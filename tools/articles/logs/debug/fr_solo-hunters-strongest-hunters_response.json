@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-202601280308071308458504Y8U4FTl",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1769540889,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'\nimport { Callout } from '@/components/mdx/Callout'\nimport { Card, CardGrid } from '@/components/mdx/CardGrid'\nimport { Checklist } from '@/components/mdx/Checklist'\nimport { FAQ } from '@/components/mdx/FAQ'\nimport { Steps, Step } from '@/components/mdx/Steps'\nimport { Section } from '@/components/mdx/Section'\nimport { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'\n\nexport const metadata = {\n  title: \"Les Chasseurs les plus forts de Chasseurs solitaires : Classement et Analyse 2026\",\n  description: \"Découvrez les chasseurs solitaires les plus puissants de Chasseurs solitaires, connus sous le nom de Chasseurs de niveau national. Ce guide classe leur force, leurs capacités uniques et leur impact sur la scène mondiale en 2026.\",\n  category: \"Classement des Chasseurs\",\n  image: \"https://placehold.co/800x400/8B5CF6/fff?text=Solo+Leveling+Strongest+Hunters\",\n  date: \"2026-01-25\",\n  author: \"Équipe Wiki de Chasseurs solitaires\"\n}\n\n<Callout type=\"info\" title=\"Guide rapide des chasseurs solitaires les plus forts\">\n- Les **chasseurs solitaires les plus forts** sont connus sous le nom de Chasseurs de niveau national, exerçant un pouvoir comparable à celui de nations entières.\n- Ces individus d'élite tirent souvent leur immense force du fait d'être des **vaisseaux pour les Dirigeants**, leur accordant des capacités uniques.\n- **Thomas Andre** et **Liu Zhigang** se classent régulièrement parmi les meilleurs, affichant des prouesses de combat et une profondeur stratégique inégalées.\n- **Sung Jinwoo** transcende finalement tous les classements conventionnels, évoluant vers l'entité la plus forte et incontestée de l'univers.\n- Comprendre leurs capacités uniques comme **Autorité du Dirigeant** et **Manifestation du Corps Spirituel** est crucial pour apprécier leur pouvoir.\n</Callout>\n\nDans l'univers palpitant de Chasseurs solitaires, où les Portails interdimensionnels libèrent de terrifiantes bêtes magiques, le sort de l'humanité repose sur les épaules de ses défenseurs les plus puissants : les Chasseurs. Alors que le titre de Rang S dénote une force incroyable, un échelon rare existe au-dessus de celui-ci. Ce sont les Chasseurs de niveau national - des individus dont la puissance brute, l'influence et les capacités de combat sont si immenses qu'ils sont considérés comme équivalents à des armées nationales entières. Ce sont les **chasseurs solitaires les plus forts**, des figures capables de modifier l'équilibre mondial du pouvoir et de faire face à des menaces qui anéantiraient des forces moindres. Ce guide complet, mis à jour pour 2026, se penche sur les origines, les pouvoirs uniques et le classement définitif de ces figures légendaires, culminant dans le plus fort incontesté de tous.\n\n<Section icon={Trophy} title=\"La Genèse des Chasseurs de niveau national\">\n\nLa désignation d'un Chasseur de niveau national n'est pas simplement un titre ; c'est un témoignage d'une force inégalée et une reconnaissance de la capacité d'un chasseur à défendre seul une nation. Cette classe d'élite a émergé à la suite de l'une des crises les plus pénibles de l'humanité : l'apparition du dragon Kamish, le boss du tout premier Portail de Rang S. Cinq Chasseurs de Rang S se sont unis pour vaincre cette entité monstrueuse, un exploit qui a cimenté leur statut et leur a valu une autorité comparable à celle des États souverains. Cet événement central a établi les critères et la légende du Chasseur de niveau national.\n\nCes individus ne sont pas seulement puissants ; ils possèdent des capacités qui dépassent largement celles des Chasseurs de Rang S ordinaires. Leurs capacités uniques découlent souvent d'une connexion profonde avec les Dirigeants, une ancienne race angélique. En devenant des vaisseaux pour ces Dirigeants, les chasseurs ont accès à une immense puissance divine, se manifestant par des compétences puissantes telles que la Manifestation du Corps Spirituel et l'Autorité du Dirigeant. Cela fait d'eux non seulement des combattants, mais des armes vivantes capables de remodeler les champs de bataille.\n\n**Points saillants de la vidéo:**\n- Explique l'origine et la signification des Chasseurs de niveau national dans le récit de Chasseurs solitaires.\n- Détaille l'échelle de puissance qui les distingue des Chasseurs de Rang S et leur influence politique.\n- Introduit le concept des Dirigeants et des Monarques et leur lien direct avec la force d'un chasseur.\n- Fournit un contexte pour le système de classement unique et les défis auxquels sont confrontés ces individus puissants.\n- Souligne l'événement fondateur de la défaite de Kamish comme le catalyseur de leur reconnaissance.\n\n<YouTubeEmbed videoId=\"oFEFe_-sYG8\" title=\"Top Five STRONGEST Hunters in Solo Leveling!\" />\n\nLe pouvoir conféré à ces vaisseaux est transformateur. Il leur permet de puiser dans une force cosmique, leur accordant des prouesses de force et de contrôle qui sont tout simplement impossibles pour les non-vaisseaux. Cette intervention divine est ce qui les élève véritablement, faisant de chaque Chasseur de niveau national un monument à la puissance brute et un symbole d'espoir pour l'humanité.\n\n<Callout type=\"tip\" title=\"Autonomisation Divine\">\nLe véritable différenciateur pour la plupart des Chasseurs de niveau national est leur statut de **vaisseaux pour les Dirigeants**. Cela leur donne accès à des capacités telles que la **Manifestation du Corps Spirituel** et l'**Autorité du Dirigeant**, poussant leur puissance bien au-delà des limites conventionnelles du Rang S.\n</Callout>\n\n</Section>\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2737,
+    "completion_tokens": 1400,
+    "total_tokens": 4137,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 2737,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

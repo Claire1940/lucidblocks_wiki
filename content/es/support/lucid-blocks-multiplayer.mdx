@@ -1,0 +1,202 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Activity, Layers } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Lucid Blocks Multijugador: Guía Completa de Estado y Supervivencia 2026",
+  description: "Explora el estado actual del multijugador de Lucid Blocks, las características de la comunidad y las estrategias esenciales de supervivencia en esta guía del sandbox de vóxeles surrealista.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Lucid+Blocks+Multiplayer+Guide",
+  date: "2026-03-17",
+  author: "Equipo de Wiki de Lucid Blocks",
+  keywords: "Lucid Blocks, multijugador, guía de supervivencia, sandbox, sistema Qualia, crafteo Apotheosis"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Estado del Multijugador**: Oficialmente es una experiencia para un solo jugador con un fuerte enfoque en compartir mundos a través de la **comunidad** y soporte para Workshop.
+- **Sistema Qualia**: Tu instancia personal del mundo que puede ser modificada, compartida y respaldada a través del **Enlace Qualia**.
+- **Mecánica Principal**: El sistema de creación **Apotheosis** requiere combinar materiales en secuencias específicas para desbloquear herramientas.
+- **Herramienta Esencial**: El **Ancla de Rejuvenecimiento** es obligatoria para establecer puntos de reaparición en la cambiante extensión liminal.
+- **Prioridad de Supervivencia**: Concéntrate en recolectar **Osmio** y **Palos** temprano para fabricar Picos de Escarcha de alta eficiencia.
+</Callout>
+
+Lucid Blocks ha tomado por asalto el género de sandbox de vóxeles en 2026, ofreciendo una experiencia liminal e inquietantemente bella que se siente como una versión febril de Minecraft. A medida que los jugadores se sumergen en los paisajes surrealistas creados por Eric Alfaro, la cuestión del **multijugador en Lucid Blocks** se ha convertido en un tema central de discusión dentro de la comunidad. Aunque el juego está diseñado fundamentalmente como un viaje solitario hacia el subconsciente, la forma en que los jugadores interactúan con archivos "Qualia" compartidos y mods de la comunidad crea un entorno pseudo-multijugador que es único y atractivo.
+
+En esta guía exhaustiva, desglosaremos el estado actual de las funciones **multijugador de Lucid Blocks**, exploraremos el intrincado sistema de creación Apotheosis y te proporcionaremos las tácticas de supervivencia necesarias para navegar por el firmamento cada vez más hostil. Ya sea que busques compartir tus diseños de mundos o simplemente sobrevivir a la noche contra las agresivas "Variantes Cuadradas", esta guía cubre todo lo que necesitas saber sobre la experiencia de Lucid Blocks en 2026.
+
+<Section icon={Map} title="Comprendiendo el Entorno Multijugador">
+
+La iteración actual de Lucid Blocks (v2.8.5) se centra en la "Qualia", una sensación en primera persona de la experiencia consciente. Aunque el **multijugador de Lucid Blocks** tradicional en tiempo real no es una característica nativa del juego base, la integración de Steam Workshop y el intercambio de archivos "Qualia" permite a los jugadores habitar las mismas pesadillas arquitectónicas diseñadas por otros.
+
+**Puntos Destacados del Video:**
+- **Visuales Surrealistas**: Presencia la estética única de espacios liminales que define el mundo del juego.
+- **Mecánicas de Exploración**: Mira cómo el jugador interactúa con el entorno usando el Colgante con Fugas.
+- **Conceptos Básicos de Combate**: Un vistazo a la lucha contra las diversas "entidades" encontradas en las capas más profundas.
+- **Lógica de Sueño**: Comprendiendo cómo el mundo cambia y se transforma según el nivel del jugador.
+
+<YouTubeEmbed videoId="TzxjuyS64vY" title="MINECRAFT + ESPACIOS LIMINALES = Lucid Blocks" />
+
+<Callout type="tip" title="Interacción con la Comunidad">
+Incluso sin PvP o cooperativo directo, puedes participar en el espíritu **multijugador de Lucid Blocks** descargando "Bacon World" o "Macrocosm" desde Steam Workshop para explorar estructuras construidas por la comunidad.
+</Callout>
+
+| Característica | Un Jugador | Comunidad/Multijugador |
+| :--- | :--- | :--- |
+| **Cooperativo en Tiempo Real** | Soportado | No Soportado Oficialmente |
+| **Compartir Mundos** | Solo Local | vía Steam Workshop/Archivos Qualia |
+| **Logros Globales** | Activado | Rastreado vía Comunidad de Steam |
+| **Soporte para Mods** | Completo | Compartido vía Workshop |
+| **Tablas de Clasificación** | Personal | Estadísticas Globales Disponibles |
+
+</Section>
+
+<Section icon={Sparkles} title="El Sistema de Creación Apotheosis">
+
+La creación en Lucid Blocks se conoce como Apotheosis. A diferencia de las cuadrículas de crafteo tradicionales, este sistema se basa en "cánticos" y la combinación de esencias. Para dominar la construcción de mundos en el **multijugador de Lucid Blocks**, debes entender cómo reaccionan los diferentes materiales al combinarse con tu Qualia central.
+
+<CardGrid cols={3}>
+  <Card title="Combinación de Esencias">
+    - **Esencia de Bola**: El material más común para construcciones básicas.
+    - **Esencia de Amistad**: Usada para pacificar ciertas entidades o crear bloques decorativos.
+    - **Esencia de Odio**: Material de alto riesgo que aumenta el daño pero escala peligrosamente.
+  </Card>
+  <Card title="Forja de Herramientas">
+    - **Picos de Escarcha**: Fabricados con Osmio y Palos; alta velocidad, baja durabilidad.
+    - **Hachas de Arcilla**: Esenciales para la recolección de madera al inicio del juego y defensa básica.
+    - **Picos de Hoja**: Una herramienta regenerativa que es eficiente en Qualias con temática de bosque.
+  </Card>
+  <Card title="Objetos Especiales">
+    - **Colgante con Fugas**: Un objeto basado en objetivos que te guía hacia el muro colosal.
+    - **Pulsera de Cuentas**: Un accesorio misterioso que influye en el comportamiento de las entidades.
+    - **Bombas de Mercurio**: Explosivos potentes con un radio de daño significativo.
+  </Card>
+</CardGrid>
+
+| Material | Fuente | Uso Primario |
+| :--- | :--- | :--- |
+| **Osmio** | Reino de Osmio/Minería Profunda | Herramientas de alto nivel, Bombas |
+| **Terrones de Arcilla** | Excavación de Suelo | Construcción Básica, Hachas |
+| **Aluminio** | Jugadores de Metal/Entidades | Componentes Industriales |
+| **Goma de Burbuja** | Entidades Oso Burbuja | Comida, Huevos Especializados |
+| **Zarcillos de Mercurio** | Cajas de Cartón/Zonas Industriales | Explosivos, Cánticos Avanzados |
+
+<Callout type="warning" title="Escalado de Odio">
+A partir de la Actualización 2.8.5, el crecimiento del **Daño de Odio** tiene un límite suave en 60. Ten cuidado al usar objetos basados en Odio, ya que el escalado puede hacer que el mundo del juego sea significativamente más hostil.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Supervivencia y Construcción de Bases">
+
+Sobrevivir a la extensión liminal requiere más que solo construir una casa; requiere anclar tu alma al mundo. Debido a que el mundo se genera proceduralmente y puede sentirse infinito, establecer un punto de reaparición es tu primera prioridad.
+
+<Steps>
+  <Step num="1" title="Adquirir un Ancla de Rejuvenecimiento">
+    Sube de nivel tus estadísticas de Vida y Fe para recibir el bloque del Ancla de Rejuvenecimiento. Esta es la única forma de establecer una posición de renacimiento permanente.
+  </Step>
+  <Step num="2" title="Asegurar una Fuente de Recursos">
+    Encuentra una instancia de Qualia rica en **Bayas de Ópalo** o **Tofu**. La comida es escasa y la salud no se regenera automáticamente sin consumibles específicos.
+  </Step>
+  <Step num="3" title="Construir un Refugio">
+    Usa **Bloques de Papel Tapiz** o **Bloques de Tierra** para crear un espacio hueco. Entidades como la "Variante Cuadrada" pueden ser brutales si te atrapan a cielo abierto.
+  </Step>
+  <Step num="4" title="Establecer un Enlace Qualia">
+    Crea un portal de regreso a tu planta Qualia personal. Esto asegura que tengas un refugio seguro sin importar qué tan profundo explores en el firmamento.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Eficiencia Alimentaria">
+Los **Cadáveres de Peces** proporcionan la mayor ganancia de salud inmediata. Siempre lleva algunos en tu inventario cuando explores las cuencas submarinas o las llanuras heladas.
+</Callout>
+
+| Alimento | Recuperación de Salud | Rareza |
+| :--- | :--- | :--- |
+| **Baya de Ópalo** | 1 Corazón | Común |
+| **Terrón de Tofu** | 2 Corazones | Poco común |
+| **Cadáver de Pez** | 4 Corazones | Raro |
+| **Huevo de Oso Burbuja** | 3 Corazones + Mejora | Muy Raro |
+| **Paleta** | 1.5 Corazones | Encontrado en Cajas |
+
+</Section>
+
+<Section icon={Activity} title="Entidades y Tácticas de Combate">
+
+Las entidades en Lucid Blocks a menudo se denominan "criaturas esotéricas". Mientras que algunas son inofensivas, otras son implacables. En el contexto de las discusiones sobre el **multijugador de Lucid Blocks**, los jugadores a menudo comparten estrategias sobre cómo manejar a los enemigos "Jugador de Metal" y "Variante Cuadrada".
+
+**Lista de Estrategia de Combate:**
+- **Mantener Distancia**: La mayoría de los enemigos tienen un alcance corto; usa la técnica de "caminar hacia atrás".
+- **Apuntar a la Cabeza**: Entidades como El Maniquí reciben más daño por golpes desde arriba.
+- **Usar la Física del Entorno**: Muchos enemigos pueden ser atraídos al agua donde se hunden y se ahogan.
+- **Uso de Bombas**: Reserva las Bombas de Mercurio para grupos de Jugadores de Metal o criaturas gigantes indestructibles.
+
+| Entidad | Comportamiento | Botín Notable |
+| :--- | :--- | :--- |
+| **Variante Cuadrada** | Agresivo, embestidas rápidas | Esencia de Bola, Arcilla |
+| **Jugador de Metal** | HP alto, sonidos metálicos | Aluminio, Osmio |
+| **Oso Burbuja** | Pasivo a menos que sea golpeado | Goma de Burbuja |
+| **El Maniquí** | Acecha desde la distancia | Palos, Picos de Madera |
+| **El Gigante** | Indestructible, destruye bloques | Ninguno (Evitar a toda costa) |
+
+<Callout type="info" title="La Criatura Gigante">
+Informes recientes de la comunidad mencionan una criatura gigante que destruye bloques y crea túneles. Actualmente es indestructible; si la ves, usa tu **Colgante con Fugas** para encontrar una salida de inmediato.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Progresión y Logros">
+
+La progresión en Lucid Blocks se mide por tu "Nivel Qualia". A medida que ganas niveles, desbloqueas "Oleadas" (Surges) que aumentan tus atributos. Esto es lo más cerca que el juego está de un sistema de progresión RPG tradicional.
+
+<Checklist
+  id="lucid-progression"
+  title="Hitos Clave de Progresión:"
+  items={[
+    "Obtener tu primera Esencia de Bola de una Variante Cuadrada",
+    "Establecer una posición de renacimiento usando el Ancla de Rejuvenecimiento",
+    "Descubrir el Reino de Osmio a través del Colgante con Fugas",
+    "Fabricar un set completo de herramientas de Escarcha",
+    "Alcanzar el nivel 10 en las estadísticas de Fe y Odio",
+    "Explorar una Qualia creada por la comunidad desde el Workshop"
+  ]}
+/>
+
+<Callout type="tip" title="Enfoque de Estadísticas">
+Prioriza la **Oleada de Fe** (Faith Surge) desde el principio. Aumenta tu capacidad para encantar objetos, lo cual es vital para convertir materiales básicos en armas poderosas como el Pico de Hielo.
+</Callout>
+
+| Tipo de Estadística | Efecto | Nivel Recomendado |
+| :--- | :--- | :--- |
+| **Oleada de Vida** | Aumenta el conteo total de Corazones | Nivel 5+ |
+| **Oleada de Fe** | Mejora el éxito del encantamiento | Nivel 8+ |
+| **Oleada de Odio** | Aumenta la salida de daño | Nivel 3 (Con cuidado) |
+| **Enlace Qualia** | Desbloquea el portal de planta personal | Nivel 1 (Esencial) |
+
+</Section>
+
+<Section icon={Swords} title="Preguntas Frecuentes de Lucid Blocks">
+
+<FAQ items={[
+  {
+    question: "¿Existe un modo multijugador real disponible en Lucid Blocks?",
+    answer: "Actualmente, Lucid Blocks es un sandbox para un solo jugador. Sin embargo, puedes experimentar elementos 'multijugador' compartiendo archivos Qualia, descargando mundos de la comunidad desde Steam Workshop y participando en desafíos de la comunidad."
+  },
+  {
+    question: "¿Cómo encuentro el Reino de Osmio?",
+    answer: "Debes usar el Colgante con Fugas, que se desbloquea al subir de nivel. El colgante emitirá partículas que te guiarán hacia el Muro Colosal, donde el Osmio es abundante."
+  },
+  {
+    question: "¿Qué pasa con mis objetos cuando muero?",
+    answer: "A diferencia de muchos juegos de supervivencia, Lucid Blocks te permite conservar tus recursos al morir. Sin embargo, reaparecerás en tu última Ancla de Rejuvenecimiento o en el punto de inicio del mundo."
+  },
+  {
+    question: "¿Puedo domesticar a las criaturas que encuentro en el firmamento?",
+    answer: "Algunas criaturas, como el Oso Burbuja, pueden ser 'domesticadas' o influenciadas usando Esencia de Amistad o alimentos específicos como el Huevo de Oso Burbuja, aunque actúan principalmente como compañeros más que como mascotas de combate."
+  }
+]} />
+
+</Section>

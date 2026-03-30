@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-20260128030806874756618lu5r0wkl",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1769540888,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'\nimport { Callout } from '@/components/mdx/Callout'\nimport { Card, CardGrid } from '@/components/mdx/CardGrid'\nimport { Checklist } from '@/components/mdx/Checklist'\nimport { FAQ } from '@/components/mdx/FAQ'\nimport { Steps, Step } from '@/components/mdx/Steps'\nimport { Section } from '@/components/mdx/Section'\nimport { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'\n\nexport const metadata = {\n  title: \"Los Cazadores Solitarios Más Fuertes: Ranking y Análisis 2026\",\n  description: \"Descubre los cazadores solitarios más poderosos en Solo Leveling, conocidos como Cazadores de Nivel Nacional. Esta guía clasifica su fuerza, habilidades únicas e impacto en el escenario mundial en 2026.\",\n  category: \"Ranking de Cazadores\",\n  image: \"https://placehold.co/800x400/8B5CF6/fff?text=Solo+Leveling+Strongest+Hunters\",\n  date: \"2026-01-25\",\n  author: \"Equipo de Wiki de Solo Leveling: Arise\"\n}\n\n<Callout type=\"info\" title=\"Guía Rápida de los Cazadores Solitarios Más Fuertes\">\n- Los **cazadores solitarios más fuertes** son conocidos como Cazadores de Nivel Nacional, y su poder es comparable al de naciones enteras.\n- Estos individuos de élite a menudo derivan su inmensa fuerza de ser **vasijas para los Gobernantes**, lo que les otorga habilidades únicas.\n- **Thomas Andre** y **Liu Zhigang** se clasifican consistentemente entre los mejores, mostrando una destreza de combate y una profundidad estratégica sin igual.\n- **Sung Jinwoo** finalmente trasciende todos los rankings convencionales, evolucionando hasta convertirse en la entidad más fuerte indiscutible del universo.\n- Comprender sus habilidades únicas como la **Autoridad del Gobernante** y la **Manifestación del Cuerpo Espiritual** es crucial para apreciar su poder.\n</Callout>\n\nEn el emocionante universo de Cazadores Solitarios, donde los Portales interdimensionales desatan bestias mágicas aterradoras, el destino de la humanidad descansa sobre los hombros de sus defensores más poderosos: los Cazadores. Si bien el título de Rango S denota una fuerza increíble, existe un escalón raro por encima de él. Estos son los Cazadores de Nivel Nacional: individuos cuyo poder bruto, influencia y capacidades de combate son tan inmensos que se les considera equivalentes a ejércitos nacionales enteros. Son los **cazadores solitarios más fuertes**, figuras capaces de alterar el equilibrio global de poder y enfrentarse a amenazas que aniquilarían a fuerzas menores. Esta guía completa, actualizada para 2026, profundiza en los orígenes, los poderes únicos y la clasificación definitiva de estas figuras legendarias, que culminan en el más fuerte indiscutible de todos.\n\n<Section icon={Trophy} title=\"El Génesis de los Cazadores de Nivel Nacional\">\n\nLa designación de un Cazador de Nivel Nacional no es simplemente un título; es un testimonio de una fuerza sin igual y un reconocimiento de la capacidad de un cazador para defender una nación por sí solo. Esta clase de élite surgió tras una de las crisis más desgarradoras de la humanidad: la aparición del dragón Kamish, el jefe del primer Portal de Rango S. Cinco Cazadores de Rango S se unieron para derrotar a esta entidad monstruosa, una hazaña que cimentó su estatus y les valió una autoridad comparable a la de los estados soberanos. Este evento fundamental estableció los criterios y la leyenda del Cazador de Nivel Nacional.\n\nEstos individuos no son solo poderosos; poseen habilidades que superan con creces las de los Cazadores de Rango S regulares. Sus capacidades únicas a menudo provienen de una profunda conexión con los Gobernantes, una antigua raza angelical. Al convertirse en vasijas para estos Gobernantes, los cazadores obtienen acceso a un inmenso poder divino, que se manifiesta en habilidades potentes como la Manifestación del Cuerpo Espiritual y la Autoridad del Gobernante. Esto los convierte no solo en luchadores, sino en armas vivientes capaces de remodelar los campos de batalla.\n\n**Video Destacados:**\n- Explica el origen y la importancia de los Cazadores de Nivel Nacional en la narrativa de Cazadores Solitarios.\n- Detalla la escala de poder que los distingue de los Cazadores de Rango S y su influencia política.\n- Introduce el concepto de Gobernantes y Monarcas y su conexión directa con la fuerza de un cazador.\n- Proporciona contexto para el sistema de clasificación único y los desafíos que enfrentan estos poderosos individuos.\n- Destaca el evento fundacional de la derrota de Kamish como el catalizador para su reconocimiento.\n\n<YouTubeEmbed videoId=\"oFEFe_-sYG8\" title=\"Top Five STRONGEST Hunters in Solo Leveling!\" />\n\nEl poder otorgado a estas vasijas es transformador. Les permite aprovechar una fuerza cósmica, otorgándoles hazañas de fuerza y control que son simplemente imposibles para los que no son vasijas. Esta intervención divina es lo que realmente los eleva, haciendo de cada Cazador de Nivel Nacional un monumento al poder bruto y un símbolo de esperanza para la humanidad.\n\n<Callout type=\"tip\" title=\"Empoderamiento Divino\">\nEl verdadero diferenciador para la mayoría de los Cazadores de Nivel Nacional es su estatus como **vasijas para los Gobernantes**. Esto les da acceso a habilidades como la **Manifestación del Cuerpo Espiritual** y la **Autoridad del Gobernante**, empujando su poder mucho más allá de los límites convencionales del Rango S.\n</Callout>\n\n</Section>\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2739,
+    "completion_tokens": 1308,
+    "total_tokens": 4047,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 2739,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

@@ -1,0 +1,10 @@
+# MCP SDK
+mcp
+
+# YouTube 依赖
+yt-dlp
+youtube-transcript-api
+requests
+
+# 环境变量管理
+python-dotenv

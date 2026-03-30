@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-20251215160449498301850qr65G2zP",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1765785900,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "---\ntitle: \"Lista de Niveles de Defensa de Torre Universal: Panorama General del Meta, Roles Explicados y Selecciones Rápidas (2025)\"\ndescription: \"Lista de niveles rápida de Defensa de Torre Universal con panorama general del meta actual, explicaciones de roles de unidades y selecciones de equipo instantáneas. Actualización de diciembre de 2025.\"\nkeywords: [\"lista de niveles de defensa de torre universal\", \"panorama general del meta\", \"roles de unidades\", \"lista de niveles rápida\"]\ncanonical: \"/es/tier-list/universal-tower-defense-tierlist/\"\ndate: \"2025-12-15\"\nvideo:\n  enabled: true\n  youtubeId: \"ppqydXVOV88\"\n  title: \"Lista de Niveles de *LANZAMIENTO* de Defensa de Torre Universal -- ¡¡Las Mejores Unidades del Juego!!\"\n  description: \"Ranking de la lista de niveles de lanzamiento\"\n  duration: \"PT14M18S\"\n  uploadDate: \"2024-12-13\"\n---\n\n¿Necesitas una lista de niveles rápida de Defensa de Torre Universal? Este panorama general del meta te muestra las mejores unidades, explica cada rol y te da selecciones de equipo instantáneas para diferentes escenarios. Actualizado para el meta de diciembre de 2025, centrado en el escalado infinito y el daño explosivo a los jefes.\n\n## Panorama General del Meta Actual (Diciembre de 2025)\n\n**Dominadores de Nivel S**: Sung Jin-Woo, Dragon Silver, Kirito, Ragna, Zaraki, Sasuke\n\n**Características del Meta**:\n- Las unidades de escalado infinito dominan el juego tardío\n- El daño explosivo a los jefes es muy valorado\n- Los rasgos impactan significativamente en el rendimiento\n- La limpieza de AoE es importante para el farmeo\n\nPara clasificaciones de niveles completas con explicaciones completas, consulta nuestra [lista de niveles detallada de Defensa de Torre Universal](/tier-list/universal-tower-defense-tierlist/).\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/ppqydXVOV88\"\n    title=\"Universal Tower Defence *RELEASE* Tier List -- Best Units in the Game!!\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\n## Roles de Unidades Explicados\n\n**Carry/DPS**: Principal causante de daño (Sung Jin-Woo, Dragon Silver)\n**Especialista en Explosión**: Altas ventanas de daño para jefes (Ragna)\n**Limpieza de AoE**: Gestión de oleadas (Kirito, Mob Psycho)\n**Soporte/Buffer**: Potencia a los aliados (Lelouch)\n**Tanque**: Absorbe daño (menos meta actualmente)\n\n## Selecciones Rápidas de Equipo\n\n**Equipo Económico** (Sin Míticos):\nMob Psycho + Gojo + Tanjiro + Zoro\n\n**Mitad del Juego** (Un Mítico):\nSung Jin-Woo O Dragon Silver + Sasuke + Lelouch + Gilgamesh\n\n**Final del Juego** (Múltiples Míticos):\nSung Jin-Woo + Dragon Silver + Kirito + Zaraki + Ragna\n\n## Las 5 Unidades Imprescindibles\n\n1. **Sung Jin-Woo** - La mejor unidad en general, escalado infinito\n2. **Dragon Silver** - Segundo mejor carry, monstruo de juego tardío\n3. **Ragna** - Asesino de jefes esencial\n4. **Kirito** - El mejor daño AoE\n5. **Sasuke** - Utilidad versátil + daño\n\n## Impacto del Rasgo en los Niveles\n\n**Rasgo Gobernante**: Mueve las unidades hacia arriba 1-2 niveles como mínimo\n**Mago/Guerrero**: Añade ~30% de mejora de rendimiento\n**Rasgos Comunes**: Impacto mínimo (5-10%)\n\nLas unidades con rasgo de Gobernante pueden saltar del nivel A al rendimiento de nivel S.\n\n## Cambios Meta a Observar\n\n**Nerfs Esperados**: La Legión de las Sombras de Sung Jin-Woo puede ser nerfeada\n**Unidades en Ascenso**: Las unidades más nuevas pueden sacudir la lista de niveles\n**Cambios de Rasgos**: El reequilibrio de los rasgos podría cambiar las clasificaciones\n\nÚnete al [Discord de Defensa de Torre Universal](/discord/universal-tower-defense-discord/) para debates meta en tiempo real.\n\n## Preguntas Frecuentes\n\n**¿La rareza determina la colocación en el nivel?**\nNo. Algunas unidades épicas superan a unidades legendarias específicas. El rendimiento importa más que la rareza.\n\n**¿Debo invocar solo unidades de nivel S?**\nSi es posible, sí. Pero las unidades de nivel A funcionan bien para la mayoría del contenido.\n\n**¿Con qué frecuencia cambia la lista de niveles?**\nCada 2-3 semanas con parches de equilibrio. Las unidades individuales rara vez se mueven más de un nivel.\n\nPara obtener códigos para invocar estas unidades, consulta nuestra página de [códigos de Defensa de Torre Universal](/codes/universal-tower-defense-codes/).\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1309,
+    "completion_tokens": 1255,
+    "total_tokens": 2564,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 1309,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

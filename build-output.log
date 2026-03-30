@@ -1,0 +1,20 @@
+
+> nextjs-shadcn@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.9
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 1653ms
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/9) ...
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: 
+    at <unknown> (.next/server/chunks/837.js:1:76695)
+    at o (.next/server/app/[locale]/guides/page.js:1:8073) {
+  digest: '2731810608'
+}
+Export encountered an error on /_not-found/page: /_not-found, exiting the build.
+ ⨯ Next.js build worker exited with code: 1 and signal: null

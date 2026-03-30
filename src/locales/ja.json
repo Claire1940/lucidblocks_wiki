@@ -1,0 +1,931 @@
+{
+  "seo": {
+    "home": {
+      "title": "Lucid Blocks Wiki - クラフト、バイオーム、実績",
+      "description": "Lucid Blocks Wikiでは、Steamで展開される超現実的なボクセルサンドボックスアドベンチャーのクラフト、バイオーム、クリーチャー、アイテム、実績、エンディング、サバイバルのヒントについて解説しています。",
+      "keywords": "Lucid Blocks, Lucid Blocks wiki, クラフト, バイオーム, 実績, サバイバル, Steam",
+      "ogTitle": "Lucid Blocks Wiki - クラフト、バイオーム、実績",
+      "ogDescription": "Lucid Blocks Wikiでは、Steamで展開される超現実的なボクセルサンドボックスアドベンチャーのクラフト、バイオーム、クリーチャー、アイテム、実績、エンディング、サバイバルのヒントについて解説しています。",
+      "twitterTitle": "Lucid Blocks Wiki - クラフト、バイオーム、実績",
+      "twitterDescription": "Lucid Blocks Wikiでは、Steamの超現実的なボクセルサンドボックスにおけるクラフト、バイオーム、クリーチャー、アイテム、実績、サバイバルのヒントを網羅しています。"
+    }
+  },
+  "nav": {
+    "guides": "ガイド",
+    "crafting": "クラフト",
+    "items": "アイテム",
+    "biomes": "バイオーム",
+    "building": "建築",
+    "support": "サポート"
+  },
+  "common": {
+    "home": "ホーム",
+    "more": "もっと見る",
+    "playNow": "Steamでプレイ",
+    "switchLanguage": "言語を切り替える",
+    "switchTheme": "テーマを切り替える",
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "notFound": "ページが見つかりません",
+    "notFoundDescription": "お探しのページは存在しません。",
+    "backToHome": "ホームに戻る",
+    "relatedArticles": "関連記事",
+    "readMore": "続きを読む"
+  },
+  "hero": {
+    "badge": "__PROTECTED_c0b0161c__ ボクセル・サバイバル・サンドボックス",
+    "title": "Lucid Blocks Wiki",
+    "description": "夢のようなバイオームを探索し、Apotheosisでアイテムを融合、自由に建築を楽しみましょう。Steamで繰り広げられるこのシュールなオープンワールド・サンドボックスで、奇妙なクリーチャーから生き延びてください。",
+    "getFreeCodesCTA": "クラフトガイドを見る",
+    "playOnSteamCTA": "Steamでプレイ",
+    "stats": {
+      "stat1": {
+        "value": "1,325",
+        "label": "オンラインプレイヤー"
+      },
+      "stat2": {
+        "value": "1,986",
+        "label": "最大同時接続数"
+      },
+      "stat3": {
+        "value": "97%",
+        "label": "好評"
+      },
+      "stat4": {
+        "value": "2026年3月12日",
+        "label": "リリース日"
+      }
+    }
+  },
+  "gameFeature": {
+    "title": "Lucid Blocks ゲームプレイ",
+    "description": "超現実的なバイオームを探索し、Apotheosis でアイテムを融合。Steam で、奇妙なクリーチャーから生き延びる夢のようなボクセルサンドボックスを体験しましょう。"
+  },
+  "tools": {
+    "title": "Lucid Blocks",
+    "titleHighlight": "リソース",
+    "subtitle": "Lucid Blocksでの探索、クラフト、生存に必要なすべての情報",
+    "cards": [
+      {
+        "icon": "BookOpen",
+        "title": "初心者ガイド",
+        "description": "最初のステップ、探索、序盤の進め方"
+      },
+      {
+        "icon": "Sparkles",
+        "title": "Apotheosis クラフト",
+        "description": "フリーフォーム・フュージョンシステムと序盤のレシピ"
+      },
+      {
+        "icon": "Hammer",
+        "title": "ツールと武器",
+        "description": "フロストピック、アズラエル、__PROTECTED_6a765cb2__、その他"
+      },
+      {
+        "icon": "Package",
+        "title": "ストレージとインベントリ",
+        "description": "キャッシュキューブ、キャビネット、クオリアストレージ"
+      },
+      {
+        "icon": "Home",
+        "title": "クオリアと拠点建築",
+        "description": "パーソナルクオリアと拠点のセットアップ"
+      },
+      {
+        "icon": "Eye",
+        "title": "ワールドエリア",
+        "description": "Fog Meadow、エッセンスの沼地、その他"
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "クリーチャーと敵",
+        "description": "マネキン、クモ、そして生き残る方法"
+      },
+      {
+        "icon": "ArrowRight",
+        "title": "移動用装備",
+        "description": "__PROTECTED_6a765cb2__、グライダーグローブ、__PROTECTED_163b9bec__"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "農業と成長",
+        "description": "種の進行と素材集め"
+      },
+      {
+        "icon": "Star",
+        "title": "序盤のおすすめアンロック",
+        "description": "プレイ開始1時間で優先すべきアップグレード"
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "実績トラッカー",
+        "description": "全19個のSteamの実績と解除条件"
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "シングルプレイヤーFAQ",
+        "description": "プラットフォーム、価格、協力プレイ、言語に関する質問"
+      },
+      {
+        "icon": "Gamepad2",
+        "title": "Steam Deckとコントローラー",
+        "description": "Proton 9.0.4のセットアップとコントローラーのヒント"
+      },
+      {
+        "icon": "Settings",
+        "title": "設定とアクセシビリティ",
+        "description": "手の非表示、__PROTECTED_38625270__、表示オプション"
+      },
+      {
+        "icon": "Clock",
+        "title": "アップデートとパッチノート",
+        "description": "最近の修正とロードマップ"
+      },
+      {
+        "icon": "Shield",
+        "title": "クラッシュ修正",
+        "description": "__PROTECTED_38625270__の確認、ログのパス、バグ報告"
+      }
+    ]
+  },
+  "modules": {
+    "lucidBlocksBeginnerGuide": {
+      "title": "Lucid Blocks 初心者ガイド",
+      "displayType": "steps",
+      "intro": "まずは探索、融合、そして進行がどのように繋がっているかを学ぶことから始めましょう。Lucid Blocks では試行錯誤が報われます。序盤の進行は、珍しい素材を集め、組み合わせを試し、自分だけのクオリアを解放することから始まります。",
+      "steps": [
+        {
+          "title": "本格的に動く前に探索する",
+          "description": "外へ歩き出し、一般的なブロックを採掘し、見つけた奇妙なドロップアイテムはすべて取っておきましょう。序盤の進行は、決まったクエストをこなすことよりも、素材が何に変化するかを発見することに重点が置かれています。"
+        },
+        {
+          "title": "早めに自分専用のクオリアを解放する",
+          "description": "自分専用のクオリアは、序盤で最も重要なマイルストーンの一つです。体制を立て直し、拠点を構築するための信頼できる場所となります。"
+        },
+        {
+          "title": "序盤の素早い進行にオスミウムを活用する",
+          "description": "オスミウムは序盤で最も役立つ素材の一つです。オスミウムと棒を組み合わせて、素早い採掘が可能な「フロストピック」を作るのが人気の序盤ルートです。"
+        },
+        {
+          "title": "優れた融合を記録する",
+          "description": "成功した組み合わせはジャーナルに記録しておきましょう。Lucid Blocks には膨大な融合パターンがあるため、有用な結果を書き留めておくことで大幅な時間の節約になります。"
+        }
+      ],
+      "quickTips": [
+        "Apotheosis には固定のレシピリストは必要ありません。",
+        "無限に生成される世界では、より高く、あるいはより深く移動することで、全く異なる素材が見つかることがあります。",
+        "移動ツールやユーティリティ装備を解放し始めると、プレイの快適さが劇的に向上します。",
+        "序盤に迷うのは普通のことですが、最初の優れた融合が成功すれば、便利なツール、ストレージ、移動手段が次々と手に入るようになります。"
+      ]
+    },
+    "lucidBlocksApotheosisCrafting": {
+      "title": "Lucid Blocks Apotheosis クラフト",
+      "displayType": "cards",
+      "intro": "Apotheosis は、このゲームの制限のない融合システムです。従来のレシピ本を暗記する代わりに、素材を組み合わせ、結果を観察し、時間をかけて自分だけのクラフト知識を築き上げていきます。",
+      "cards": [
+        {
+          "name": "フリーフォームな融合",
+          "description": "Apotheosis では、固定のレシピリストに従うことなく、さまざまなアイテムを融合させることができます。"
+        },
+        {
+          "name": "複数の有用な結果",
+          "description": "素材によって、特定の結果に繋がりやすい傾向があります。コミュニティの発見によれば、似たような投入素材からでも、実用的なツール、ストレージ、あるいは戦闘用のアップグレードを作成可能です。"
+        },
+        {
+          "name": "ジャーナル優先のクラフト",
+          "description": "Apotheosis を学ぶ最良の方法は、成功した組み合わせを記録することです。ジャーナルはすぐにあなた専用のクラフトリファレンスになります。"
+        },
+        {
+          "name": "コミュニティ検証済みの序盤の融合",
+          "description": "序盤の代表例としては、オスミウム＋棒で「フロストピック」、棒＋タングステンの付属肢で「アズラエル」、アズラエル＋磁鉄鉱で「触手レイピア」などが挙げられます。"
+        }
+      ],
+      "milestones": [
+        "アイテムを融合させる",
+        "害獣を融合させる",
+        "神聖なアーティファクトを融合させる"
+      ]
+    },
+    "lucidBlocksToolsAndWeapons": {
+      "title": "Lucid Blocks ツールと武器",
+      "displayType": "itemCards",
+      "intro": "Lucid Blocks では、公式のユーティリティ装備とコミュニティが発見した序盤の武器が混在しています。最適なセットアップは通常、素早い採掘、安全な移動、そして信頼できる戦闘手段を組み合わせたものです。",
+      "items": [
+        {
+          "name": "フロストピック",
+          "type": "採掘ツール",
+          "description": "オスミウムと棒から作られる、高速で安価な序盤用ピッケル。プレイヤーはこれを使って序盤の素材集めを加速させます。"
+        },
+        {
+          "name": "アズラエル",
+          "type": "初期武器",
+          "description": "棒とタングステンの付属肢からクラフトできる、実用的な序盤の武器ルートです。"
+        },
+        {
+          "name": "触手レイピア",
+          "type": "強化武器",
+          "description": "アズラエルと磁鉄鉱を組み合わせて作る強力な発展武器。プレイヤー間で共有されている、序盤から中盤にかけて最も有用な戦闘ルートの一つです。"
+        },
+        {
+          "name": "__PROTECTED_6a765cb2__",
+          "type": "移動ツール",
+          "description": "移動能力と垂直方向の探索を大幅に向上させる公式の移動アイテムです。"
+        },
+        {
+          "name": "__PROTECTED_163b9bec__",
+          "type": "移動ツール",
+          "description": "より安全かつ効率的に距離を移動するのに役立つ公式の移動アイテムです。"
+        },
+        {
+          "name": "ボールワンド",
+          "type": "ユーティリティ武器",
+          "description": "戦闘やパズルの選択肢を広げる公式の遠距離ユーティリティアイテムです。"
+        },
+        {
+          "name": "スキューバダイビングギア",
+          "type": "移動装備",
+          "description": "通常は探索が困難な場所へ到達するための公式ユーティリティアイテムです。"
+        },
+        {
+          "name": "爆発物",
+          "type": "ユーティリティ・ダメージ",
+          "description": "中核となるツールセットの一部として公式に推奨されており、脅威や障害物を突破するのに役立ちます。"
+        }
+      ]
+    },
+    "lucidBlocksStorageAndInventory": {
+      "title": "Lucid Blocks ストレージとインベントリ",
+      "displayType": "solutionCards",
+      "intro": "Lucid Blocks では早い段階からインベントリが圧迫されるため、ストレージの構築を優先目標にすべきです。実際のプレイヤーによって検証されたいくつかの解決策がすでに確立されています。",
+      "solutions": [
+        {
+          "name": "キャッシュキューブ",
+          "role": "チェスト型ストレージ",
+          "description": "キャッシュキューブは最も初期に利用可能な実用的なストレージであり、プレイヤーの間ではゲーム内の主要なチェスト型コンテナとして扱われています。"
+        },
+        {
+          "name": "キャビネット",
+          "role": "簡易拠点ストレージ",
+          "description": "キャビネットも確認されているストレージの選択肢です。共有されている序盤のレシピでは、カットウッド1つと紐1つを使用します。"
+        },
+        {
+          "name": "個人用クオリア",
+          "role": "長期ストレージハブ",
+          "description": "解放されると、個人用クオリアは素材を整理し、落ち着いてクラフトを行い、拠点を拡張するための自然な拠点となります。"
+        },
+        {
+          "name": "ジャーナルによる追跡",
+          "role": "インベントリの効率化",
+          "description": "有用な組み合わせをジャーナルに記録することで、素材の無駄を減らし、インベントリ管理を大幅に楽にすることができます。"
+        }
+      ],
+      "managementTips": [
+        "レアなドロップ品を溜め込む前に、信頼できるストレージを一つ確保することを優先しましょう。",
+        "個人用クオリアが利用可能になったら、そこを中心に構築を進めましょう。",
+        "クラフト素材、戦闘ツール、移動装備を分けて保管することで、アップグレードの計画が立てやすくなります。",
+        "ジャーナルを単なるクラフトの発見用ではなく、インベントリ管理の一部として活用しましょう。"
+      ]
+    },
+    "lucidBlocksQualiaAndBaseBuilding": {
+      "title": "Lucid Blocks クオリアと拠点建築",
+      "displayType": "cards",
+      "intro": "クオリアは Lucid Blocks における最も重要な進行マイルストーンの一つです。体制を整え、素材を保管し、探索の成果を徐々に本格的な拠点へと変えていくための個人空間を提供します。",
+      "cards": [
+        {
+          "name": "個人用クオリア",
+          "description": "クオリアの解放は序盤のマイルストーンであり、広い世界を探索する中で戻ってくるための信頼できる場所となります。"
+        },
+        {
+          "name": "ストレージ優先の建築",
+          "description": "多くのプレイヤーは、整理されたクラフトスペースや建築スペースを持つ大きな拠点にする前に、まずクオリアをストレージハブとして使い始めます。"
+        },
+        {
+          "name": "クリエイティブな自宅建築",
+          "description": "Lucid Blocks はクリエイティブな建築をサポートしており、プレイヤーはすでにクオリアの空間を利用して家やパーソナライズされたレイアウトを作成しています。"
+        },
+        {
+          "name": "進行のハブ",
+          "description": "強力な拠点は、探索で得た戦利品、クラフト素材、種、ツール、移動装備を分類するのに役立ち、次のアップグレード計画を容易にします。"
+        }
+      ],
+      "highlights": [
+        "クオリアに入る",
+        "素材を安全に保管する",
+        "実用性から装飾へと拡張する",
+        "拠点のスペースを活用してクラフトや農業を支援する"
+      ]
+    },
+    "lucidBlocksWorldRegions": {
+      "title": "Lucid Blocks 世界の地域",
+      "displayType": "regionCards",
+      "intro": "Lucid Blocks は無限の世界生成を採用しているため、プレイヤーは常に新しい環境や構造物を発見し続けています。実績やコミュニティの議論には、すでにいくつかの地名が登場しています。",
+      "regions": [
+        {
+          "name": "Fog Meadow",
+          "type": "コミュニティ注目エリア",
+          "description": "Fog Meadow は、隠れた脅威や危険な遭遇に関連する緊張感のあるエリアとして、プレイヤーの間ですでに知られています。"
+        },
+        {
+          "name": "ティアマナ・レイライン",
+          "type": "発見ランドマーク",
+          "description": "ティアマナ・レイラインは独自の実績マイルストーンを持つほど重要であり、これまでに判明している中で最も明確な名前付きの発見場所の一つです。"
+        },
+        {
+          "name": "クロナクオリア",
+          "type": "建築スペース",
+          "description": "プレイヤーはすでにクロナクオリアを、家を建てたり、素材を保管したり、より永続的なレイアウトを試したりする場所として利用しています。"
+        },
+        {
+          "name": "エッセンスの沼地",
+          "type": "ファーミングエリア",
+          "description": "エッセンスの沼地は、特にスライムとの戦闘や経験値稼ぎに役立つファーミング場所としてプレイヤー間で共有されています。"
+        }
+      ]
+    },
+    "lucidBlocksCreaturesAndEnemies": {
+      "title": "Lucid Blocks クリーチャーと敵",
+      "displayType": "creatureCards",
+      "intro": "Lucid Blocks は超現実的なクリーチャーと現実的な危険が混ざり合っています。公式の説明やコミュニティの投稿は、奇妙な生命、敵対的な脅威、そしてプレイヤーがすぐに覚えるような印象的な遭遇に満ちた世界を指し示しています。",
+      "creatures": [
+        {
+          "name": "マネキン",
+          "role": "敵対的な敵",
+          "description": "マネキンはこの世界における公式な名前を持つ敵の一つであり、ゲームの超現実的な脅威リストの一部です。"
+        },
+        {
+          "name": "ぷにぷにジェル",
+          "role": "敵対的な敵",
+          "description": "ぷにぷにジェルも公式な名前を持つ敵タイプであり、ゲームの奇妙な生物学的スタイルを象徴しています。"
+        },
+        {
+          "name": "高次元の存在",
+          "role": "敵対的な敵",
+          "description": "これらの存在は、世界のより抽象的で不安をかき立てる敵ラインナップの一部として登場します。"
+        },
+        {
+          "name": "巨大クモ",
+          "role": "主要な脅威",
+          "description": "クモはコミュニティの議論で最も即座に恐れられている敵の一つであり、明らかに記憶に残る危険な存在です。"
+        },
+        {
+          "name": "__PROTECTED_26ee183b__",
+          "role": "名前付きクリーチャー",
+          "description": "__PROTECTED_26ee183b__ は独自の実績を持つほど注目に値し、ゲーム内で最も明確な名前付きクリーチャーとの遭遇の一つです。"
+        },
+        {
+          "name": "可愛い害獣",
+          "role": "インタラクティブな生物",
+          "description": "害獣は融合の進行に関わるだけでなく、名前を付けることもでき、標準的な敵よりも個人的な役割を持ちます。"
+        },
+        {
+          "name": "冒涜的なクリーチャー",
+          "role": "エリートの脅威",
+          "description": "冒涜的なクリーチャーは専用の戦闘実績に関連付けられており、重要な敵との遭遇として位置づけられています。"
+        }
+      ]
+    },
+    "lucidBlocksMobilityGear": {
+      "title": "Lucid Blocks 移動装備",
+      "displayType": "itemCards",
+      "intro": "移動手段のアップグレードは、Lucid Blocks におけるプレイの快適さを最も大きく向上させる要素の一つです。最初の移動ツールを解放すれば、探索はより速く、より安全に、そしてより実りあるものになります。",
+      "items": [
+        {
+          "name": "__PROTECTED_6a765cb2__",
+          "type": "移動ツール",
+          "description": "フックショットはゲーム内で最も明確な移動のマイルストーンの一つであり、専用の実績も用意されています。"
+        },
+        {
+          "name": "グライダーグローブ",
+          "type": "空中移動",
+          "description": "グライダーグローブはよりスムーズな移動を可能にし、独自の実績を持つもう一つの主要な進行マイルストーンです。"
+        },
+        {
+          "name": "__PROTECTED_163b9bec__",
+          "type": "移動ツール",
+          "description": "ビィ・グライダーは、効率的に距離を移動するための移動ツールキットの一部として公式に推奨されています。"
+        },
+        {
+          "name": "ボールワンド",
+          "type": "ユーティリティ装備",
+          "description": "ボールワンドは公式に推奨されている特殊ツールの一つで、世界を移動したり干渉したりする方法を広げてくれます。"
+        },
+        {
+          "name": "スキューバダイビングギア",
+          "type": "探索装備",
+          "description": "スキューバダイビングギアは、通常では探索が困難なエリアに到達するための中核的なユーティリティセットとして公式にリストされています。"
+        },
+        {
+          "name": "爆発物",
+          "type": "ユーティリティ・ダメージ",
+          "description": "爆発物は公式に推奨されていると同時に実績マイルストーンにも関連付けられており、ゲームの中核的なユーティリティ進行の一部となっています。"
+        }
+      ],
+      "unlockMilestones": [
+        "フックショットを使いこなす",
+        "グライダーグローブで空を飛ぶ",
+        "投射物ワンドを構える",
+        "爆発物を構える"
+      ]
+    },
+    "lucidBlocksFarmingAndGrowth": {
+      "title": "Lucid Blocks 農業と成長",
+      "displayType": "mixedCards",
+      "intro": "成長は Lucid Blocks における真の進行の一部です。農業は単に植えて収穫するだけでなく、ツール、武器、クラフトの選択肢を維持するための反復可能な素材ルートを確立することでもあります。",
+      "sections": [
+        {
+          "name": "種の進行",
+          "description": "種を植えて肥料を与えることはゲーム内の重要なマイルストーンであり、完全に成長したナッツを収穫することも同じ成長パスの一部です。"
+        },
+        {
+          "name": "素材ファーミング",
+          "description": "実用的な序盤のファーミングループは「水銀カプセル」を作成することです。これにより、反復可能なクラフト素材となる触手やグーをドロップする小さなスライムが出現します。"
+        },
+        {
+          "name": "ツールの維持",
+          "description": "オスミウム、ガラスの破片、植物、スライム素材を安定して集められるようになると、その後のクラフトのための資源ファーミングがより強力になります。"
+        },
+        {
+          "name": "拠点のルーチン",
+          "description": "最適な農業セットアップは食料以上のものを支えます。ストレージ、移動ツール、武器のアップグレード、そして将来の融合実験に供給されるべきです。"
+        }
+      ],
+      "growthMilestones": [
+        "種に肥料を与える",
+        "完全に成長したナッツを収穫する",
+        "反復可能な素材ループを作成する",
+        "農業を長期的な進行に組み込む"
+      ]
+    },
+    "lucidBlocksBestEarlyUnlocks": {
+      "title": "Lucid Blocks おすすめの序盤解放要素",
+      "displayType": "priorityCards",
+      "intro": "最強の序盤解放要素は、安全性、ストレージ、そして移動能力を向上させるものです。Lucid Blocks では、いくつかの実用的なアップグレードがその後のゲームプレイ全体を非常にスムーズにします。",
+      "priorities": [
+        {
+          "name": "個人用クオリア",
+          "priority": "必須",
+          "description": "個人用クオリアにアクセスできるようになると、プレイが格段に安定します。ストレージ、建築、体制の立て直しのための信頼できるハブとして機能します。"
+        },
+        {
+          "name": "フロストピック",
+          "priority": "極めて高い",
+          "description": "オスミウムと棒で作れる、高速で安価な序盤の採掘ツール。序盤の資源収集を加速させるために最も有用なアップグレードの一つです。"
+        },
+        {
+          "name": "キャッシュキューブ",
+          "priority": "極めて高い",
+          "description": "インベントリの圧迫は早くから始まるため、最初の信頼できるチェスト型コンテナを手に入れることは、プレイの快適さを大きく向上させます。"
+        },
+        {
+          "name": "__PROTECTED_6a765cb2__",
+          "priority": "高い",
+          "description": "フックショットはゲーム内で最も明確な移動のマイルストーンの一つであり、探索をより速く、より安全にします。"
+        },
+        {
+          "name": "グライダーグローブ",
+          "priority": "高い",
+          "description": "グライダーグローブはもう一つの大きな機動力ブーストをもたらし、長距離の移動をはるかに効率的にします。"
+        },
+        {
+          "name": "投射物ワンドまたは爆弾",
+          "priority": "高い",
+          "description": "遠距離ツールや爆発物の選択肢を持つことで、危険な敵や試練形式の遭遇に対してより安全に対処できるようになります。"
+        }
+      ]
+    },
+    "lucidBlocksAchievementTracker": {
+      "title": "Lucid Blocks 実績トラッカー",
+      "displayType": "achievementGrid",
+      "intro": "Lucid Blocks には現在 19 個の Steam 実績があり、それらは探索、クラフト、移動、戦闘、成長の進行に自然に分類されます。",
+      "groups": [
+        {
+          "name": "探索",
+          "achievements": [
+            {
+              "title": "__PROTECTED_c973d4a3__ α",
+              "description": "クオリアに入る。"
+            },
+            {
+              "title": "__PROTECTED_c973d4a3__ γ",
+              "description": "ティアマナ・レイラインを発見する。"
+            },
+            {
+              "title": "__PROTECTED_c973d4a3__ δ",
+              "description": "ティアマナの試練を乗り越える。"
+            },
+            {
+              "title": "__PROTECTED_c973d4a3__ ε",
+              "description": "隠し実績。"
+            }
+          ]
+        },
+        {
+          "name": "クラフトと召喚",
+          "achievements": [
+            {
+              "title": "Apotheosis α",
+              "description": "アイテムを融合させる。"
+            },
+            {
+              "title": "Apotheosis β",
+              "description": "害獣を融合させる。"
+            },
+            {
+              "title": "Apotheosis γ",
+              "description": "神聖なアーティファクトを融合させる。"
+            },
+            {
+              "title": "Archangel β",
+              "description": "信仰を召喚する。"
+            }
+          ]
+        },
+        {
+          "name": "移動とユーティリティ",
+          "achievements": [
+            {
+              "title": "Virtue α",
+              "description": "グライダーグローブで空を飛ぶ。"
+            },
+            {
+              "title": "Virtue β",
+              "description": "フックショットを使いこなす。"
+            },
+            {
+              "title": "Archangel α",
+              "description": "投射物ワンドを構える。"
+            },
+            {
+              "title": "Archangel γ",
+              "description": "爆発物を構える。"
+            }
+          ]
+        },
+        {
+          "name": "戦闘とクリーチャー",
+          "achievements": [
+            {
+              "title": "__PROTECTED_26ee183b__ の虐殺",
+              "description": "罪のないバブルベアを倒す。"
+            },
+            {
+              "title": "Archangel δ",
+              "description": "冒涜的なクリーチャーを排除する。"
+            },
+            {
+              "title": "__PROTECTED_c973d4a3__ β",
+              "description": "死亡する。"
+            },
+            {
+              "title": "Dominion γ",
+              "description": "可愛い害獣に名前を付ける。"
+            }
+          ]
+        },
+        {
+          "name": "成長と農業",
+          "achievements": [
+            {
+              "title": "Dominion α",
+              "description": "種に肥料を与える。"
+            },
+            {
+              "title": "Dominion β",
+              "description": "完全に成長したナッツを収穫する。"
+            },
+            {
+              "title": "Dominion δ",
+              "description": "隠し実績。"
+            }
+          ]
+        }
+      ]
+    },
+    "lucidBlocksSingleplayerAndPlatformFAQ": {
+      "title": "Lucid Blocks シングルプレイヤーおよびプラットフォーム FAQ",
+      "displayType": "accordion",
+      "intro": "これらは、Lucid Blocks を購入する前にプレイヤーからよく寄せられる、プラットフォームとアクセスに関する核心的な質問です。",
+      "faqs": [
+        {
+          "question": "Lucid Blocks はシングルプレイヤーですか？",
+          "answer": "はい。Lucid Blocks はシングルプレイヤー専用ゲームです。"
+        },
+        {
+          "question": "マルチプレイヤーや協力プレイの予定はありますか？",
+          "answer": "いいえ。リリース時および将来のアップデートにおいて、マルチプレイヤーの予定はありません。"
+        },
+        {
+          "question": "Lucid Blocks はどこでプレイできますか？",
+          "answer": "現在は Windows 用に Steam で配信されています。"
+        },
+        {
+          "question": "Lucid Blocks の価格はいくらですか？",
+          "answer": "Steam で 9.99 ドルです。"
+        },
+        {
+          "question": "Lucid Blocks はコントローラーに対応していますか？",
+          "answer": "はい。ただし、メニューがコントローラー操作を前提に設計されていないため、コントローラーでのプレイは推奨されません。"
+        },
+        {
+          "question": "Lucid Blocks は Steam Deck で動作しますか？",
+          "answer": "はい。Steam Deck では、Proton 9.0 または 9.0.4 の使用が一般的に推奨されています。"
+        },
+        {
+          "question": "Lucid Blocks は Linux で動作しますか？",
+          "answer": "はい。Linux および Steam Deck において、Proton 9.0 で良好に動作することが報告されています。"
+        },
+        {
+          "question": "Mac や Android はサポートされますか？",
+          "answer": "将来的にサポートされる可能性はありますが、現時点でのローンチプラットフォームではありません。"
+        },
+        {
+          "question": "Lucid Blocks に翻訳はありますか？",
+          "answer": "いいえ。現在、翻訳の予定はありません。"
+        },
+        {
+          "question": "Lucid Blocks はアップデートされ続けますか？",
+          "answer": "はい。リリース後にいくつかのコンテンツアップデートが予定されていますが、無期限に定期的なスケジュールで継続することを意図したものではありません。"
+        }
+      ]
+    },
+    "lucidBlocksSteamDeckAndController": {
+      "title": "Lucid Blocks Steam Deck とコントローラー",
+      "displayType": "accordion",
+      "intro": "Lucid Blocks は Steam Deck で動作しますが、デフォルト設定では調整が必要な場合があります。メニュー操作や一般的なプレイにおいては、キーボードとマウスの方がスムーズです。",
+      "faqs": [
+        {
+          "question": "Lucid Blocks は Steam Deck で動作しますか？",
+          "answer": "はい。Proton 9.0 で良好に動作します。また、Proton 9.0.4 は Steam Deck の問題に対する一般的な修正方法として共有されています。"
+        },
+        {
+          "question": "Steam Deck の操作が効かない場合はどうすればよいですか？",
+          "answer": "互換性設定を強制し、ゲームを Proton 9.0.4 に切り替えてください。デフォルト設定ではコントローラー入力が正しく受け付けられない場合があります。"
+        },
+        {
+          "question": "Lucid Blocks はコントローラーに対応していますか？",
+          "answer": "はい。ただし、ゲームのメニューがコントローラー操作を前提に設計されていないため、コントローラーでのプレイは推奨されません。"
+        },
+        {
+          "question": "Linux のサポートは可能ですか？",
+          "answer": "はい。Linux および Steam Deck において、Proton 9.0 で良好に動作することが報告されています。"
+        },
+        {
+          "question": "最適な入力設定は何ですか？",
+          "answer": "メニューのナビゲーションや一般的なプレイにおいては、キーボードとマウスが最もスムーズな選択肢です。"
+        }
+      ]
+    },
+    "lucidBlocksSettingsAndAccessibility": {
+      "title": "Lucid Blocks 設定とアクセシビリティ",
+      "displayType": "settingCards",
+      "intro": "Lucid Blocks には、プレイヤーが最初にゲームを起動した際に重要となる、いくつかの実用的な設定と互換性に関する注意点があります。",
+      "settings": [
+        {
+          "name": "ディスプレイ設定",
+          "type": "快適性オプション",
+          "description": "ディスプレイ設定には、画面上の手を表示しないようにするオプションが含まれています。"
+        },
+        {
+          "name": "グラフィックスの互換性",
+          "type": "システム要件",
+          "description": "グラフィックスを正しくレンダリングするには __PROTECTED_38625270__ のサポートが必要です。__PROTECTED_38625270__ に対応していないシステムでは、クラッシュや深刻なグラフィックの不具合が発生する可能性があります。"
+        },
+        {
+          "name": "入力の好み",
+          "type": "操作設定",
+          "description": "コントローラーのサポートは存在しますが、メニューがコントローラー操作向けに構築されていないため、キーボードとマウスの方がスムーズな体験が得られます。"
+        },
+        {
+          "name": "言語サポート",
+          "type": "ローカライズ",
+          "description": "現在の設定は英語のみであり、現時点では翻訳の予定はありません。"
+        }
+      ]
+    },
+    "lucidBlocksUpdatesAndPatchNotes": {
+      "title": "Lucid Blocks アップデートとパッチノート",
+      "displayType": "timeline",
+      "intro": "Lucid Blocks では、リリース直後の迅速な修正や小規模なユーザビリティのアップデートがすでに行われています。",
+      "entries": [
+        {
+          "title": "アップデート 2.8.2",
+          "type": "UI アップデート",
+          "description": "メインメニューの「awaken（目覚める）」を「exit（終了）」に変更しました。"
+        },
+        {
+          "title": "起動時のクラッシュに関する小規模パッチ",
+          "type": "ホットフィックス",
+          "description": "起動時にゲームがクラッシュしていたプレイヤー向けに、専用のパッチがリリースされました。"
+        },
+        {
+          "title": "リリース後のコンテンツサポート",
+          "type": "ロードマップ注記",
+          "description": "リリース後にいくつかのコンテンツアップデートが予定されていますが、無期限に定期的なスケジュールで継続することを意図したものではありません。"
+        }
+      ]
+    },
+    "lucidBlocksCrashFixAndTroubleshooting": {
+      "title": "Lucid Blocks クラッシュ修正とトラブルシューティング",
+      "displayType": "steps",
+      "intro": "起動時やクラッシュに関する差し迫った問題は、パッチレベル、グラフィックスサポート、プラットフォームの互換性、ログの順に確認してください。",
+      "steps": [
+        {
+          "title": "最新のクラッシュホットフィックスをインストールする",
+          "description": "起動時にゲームがクラッシュする場合は、まずアップデートを行い、最新の起動クラッシュ用パッチで再度テストしてください。"
+        },
+        {
+          "title": "__PROTECTED_38625270__ のサポートを確認する",
+          "description": "Lucid Blocks には __PROTECTED_38625270__ のサポートが必要です。__PROTECTED_38625270__ に対応していないシステムでは、クラッシュや重大なレンダリングの問題が発生する可能性があります。"
+        },
+        {
+          "title": "Steam Deck で Proton 9.0.4 を使用する",
+          "description": "Steam Deck で入力や起動の挙動に問題がある場合は、互換性設定を強制し、Proton 9.0.4 に切り替えてください。"
+        },
+        {
+          "title": "クラッシュログを収集する",
+          "description": "Windows の「ファイル名を指定して実行」を開き、「%APPDATA%」を貼り付けて、lucid blocks/logs フォルダに移動し、トラブルシューティング用の .txt ファイルを収集してください。"
+        },
+        {
+          "title": "問題を正しく報告する",
+          "description": "公式 Discord の bug-reports フォーラム、または Steam コミュニティページで、ログとデバイスの詳細を共有してください。"
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "よくある",
+    "titleHighlight": "質問",
+    "subtitle": "Lucid Blocks に関するすべての情報",
+    "questions": [
+      {
+        "question": "Lucid Blocks はシングルプレイヤーゲームですか？",
+        "answer": "はい。Lucid Blocks はシングルプレイヤー専用のゲームであり、マルチプレイヤーや協力プレイの予定はありません。"
+      },
+      {
+        "question": "Lucid Blocks における Apotheosis システムとは何ですか？",
+        "answer": "Apotheosis は Lucid Blocks のフリーフォーム・フュージョン・クラフトシステムです。決まったレシピに従うのではなく、素材を組み合わせて独自のクラフトパスを発見していきます。"
+      },
+      {
+        "question": "Lucid Blocks はどこでプレイできますか？",
+        "answer": "Lucid Blocks は現在、Windows向けに Steam で配信されています。Linuxおよび Steam Deckへの対応は、Proton 9.0を通じて提供されています。"
+      },
+      {
+        "question": "Lucid Blocks の価格はいくらですか？",
+        "answer": "Lucid Blocks は Steam で9.99ドルです。"
+      },
+      {
+        "question": "Lucid Blocks はコントローラーに対応していますか？",
+        "answer": "はい。ただし、メニューがコントローラー操作を前提に設計されていないため、コントローラーでのプレイは推奨されません。キーボードとマウスの方がスムーズに操作できます。"
+      },
+      {
+        "question": "Lucid Blocks のアップデートはありますか？",
+        "answer": "はい。リリース後にいくつかのコンテンツアップデートを予定していますが、無期限に定期的なスケジュールで継続することを意図したものではありません。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Lucid Blocksを探索する準備はできましたか？",
+    "description": "DiscordのLucid Blocksコミュニティに参加して、ガイドや最新情報、ディスカッションをチェックしましょう！",
+    "joinCommunity": "Discordに参加",
+    "joinGame": "Steamでプレイ"
+  },
+  "footer": {
+    "title": "Lucid Blocks Wiki",
+    "description": "Lucid Blocksのクラフト、バイオーム、クリーチャー、実績、サバイバルガイドに関する完全なリソースハブです。",
+    "resources": "リソース",
+    "community": "コミュニティ",
+    "legal": "法的情報",
+    "discord": "Discord",
+    "twitter": "X / Twitter",
+    "steamCommunity": "Steam コミュニティ",
+    "steamStore": "Steam ストア",
+    "about": "このサイトについて",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "copyrightNotice": "著作権",
+    "copyright": "© 2026 Lucid Blocks Wiki. Lucid Blocksの開発元とは提携していません。",
+    "disclaimer": "非公式のファン作成リソースサイトです。"
+  },
+  "pages": {
+    "guides": {
+      "title": "Lucid Blocks 攻略ガイド",
+      "description": "初心者向けの基本から、高度な Apotheosis 戦略まで網羅した完全攻略ガイド。サバイバルとクラフトを極めましょう。",
+      "metaTitle": "Lucid Blocks 攻略ガイド - 初心者から上級者向けの戦略",
+      "metaDescription": "初心者向けのヒント、Apotheosis システム、サバイバル戦略、そしてシュールなサンドボックスの世界を攻略するための専門的な戦術を網羅した Lucid Blocks 完全ガイド。",
+      "categoryLabel": "ゲームガイド",
+      "whatIs": "ガイドとは？",
+      "whatIsDescription": "ゲームの仕組み、サバイバル戦略、Apotheosis クラフトシステムを網羅した包括的なガイド。最初の一歩から高度なテクニックまで、すべてを学びましょう。",
+      "why": "なぜガイドを読むのか？",
+      "whySteps": {
+        "step1Title": "基本システムを学ぶ",
+        "step1Description": "Apotheosis システムを理解し、初心者が陥りやすいミスを回避しましょう",
+        "step2Title": "素早い進行",
+        "step2Description": "シュールな世界で生き残り、繁栄するための実証済みの道筋を辿りましょう",
+        "step3Title": "戦略を極める",
+        "step3Description": "探索とクラフトのための高度な戦術を身につけましょう"
+      },
+      "featured": "注目・必須ガイド",
+      "all": "すべてのガイド"
+    },
+    "crafting": {
+      "title": "Lucid Blocks クラフト",
+      "description": "エッセンスの仕組み、レシピ、強力なアイテムを作るためのクラフト戦略など、Apotheosis 合成システムをマスターしましょう。",
+      "metaTitle": "Lucid Blocks クラフト - Apotheosis システムとレシピ",
+      "metaDescription": "Lucid Blocks の Apotheosis クラフトシステムを極める。エッセンスの仕組み、合成レシピ、強力な道具や武器を作るための戦略を学びましょう。",
+      "categoryLabel": "クラフトシステム",
+      "whatIs": "クラフトとは？",
+      "whatIsDescription": "Apotheosis システムは、最大6つのアイテムを組み合わせて新しいレシピを発見する、独自のエッセンス駆動型合成メカニズムです。固定されたクラフトメニューはなく、実験が鍵となります。",
+      "why": "なぜクラフトを極めるのか？",
+      "whySteps": {
+        "step1Title": "強力なアイテムをアンロック",
+        "step1Description": "合成を通じて、不可欠な道具、武器、移動用装備を発見しましょう",
+        "step2Title": "エッセンスを理解する",
+        "step2Description": "アイテムのエッセンスがどのように組み合わさり、予測可能な結果を生み出すかを学びましょう",
+        "step3Title": "リソースを最適化",
+        "step3Description": "希釈メカニズムを使用して、安価な材料から出力を最大化しましょう"
+      },
+      "featured": "注目・必須ガイド",
+      "all": "すべてのクラフトガイド"
+    },
+    "items": {
+      "title": "Lucid Blocks アイテム",
+      "description": "道具、武器、移動用装備、収納ソリューションを網羅した詳細なアイテムガイド。クラフトレシピや使い方のヒントも掲載。",
+      "metaTitle": "Lucid Blocks アイテム - 道具、武器、装備ガイド",
+      "metaDescription": "道具、武器、移動用装備、収納を含む Lucid Blocks の完全アイテムデータベース。各アイテムを効果的に作り、使用する方法を学びましょう。",
+      "categoryLabel": "アイテム＆装備",
+      "whatIs": "アイテムとは？",
+      "whatIsDescription": "道具、武器、移動用装備、機能的なアイテムに関する包括的なガイド。クラフトレシピ、使用戦略、最適な組み合わせを学びましょう。",
+      "why": "なぜアイテムガイドをチェックするのか？",
+      "whySteps": {
+        "step1Title": "クラフトレシピを学ぶ",
+        "step1Description": "Apotheosis を使用して、不可欠な道具や武器をクラフトする方法を発見しましょう",
+        "step2Title": "装備を最適化",
+        "step2Description": "プレイスタイルや進行状況に合わせて最適なアイテムを選びましょう",
+        "step3Title": "生存率を高める",
+        "step3Description": "移動用装備や武器を装備して、危険な世界を探索しましょう"
+      },
+      "featured": "注目・必須ガイド",
+      "all": "すべてのアイテム"
+    },
+    "biomes": {
+      "title": "Lucid Blocks バイオーム",
+      "description": "世界の各地域、環境の特徴、リソースの場所、各バイオームでのサバイバルのヒントを探索しましょう。",
+      "metaTitle": "Lucid Blocks バイオーム - 世界の地域と探索",
+      "metaDescription": "ティアマナ・レイライン、Fog Meadow、シュールな地域を含む Lucid Blocks のバイオームを探索。リソースを見つけ、危険を回避し、無限の世界を旅しましょう。",
+      "categoryLabel": "世界の地域",
+      "whatIs": "バイオームとは？",
+      "whatIsDescription": "世界のさまざまな地域、環境の特徴、リソースの分布、危険地帯に関するガイド。各エリアで何が待ち受けているか、どのように準備すべきかを学びましょう。",
+      "why": "なぜバイオームを探索するのか？",
+      "whySteps": {
+        "step1Title": "リソースを見つける",
+        "step1Description": "各地域特有の希少な材料やエッセンスの場所を特定しましょう",
+        "step2Title": "危険を回避",
+        "step2Description": "環境の危険や敵対的な生物について理解しましょう",
+        "step3Title": "探索を計画",
+        "step3Description": "各バイオームのタイプに合わせて、適切な道具と装備を準備しましょう"
+      },
+      "featured": "注目・必須ガイド",
+      "all": "すべてのバイオーム"
+    },
+    "building": {
+      "title": "Lucid Blocks 建築",
+      "description": "クオリア個人次元、拠点建築、収納管理、クリエイティブな建設テクニックをマスターしましょう。",
+      "metaTitle": "Lucid Blocks 建築 - クオリアと拠点建設",
+      "metaDescription": "クオリア個人次元、拠点建設、収納ソリューション、クリエイティブな建築テクニックなど、Lucid Blocks の建築を極めましょう。",
+      "categoryLabel": "建築＆拠点",
+      "whatIs": "建築とは？",
+      "whatIsDescription": "クオリア個人次元システム、拠点建設、収納管理、クリエイティブな建築に関するガイド。シュールな世界の中に自分だけの安息の地を作る方法を学びましょう。",
+      "why": "なぜ拠点を建てるのか？",
+      "whySteps": {
+        "step1Title": "安全な場所を作る",
+        "step1Description": "収納やクラフト作業のための安全な拠点を確立しましょう",
+        "step2Title": "リソースを管理",
+        "step2Description": "収納ソリューションを使用して、材料を効率的に整理しましょう",
+        "step3Title": "クオリアをアンロック",
+        "step3Description": "究極の利便性を備えた個人のポケット次元にアクセスしましょう"
+      },
+      "featured": "注目・必須ガイド",
+      "all": "すべての建築ガイド"
+    },
+    "support": {
+      "title": "Lucid Blocks サポート",
+      "description": "テクニカルサポート、プラットフォームの互換性、パフォーマンスの最適化、一般的な問題のトラブルシューティング。",
+      "metaTitle": "Lucid Blocks サポート - テクニカルヘルプと修正",
+      "metaDescription": "Steam Deck のセットアップ、クラッシュの修正、パフォーマンスの最適化、プラットフォームの互換性ガイドなど、Lucid Blocks のテクニカルサポートを受けられます。",
+      "categoryLabel": "テクニカルサポート",
+      "whatIs": "サポートとは？",
+      "whatIsDescription": "プラットフォームの互換性、パフォーマンスの最適化、クラッシュの修正、一般的な問題を網羅したテクニカルガイド。Steam Deck、マルチプレイヤーに関する質問、設定などのヘルプ。",
+      "why": "なぜサポートをチェックするのか？",
+      "whySteps": {
+        "step1Title": "技術的な問題を解決",
+        "step1Description": "クラッシュ、パフォーマンスの問題、互換性の問題を解決しましょう",
+        "step2Title": "パフォーマンスを最適化",
+        "step2Description": "お使いのプラットフォームで最高の体験を得るために設定を構成しましょう",
+        "step3Title": "プラットフォームの互換性",
+        "step3Description": "Steam Deck、コントローラーのサポート、システム要件について学びましょう"
+      },
+      "featured": "注目・必須ガイド",
+      "all": "すべてのサポート記事"
+    }
+  }
+}

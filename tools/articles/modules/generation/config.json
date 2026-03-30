@@ -1,0 +1,14 @@
+{
+  "api_key": "sk-OxJJtxGZLYFWUZkaQoGgo68MacGSEuZ5oPg4oKLElGJ98WvB",
+  "api_base_url": "https://api.apifast.tech/v1",
+  "model": "gemini-2.5-flash",
+  "temperature": 0.7,
+  "max_tokens": 24576,
+  "timeout": 900,
+  "concurrent_limit": 1000,
+  "retry_attempts": 2,
+  "retry_delay": 5,
+  "keywords_file": "../../../keywords.json",
+  "merged_dir": "../../../content_pipeline/out/merged",
+  "output_dir": "../../../../content/"
+}

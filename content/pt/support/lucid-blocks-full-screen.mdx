@@ -1,0 +1,191 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Monitor, Zap } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Lucid Blocks em Tela Cheia: Guia Completo de Controles e Gameplay 2026",
+  description: "Domine Lucid Blocks com nosso guia de 2026. Aprenda a alternar para tela cheia, domine o sistema de crafting Apotheosis e explore biomas de sonhos surreais.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Lucid+Blocks+Full+Screen+Guide",
+  date: "2026-03-17",
+  author: "Equipe da Wiki Lucid",
+  keywords: "lucid blocks, tela cheia, controles, gameplay, guia, apotheosis, qualia, biomas surreais"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Alternar Tela Cheia**: Pressione **F11** para ativar instantaneamente o modo **lucid blocks em tela cheia** para uma experiência mais imersiva.
+- **Mecânica Central**: O jogo é baseado em **Qualia** — experiências sensoriais e sentimentos, em vez de marcos tradicionais de sobrevivência.
+- **Sistema de Crafting**: Use a aba **Apotheosis** no seu inventário para transmutar materiais via alquimia.
+- **Penalidade de Morte**: Morrer redefine sua posição e transmuta todo o seu inventário em itens aleatórios.
+- **Progressão**: Siga o **Pingente Vazante (Leaky Pendant)** para encontrar caixas de vidro que acionam cutscenes da história e iluminam seu rosário.
+</Callout>
+
+Lucid Blocks é muito mais do que um simples sandbox baseado em voxels; é uma "mistura de sentimentos" meticulosamente elaborada, projetada para evocar nostalgia, surrealismo e existencialismo. Ao contrário dos jogos de sobrevivência tradicionais, ele prioriza o conceito de qualia — as instâncias individuais de experiência subjetiva e consciente. Os jogadores se veem vagando por uma terra que parece vagamente familiar e completamente estranha, onde memórias de infância, como varinhas de bolha, tornam-se ferramentas defensivas e fantoches de pré-escola servem como planadores. Para se perder verdadeiramente nesta paisagem onírica, ativar o **lucid blocks em tela cheia** é essencial, pois a atmosfera do jogo depende fortemente de seus filtros visuais únicos e sons ambientes, como o canto distante de uma rola-carpinteira. Neste guia abrangente de 2026, vamos orientá-lo pelos controles essenciais, o complexo sistema Apotheosis e os biomas assustadoramente belos que definem este projeto único.
+
+<Section icon={Monitor} title="Controles Básicos e Configurações de Exibição">
+
+Antes de mergulhar nas profundezas subsuperficiais, você deve dominar a interface. O jogo utiliza uma interface de usuário minimalista que incentiva a exploração sem menus poluídos. Uma das perguntas mais comuns para novos jogadores é como otimizar a experiência visual para imersão máxima.
+
+**Destaques do Vídeo:**
+- Explicação das teclas básicas de movimento e interação.
+- Como acessar o menu de crafting **Apotheosis**.
+- Dicas de gerenciamento de inventário para novos criadores de "Qualia".
+- Uma olhada rápida no sistema de progressão "Bloom" (Florescer).
+
+<YouTubeEmbed videoId="Uiw3GyHmuOU" title="Tutorial de Lucid Blocks - controles, crafting, progressão" />
+
+Para ativar o **lucid blocks em tela cheia**, basta pressionar **F11** a qualquer momento durante o jogo. Isso é altamente recomendado para apreciar plenamente os efeitos de shader e a matemática "fractal" usada em certos biomas.
+
+| Ação | Tecla / Entrada | Descrição |
+| :--- | :--- | :--- |
+| **Tela Cheia** | **F11** | Alterna entre o modo janela e tela cheia |
+| **Movimento** | **WASD** | Movimentação direcional padrão |
+| **Pular** | **Espaço** | Movimento vertical e escalada |
+| **Agachar** | **Ctrl Esquerdo** | Evita cair de bordas (essencial para o Divisor) |
+| **Inventário** | **E** | Abre o menu principal e a aba Apotheosis |
+| **Quebrar Bloco** | **Clique Esquerdo** | Interação padrão/ataque |
+| **Colocar Bloco** | **Clique Direito** | Interação secundária/construção |
+| **Soltar Item** | **Q** | Descarta itens do seu slot ativo |
+
+<Callout type="tip" title="Dica Pro: A Segurança de Agachar">
+Ao explorar o "Divisor" (The Divide) — o teto espesso que separa a superfície dos mundos inferiores — sempre segure o **Ctrl Esquerdo**. Cair do Divisor é quase sempre fatal, a menos que você tenha um Gancho de Escalada ou Planador equipado.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="O Sistema de Alquimia Apotheosis">
+
+O crafting em Lucid Blocks é conhecido como **Apotheosis**. Ele funciona mais como transmutação ou alquimia do que como montagem tradicional. A matéria é transferida de um estado para outro, muitas vezes levando a resultados imprevisíveis e surreais. Você não apenas "constrói" uma ferramenta; você a evoca a partir dos materiais que coletou.
+
+<Steps>
+  <Step num="1" title="Acesse a Aba Apotheosis">
+    Pressione **E** para abrir seu inventário e navegue até a aba **Apotheosis** usando os botões na tela ou as setas do teclado.
+  </Step>
+  <Step num="2" title="Selecione os Ingredientes">
+    Coloque dois ingredientes diferentes em qualquer um dos slots dentro da interface circular de alquimia. O slot específico não importa, apenas os tipos e quantidades de itens.
+  </Step>
+  <Step num="3" title="Ganhe Experiência">
+    Cada transmutação bem-sucedida concede XP invisível. Quando seu medidor encher, você irá "Florescer" (Bloom), permitindo que você melhore seus atributos.
+  </Step>
+  <Step num="4" title="Retire o Resultado">
+    O novo item aparecerá no centro. Note que algumas receitas são intercambiáveis; por exemplo, um Gancho de Escalada pode ser feito com Gel de Mana ou Tentáculos de Mercúrio.
+  </Step>
+</Steps>
+
+| Item Resultante | Ingrediente A | Ingrediente B | Efeito / Uso |
+| :--- | :--- | :--- | :--- |
+| **Picareta de Madeira** | Bloco de Madeira | Graveto | Ferramenta básica de mineração |
+| **Gancho de Escalada** | Gel de Mana | Corda | Essencial para travessia vertical |
+| **Bracelete de Pato** | Areia | Lã | +5 Ar, +2 HP (Equipável) |
+| **Lápis de Renomeação** | Livros | Corda | Usado para nomear itens ou entidades |
+| **Balde de Água** | Balde Vazio | Bloco de Madeira | Transmuta madeira em água líquida |
+| **Remo (Paddle)** | Picareta | Carne de Carneiro Crua | Uma arma corpo a corpo estranha e "perfurante" |
+
+<Callout type="warning" title="Transmutação de Inventário ao Morrer">
+A morte em Lucid Blocks é um evento transformador. Tudo em seu inventário é aleatoriamente "apoteosado" em conjunto. Você perderá seus itens originais, mas poderá renascer com materiais inteiramente novos e raros, criados a partir do seu antigo equipamento.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Biomas Surreais e O Divisor">
+
+O mundo de Lucid Blocks é empilhado verticalmente. Existe uma "Superfície" clara e uma "Subsuperfície" misteriosa, separadas por um teto enorme e plano conhecido como o Divisor (The Divide). Navegar entre essas camadas é o ciclo principal do jogo.
+
+<CardGrid cols={3}>
+  <Card title="Biblioteca de Babel">
+    Uma biblioteca subsuperficial infinita baseada no conto de Jorge Luis Borges. Contém todas as sequências possíveis de texto e apresenta poços sem fim para o vazio.
+  </Card>
+  <Card title="Corredores de Piscina">
+    Inspirado no espaço liminar "The Poolrooms". Estas áreas apresentam paredes azulejadas e águas rasas, evocando uma sensação de conforto nostálgico e pavor subjacente.
+  </Card>
+  <Card title="Bioma de Carne">
+    Uma paisagem orgânica e pulsante feita de blocos de pele e carne. Quebrar "Olhos de Carne" aqui fornece materiais de crafting únicos, mas a sensação é profundamente inquietante.
+  </Card>
+</CardGrid>
+
+**Destaques do Vídeo:**
+- Mergulho profundo na anatomia da "Superfície/Divisor".
+- A nostalgia dos sons ambientes da Rola-carpinteira (Morning Dove).
+- Tour visual pelas Cidades Quebradas e Santuários de Ouro.
+- Explicação do "XP Invisível" e do sistema de atributos.
+
+<YouTubeEmbed videoId="ejRs3HL-Prs" title="Um Mergulho Profundo em Lucid Blocks - Lore e Entidades" />
+
+<Callout type="info" title="O Efeito da Rola-carpinteira">
+O desenvolvedor incluiu intencionalmente o canto da rola-carpinteira como um som ambiente primário. Este pássaro é um símbolo universal de nostalgia suburbana, ajudando a fundamentar o ambiente surreal em uma sensação de realidade "lembrada".
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Entidades: Amigos e Inimigos">
+
+As entidades em Lucid Blocks variam do mundano ao matematicamente complexo. Muitas usam cinemática inversa para movimento, dando-lhes uma aparência nervosa e não natural que se encaixa na estética do sonho.
+
+| Nome da Entidade | Comportamento | Drops | Hostilidade |
+| :--- | :--- | :--- | :--- |
+| **Manequim** | Segura itens (espadas/varinhas) | Corda, Tábuas de Madeira | Neutro (Hostil se atingido) |
+| **Blasfêmia** | Semelhante a aranha com cabeça de cubo | Kila (Item único) | **Hostil** |
+| **Par Tetto** | Faz ruídos de "Vocaloid" | Desconhecido | Amigável/Surreal |
+| **Aranha de Bloco** | Disfarça-se como blocos normais | Seda de Aranha | **Hostil** |
+| **Diátomo** | Esférico com rosto humano | Nenhum | **Hostil** (Movimento lento) |
+| **Ovelha** | Pode ser montada | Lã, Carne de Carneiro | Amigável |
+
+<Callout type="success" title="Mecânicas de Montaria">
+Você pode realmente montar em ovelhas pulando em cima delas. Embora você não possa guiá-las diretamente, batê-las fará com que corram em direções aleatórias, proporcionando um método caótico, porém rápido, de viagem pela superfície.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Progressão e a História">
+
+A progressão em Lucid Blocks não é linear. Não existem "chefes" no sentido tradicional, mas há um fio narrativo envolvendo "O Senhor" (The Lord) ou "O Deva". Para avançar, você deve encontrar caixas de vidro escondidas em estruturas como as Grandes Torres de Tijolos ou os Santuários de Ouro.
+
+<Checklist
+  id="lucid-progression"
+  title="Marcos de Qualia:"
+  items={[
+    "Localize o Pingente Vazante para rastrear nós da história",
+    "Entre em uma cutscene de Caixa de Vidro em uma Grande Torre de Tijolos",
+    "Acenda pelo menos três contas em seu Rosário",
+    "Alcance a Biblioteca de Babel abaixo do Divisor",
+    "Encontre a entidade 'Senhor' em uma cutscene da história"
+  ]}
+/>
+
+<Callout type="tip" title="Encontrando Nós da História">
+O **Pingente Vazante (Leaky Pendant)** é sua ferramenta narrativa mais valiosa. Quando segurado, ele emite partículas que flutuam em direção à caixa de vidro mais próxima. Siga essas partículas para garantir que você não perca os diálogos enigmáticos e a progressão do rosário.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="FAQ de Lucid Blocks">
+
+<FAQ items={[
+  {
+    question: "Como ativo o modo tela cheia de Lucid Blocks?",
+    answer: "Você pode alternar para tela cheia pressionando a tecla F11 no seu teclado. Isso remove as bordas da janela e proporciona uma visão mais imersiva dos biomas surreais do jogo."
+  },
+  {
+    question: "O que acontece com meus itens quando eu morro?",
+    answer: "Lucid Blocks usa uma mecânica de morte única onde todo o seu inventário é combinado e randomizado através do sistema de alquimia. Você perde seus itens originais, mas ganha um novo conjunto de materiais transmutados."
+  },
+  {
+    question: "Para que servem os atributos como 'Mush' e 'Slip'?",
+    answer: "Estes fazem parte do sistema de nivelamento 'Bloom'. Enquanto alguns como Velocidade são óbvios, outros como Mush (Maciez) e Slip (Deslize) afetam sua fricção e interação com tipos específicos de blocos no mundo dos sonhos."
+  },
+  {
+    question: "Existe um objetivo final no jogo?",
+    answer: "O objetivo principal é experimentar 'Qualia'. No entanto, completar o Rosário encontrando caixas de vidro e interagindo com entidades como O Deva serve como a principal progressão narrativa."
+  }
+]} />
+
+<Callout type="info" title="Nota Final">
+Lucid Blocks é um projeto vivo, com a desenvolvedora "Lucy Blocks" atualizando frequentemente a matemática fractal e a geração de biomas. Sempre verifique o Discord oficial para as últimas atualizações de "Qualia" e receitas de alquimia descobertas pela comunidade.
+</Callout>
+
+</Section>

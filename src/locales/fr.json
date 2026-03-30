@@ -1,0 +1,965 @@
+{
+  "seo": {
+    "home": {
+      "title": "Lucid Blocks Wiki - Téléchargement de la démo, Guide de coopération, Fabrication et Mods",
+      "description": "Centre de ressources complet pour Lucid Blocks ! Obtenez des informations sur le téléchargement de la démo, des guides pour débutants, des stratégies de coopération, des conseils de fabrication, des commandes, des mods et des liens communautaires pour le jeu de braquage furtif sur Steam.",
+      "keywords": "Lucid Blocks Wiki, Lucid Blocks, téléchargement de la démo, guide pour débutants, guide de coopération, fabrication, équipement, mods, BepInEx, jeu Steam, jeu furtif",
+      "ogTitle": "Lucid Blocks Wiki - Téléchargement de la démo, Guide de coopération, Fabrication et Mods",
+      "ogDescription": "Centre de ressources complet pour Lucid Blocks ! Obtenez des informations sur le téléchargement de la démo, des guides pour débutants, des stratégies de coopération, des conseils de fabrication et des mods pour le jeu de braquage furtif sur Steam.",
+      "twitterTitle": "Lucid Blocks Wiki - Téléchargement de la démo, Guide de coopération, Fabrication et Mods",
+      "twitterDescription": "Centre de ressources complet pour Lucid Blocks ! Obtenez des informations sur le téléchargement de la démo, des guides pour débutants, des stratégies de coopération et des conseils de fabrication."
+    }
+  },
+  "nav": {
+    "guides": "Guides",
+    "crafting": "Fabrication",
+    "items": "Objets",
+    "biomes": "Biomes",
+    "building": "Construction",
+    "support": "Support"
+  },
+  "common": {
+    "home": "Accueil",
+    "more": "Plus",
+    "playNow": "Obtenir la démo",
+    "switchLanguage": "Changer de langue",
+    "switchTheme": "Changer de thème",
+    "lightMode": "Mode clair",
+    "darkMode": "Mode sombre",
+    "notFound": "Page introuvable",
+    "notFoundDescription": "La page que vous recherchez n'existe pas.",
+    "backToHome": "Retour à l'accueil",
+    "relatedArticles": "Articles similaires",
+    "readMore": "En savoir plus"
+  },
+  "hero": {
+    "badge": "Minuscules gnomes. Grandes maisons. Braquages furtifs entre amis.",
+    "title": "Lucid Blocks wiki",
+    "description": "Votre centre pour Lucid Blocks : comment fonctionnent les braquages, les tâches de Haut-Gnome, la fabrication et les améliorations, les ennemis, les commandes et les moyens les plus rapides de survivre à chaque partie.",
+    "getFreeCodesCTA": "Télécharger la démo",
+    "playOnSteamCTA": "Ajouter à la liste de souhaits sur Steam",
+    "stats": {
+      "stat1": {
+        "value": "15K",
+        "label": "Pic de CCU (Démo)"
+      },
+      "stat2": {
+        "value": "6",
+        "label": "Joueurs en coopération"
+      },
+      "stat3": {
+        "value": "31/01/2026",
+        "label": "Sortie de la démo"
+      },
+      "stat4": {
+        "value": "PC (Steam)",
+        "label": "Plateforme"
+      }
+    }
+  },
+  "gameFeature": {
+    "title": "Gameplay de Lucid Blocks",
+    "description": "Regardez de minuscules gnomes réaliser de gros braquages dans des missions furtives chaotiques en coopération à 6 joueurs !"
+  },
+  "tools": {
+    "title": "Lucid Blocks",
+    "titleHighlight": "Ressources",
+    "subtitle": "Tout ce dont vous avez besoin pour maîtriser les braquages et la furtivité en coopération",
+    "cards": [
+      {
+        "icon": "Télécharger",
+        "title": "Téléchargement de la démo",
+        "description": "Obtenez la démo gratuite sur Steam"
+      },
+      {
+        "icon": "BookOpen",
+        "title": "Guide du débutant",
+        "description": "Boucle de base et pièges courants"
+      },
+      {
+        "icon": "Utilisateurs",
+        "title": "Guide de coopération",
+        "description": "Rôles à 6 joueurs et tactiques de sauvetage"
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "Tâches et objectifs",
+        "description": "Ce que le Haut-Gnome attend de vous"
+      },
+      {
+        "icon": "Clavier",
+        "title": "Commandes et raccourcis clavier",
+        "description": "Touches par défaut et comment les modifier"
+      },
+      {
+        "icon": "Bouclier",
+        "title": "Paramètres de contenu",
+        "description": "Contenu pour adultes et options d'activation/désactivation"
+      },
+      {
+        "icon": "Marteau",
+        "title": "Fabrication et équipement",
+        "description": "Équipez-vous avec des matériaux volés"
+      },
+      {
+        "icon": "Package",
+        "title": "Butin et objets",
+        "description": "Quoi voler et conseils de transport"
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "Ennemis et dangers",
+        "description": "Menaces et comment les gérer"
+      },
+      {
+        "icon": "Oeil",
+        "title": "Furtivité et évasion",
+        "description": "Restez caché et extrayez-vous en toute sécurité"
+      },
+      {
+        "icon": "Accueil",
+        "title": "Améliorations de la maison",
+        "description": "Améliorez votre base d'île flottante"
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "Communauté et Discord",
+        "description": "Liens officiels et recherche de groupe"
+      },
+      {
+        "icon": "Paramètres",
+        "title": "Mods et BepInEx",
+        "description": "Installer le framework et configurer les mods"
+      },
+      {
+        "icon": "Étoile",
+        "title": "Mods populaires",
+        "description": "Meilleures sélections et fonctionnalités de la communauté"
+      },
+      {
+        "icon": "Gamepad2",
+        "title": "Prise en charge de la manette",
+        "description": "Jeu complet à la manette avec curseur d'interface utilisateur"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Nombre de joueurs et tendance",
+        "description": "Statistiques en direct et suivi des pics"
+      }
+    ]
+  },
+  "modules": {
+    "demoDownload": {
+      "title": "Téléchargement de la démo de Lucid Blocks",
+      "subtitle": "Obtenez la démo gratuite sur Steam",
+      "downloadSize": "2,62 Gio",
+      "diskSize": "4,88 Gio",
+      "releaseDate": "30 janvier 2026",
+      "price": "Gratuit",
+      "platform": "PC (Steam) / Windows",
+      "engine": "Unity",
+      "primaryCTA": "Télécharger la démo",
+      "secondaryCTA": "Voir les informations techniques",
+      "installPath": "Steam\\steamapps\\common\\Lucid Blocks Demo",
+      "sections": [
+        {
+          "heading": "Où télécharger",
+          "items": [
+            "Ouvrez la page officielle du magasin Steam et utilisez la section \"Télécharger la démo\".",
+            "Si Steam vous demande de vous connecter, connectez-vous d'abord et réessayez."
+          ]
+        },
+        {
+          "heading": "Vérifications rapides d'installation et de lancement",
+          "items": [
+            "Emplacement d'installation par défaut : Dossier de la bibliothèque Steam → steamapps → common → (dossier du jeu).",
+            "Si le jeu ne se lance pas : vérifiez les fichiers du jeu dans Steam, puis redémarrez Steam."
+          ]
+        }
+      ]
+    },
+    "beginnerGuide": {
+      "title": "Guide du débutant de Lucid Blocks",
+      "subtitle": "Maîtrisez la boucle de base et évitez les erreurs courantes",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Entrer dans la maison",
+          "description": "Descendez dans une maison humaine depuis votre base d'île flottante. Apparaissez à l'extérieur et faufilez-vous par des portes ou des fenêtres déverrouillées."
+        },
+        {
+          "number": 2,
+          "title": "Effectuer des tâches",
+          "description": "Terminez les tâches du Haut-Gnome avant la fin du temps imparti. Vérifiez les objectifs via la touche Tab et donnez la priorité aux tâches risquées en premier."
+        },
+        {
+          "number": 3,
+          "title": "Voler des objets",
+          "description": "Attrapez des objets de valeur et des matériaux pour la fabrication. Évitez de faire du bruit ou de vous faire repérer par le propriétaire."
+        },
+        {
+          "number": 4,
+          "title": "S'échapper via une tornade",
+          "description": "Lorsque le minuteur se termine, une tornade apparaît dans la cour - atteignez-la pour vous extraire en toute sécurité. Commencez à bouger tôt !"
+        },
+        {
+          "number": 5,
+          "title": "Améliorer et répéter",
+          "description": "Utilisez les récompenses et les matériaux pour fabriquer de l'équipement à la maison, puis commencez votre prochain braquage avec un meilleur équipement."
+        }
+      ],
+      "pitfalls": [
+        {
+          "title": "Se faire prendre",
+          "description": "Le propriétaire vous poursuivra. Restez caché, utilisez des distractions et brisez les lignes de vue pour vous échapper.",
+          "icon": "AlertTriangle"
+        },
+        {
+          "title": "Manque de temps",
+          "description": "Le minuteur de la tornade est strict. Commencez à vous diriger vers l'extraction tôt au lieu de trop piller.",
+          "icon": "Clock"
+        },
+        {
+          "title": "Ignorer ses coéquipiers",
+          "description": "Sauvez rapidement les alliés piégés dans les pièges du réfrigérateur/four - signalez immédiatement pour les sauvetages.",
+          "icon": "Utilisateurs"
+        }
+      ]
+    },
+    "coopGuide": {
+      "title": "Guide de coopération de Lucid Blocks",
+      "subtitle": "Coordonnez-vous avec jusqu'à 6 joueurs pour un chaos maximal",
+      "maxPlayers": 6,
+      "roles": [
+        {
+          "name": "Éclaireur",
+          "description": "Vérifiez les menaces, marquez les chemins sûrs et guidez les mouvements de l'équipe",
+          "icon": "Oeil"
+        },
+        {
+          "name": "Transporteur",
+          "description": "Concentrez-vous sur les objets lourds avec des améliorations de sac à dos et sécurisez la progression des tâches",
+          "icon": "Package"
+        },
+        {
+          "name": "Distraction",
+          "description": "Attirez le propriétaire/les animaux de compagnie loin de l'équipe pour créer des fenêtres sûres",
+          "icon": "Utilisateurs"
+        },
+        {
+          "name": "Sauveteur",
+          "description": "Libérez les coéquipiers piégés du réfrigérateur/four avant qu'ils ne meurent",
+          "icon": "Bouclier"
+        }
+      ],
+      "threats": [
+        "Propriétaire (vous poursuit et vous piège)",
+        "Chats et souris (itinéraires de patrouille)",
+        "Aspirateur robot (danger instantané)",
+        "Limite de temps (extraction par tornade)"
+      ],
+      "communication": "Utilisez le chat vocal (touche V) pour coordonner les tâches et les sauvetages. Annoncez : \"Repéré\", \"Itinéraire\", \"Besoin d'un sauvetage\", \"Extraire bientôt\"."
+    },
+    "tasksObjectives": {
+      "title": "Tâches et objectifs de Lucid Blocks",
+      "subtitle": "Ce que le Haut-Gnome veut : exemples de tâches",
+      "taskTypes": [
+        {
+          "type": "Voler des objets",
+          "examples": [
+            "Attrapez des objets spécifiques marqués par les objectifs du Haut-Gnome"
+          ]
+        },
+        {
+          "type": "Atteindre des lieux",
+          "examples": [
+            "Naviguez vers des zones spécifiées à l'intérieur de la maison"
+          ]
+        },
+        {
+          "type": "Faire des bêtises",
+          "examples": [
+            "Casser une télévision",
+            "Inonder des toilettes",
+            "Créer le chaos"
+          ]
+        }
+      ],
+      "efficiency": [
+        "Effectuez d'abord les tâches risquées pendant que l'équipe est ensemble",
+        "Attribuez un transporteur pour les objets de la tâche afin qu'ils ne soient pas perdus pendant les poursuites",
+        "Commencez à vous déplacer vers l'extraction avant la fin du temps imparti"
+      ]
+    },
+    "controlsKeybinds": {
+      "title": "Commandes et raccourcis clavier de Lucid Blocks",
+      "subtitle": "Commandes clavier par défaut (et où les modifier)",
+      "keybinds": [
+        {
+          "action": "Déplacer à gauche",
+          "key": "A"
+        },
+        {
+          "action": "Déplacer à droite",
+          "key": "D"
+        },
+        {
+          "action": "Avancer",
+          "key": "W"
+        },
+        {
+          "action": "Reculer",
+          "key": "S"
+        },
+        {
+          "action": "S'accroupir",
+          "key": "Ctrl gauche"
+        },
+        {
+          "action": "Attaquer",
+          "key": "Clic gauche"
+        },
+        {
+          "action": "Courir",
+          "key": "Maj gauche"
+        },
+        {
+          "action": "Déposer un objet",
+          "key": "G"
+        },
+        {
+          "action": "Interagir",
+          "key": "E"
+        },
+        {
+          "action": "Sauter",
+          "key": "Espace"
+        },
+        {
+          "action": "Appuyer pour parler",
+          "key": "V"
+        },
+        {
+          "action": "Pousser",
+          "key": "Clic droit"
+        },
+        {
+          "action": "Ragdoll",
+          "key": "Q"
+        },
+        {
+          "action": "Emplacement d'équipement 1",
+          "key": "1"
+        },
+        {
+          "action": "Emplacement d'équipement 2",
+          "key": "2"
+        },
+        {
+          "action": "Emplacement d'équipement 3",
+          "key": "3"
+        },
+        {
+          "action": "Emplacement d'équipement 4",
+          "key": "4"
+        },
+        {
+          "action": "Inventaire",
+          "key": "Tab"
+        }
+      ],
+      "changePath": "Depuis le menu titre : ouvrez PARAMÈTRES, puis vérifiez les paramètres du clavier. Utilisez le champ de recherche pour filtrer les lignes de raccourcis clavier."
+    },
+    "contentSettings": {
+      "title": "Paramètres de contenu de Lucid Blocks",
+      "subtitle": "Contenu pour adultes, activation/désactivation de la nudité et préférences Steam",
+      "descriptors": [
+        "Nudité ou contenu sexuel partiel",
+        "Contenu général pour adultes"
+      ],
+      "details": [
+        {
+          "heading": "Ce que les développeurs déclarent",
+          "items": [
+            "Un humain peut apparaître nu en faisant des activités comme se baigner.",
+            "La nudité est censurée et peut être complètement désactivée en option.",
+            "Les gnomes peuvent être démembrés et mourir de manière brutale."
+          ]
+        },
+        {
+          "heading": "Si Steam bloque la page de la communauté",
+          "items": [
+            "Steam peut masquer le hub de la communauté en fonction de vos préférences de contenu.",
+            "Utilisez \"Mettre à jour les préférences de contenu\" de Steam pour ajuster ce que vous autorisez Steam à afficher."
+          ]
+        }
+      ]
+    },
+    "craftingEquipment": {
+      "title": "Fabrication et équipement de Lucid Blocks",
+      "subtitle": "Équipez-vous : exemples de fabrication et ce que chaque outil fait",
+      "equipment": [
+        {
+          "item": "Sac à dos",
+          "benefit": "Augmente la capacité de l'inventaire pour plus de butin par course"
+        },
+        {
+          "item": "Gants de gnome",
+          "benefit": "Vous permet d'ouvrir des portes et d'interagir avec plus d'objets"
+        },
+        {
+          "item": "Chaussures à ressort",
+          "benefit": "Empêche les dégâts de chute lors des évasions depuis des hauteurs"
+        },
+        {
+          "item": "Arme",
+          "benefit": "Vous aide à combattre les menaces comme les souris lorsque vous êtes acculé"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Comment la fabrication se connecte au pillage",
+          "items": [
+            "Pendant une course, volez des objets et rapportez-les comme matériaux de fabrication.",
+            "Après l'extraction, les récompenses/matériaux soutiennent de nouvelles fabrications."
+          ]
+        },
+        {
+          "heading": "Amélioration de la base",
+          "items": [
+            "Fabriquez des meubles et améliorez votre maison sur l'île flottante (fonctionnalité du jeu complet)."
+          ]
+        }
+      ]
+    },
+    "lootItems": {
+      "title": "Butin et objets de Lucid Blocks",
+      "subtitle": "Quoi voler : types d'objets, risque et conseils de transport",
+      "categories": [
+        {
+          "type": "Objets de tâche",
+          "examples": [
+            "Objets requis par le Haut-Gnome pour les objectifs"
+          ]
+        },
+        {
+          "type": "Matériaux de fabrication",
+          "examples": [
+            "Objets ménagers réutilisés en équipement et améliorations de gnome"
+          ]
+        },
+        {
+          "type": "Cibles de méfait",
+          "examples": [
+            "Objets impliqués dans des tâches comme casser ou inonder"
+          ]
+        }
+      ],
+      "carryTips": [
+        "Donnez la priorité à la progression de la tâche, puis remplissez la capacité restante avec des matériaux de fabrication",
+        "Si des menaces sont à proximité, déplacez les objets par petits sauts sûrs plutôt que par de longs transports exposés",
+        "Planifiez l'itinéraire vers l'extraction dans la cour avant la fin du temps imparti"
+      ],
+      "riskLevels": [
+        {
+          "level": "Faible",
+          "description": "Près des entrées ou des coins sûrs"
+        },
+        {
+          "level": "Moyen",
+          "description": "Pièces plus profondes ou près des menaces errantes"
+        },
+        {
+          "level": "Élevé",
+          "description": "Près de la patrouille du propriétaire ou de l'aspirateur robot"
+        }
+      ]
+    },
+    "enemiesHazards": {
+      "title": "Ennemis et dangers de Lucid Blocks",
+      "subtitle": "Sachez ce qui peut vous attraper",
+      "threats": [
+        {
+          "name": "Le propriétaire",
+          "trigger": "Se faire repérer en cambriolant ou en effectuant des tâches",
+          "behavior": "Il vous poursuit et essaie de vous attraper",
+          "counter": "Restez furtif, brisez les lignes de vue et continuez à bouger en équipe"
+        },
+        {
+          "name": "Chats",
+          "trigger": "S'approcher trop près ou croiser leur chemin",
+          "behavior": "Ils deviennent une menace directe pendant que vous vous faufilez",
+          "counter": "Évitez leurs itinéraires et passez silencieusement"
+        },
+        {
+          "name": "Souris",
+          "trigger": "Entrer dans des zones où les souris errent",
+          "behavior": "Elles menacent les gnomes fragiles pendant les courses",
+          "counter": "Restez vigilant dans les espaces restreints et soyez prêt à vous retirer"
+        },
+        {
+          "name": "Aspirateur robot",
+          "trigger": "Être sur son chemin de nettoyage",
+          "behavior": "Il peut aspirer les gnomes",
+          "counter": "Écoutez-le, restez en dehors de son itinéraire et repositionnez-vous rapidement"
+        },
+        {
+          "name": "Piège du réfrigérateur / four",
+          "trigger": "Se faire attraper par le propriétaire",
+          "behavior": "Vous pouvez être enfermé à l'intérieur ; si les coéquipiers ne vous sauvent pas à temps, vous mourez",
+          "counter": "Signalez immédiatement ; les coéquipiers donnent la priorité à l'itinéraire de sauvetage"
+        },
+        {
+          "name": "Limite de temps",
+          "trigger": "Le minuteur de course atteint la limite",
+          "behavior": "Une tornade d'extraction apparaît dans la cour ; vous devez l'atteindre pour vous échapper",
+          "counter": "Arrêtez de trop piller, regroupez-vous et engagez-vous à l'extraction tôt"
+        }
+      ]
+    },
+    "stealthEscape": {
+      "title": "Conseils de furtivité et d'évasion de Lucid Blocks",
+      "subtitle": "Volez plus, mourez moins",
+      "do": [
+        "Restez furtif et mettez-vous à couvert avant d'interagir avec des objets",
+        "Utilisez le travail d'équipe : signalez les menaces et coordonnez les itinéraires",
+        "Sauvez rapidement les coéquipiers lorsque quelqu'un est piégé ou à terre",
+        "Réduisez vos pertes et dirigez-vous vers l'extraction lorsque le minuteur est serré"
+      ],
+      "dont": [
+        "Devenez gourmand lorsque l'extraction approche",
+        "Séparez-vous trop de l'équipe lorsque le propriétaire est actif",
+        "Ignorez les itinéraires de l'aspirateur robot ou les patrouilles d'animaux",
+        "Retardez les sauvetages lorsqu'un coéquipier est enfermé"
+      ],
+      "quickTips": [
+        {
+          "title": "La règle des 3 secondes",
+          "text": "Si vous ne pouvez pas expliquer votre prochain mouvement en 3 secondes, vous êtes sur le point de vous faire repérer."
+        },
+        {
+          "title": "Sauvetage d'abord",
+          "text": "Un sauvetage rapide maintient la course en vie ; le pillage peut attendre."
+        },
+        {
+          "title": "Discipline d'extraction",
+          "text": "Regroupez-vous tôt et engagez-vous dans la tornade avant que la panique ne commence."
+        }
+      ]
+    },
+    "homeUpgrades": {
+      "title": "Améliorations de la maison de Lucid Blocks",
+      "subtitle": "Fabriquez, construisez, améliorez",
+      "branches": [
+        {
+          "branch": "Stockage",
+          "summary": "Transportez plus et rapportez plus",
+          "items": [
+            "Sac à dos (extension d'inventaire)"
+          ]
+        },
+        {
+          "branch": "Utilité",
+          "summary": "Interagissez plus efficacement avec la maison",
+          "items": [
+            "Gants de gnome (vous permet d'ouvrir des portes et plus encore)"
+          ]
+        },
+        {
+          "branch": "Mobilité",
+          "summary": "Déplacez-vous plus en sécurité dans les espaces verticaux",
+          "items": [
+            "Chaussures à ressort (réduisent les dégâts de chute)"
+          ]
+        },
+        {
+          "branch": "Défense",
+          "summary": "Gérez les petites menaces si nécessaire",
+          "items": [
+            "Armes (pour les menaces comme les souris)"
+          ]
+        },
+        {
+          "branch": "Base d'attache",
+          "summary": "Fabriquez des meubles et améliorez votre maison sur l'île flottante",
+          "items": [
+            "Améliorations de meubles fonctionnels"
+          ]
+        }
+      ],
+      "priority": [
+        {
+          "rank": 1,
+          "title": "Stockage en premier",
+          "reason": "Plus de capacité de transport améliore le rendement de chaque course"
+        },
+        {
+          "rank": 2,
+          "title": "Utilité ensuite",
+          "reason": "De meilleures interactions réduisent le temps passé dans les zones dangereuses"
+        },
+        {
+          "rank": 3,
+          "title": "Mobilité pour la survie",
+          "reason": "La sécurité contre les chutes prévient les morts évitables lors de l'évasion"
+        }
+      ]
+    },
+    "community": {
+      "title": "Communauté et Discord de Lucid Blocks",
+      "subtitle": "Trouvez des équipes, des mises à jour, des discussions",
+      "links": [
+        {
+          "title": "Discord officiel",
+          "subtitle": "Annonces • Commentaires • LFG",
+          "url": "https://discord.com/invite/lucidblocks"
+        },
+        {
+          "title": "X officiel (Twitter)",
+          "subtitle": "Mises à jour et publications des développeurs",
+          "url": "https://x.com/lucidblocks"
+        },
+        {
+          "title": "Hub de la communauté Steam",
+          "subtitle": "Discussions • Captures d'écran • Guides",
+          "url": "https://steamcommunity.com/app/3495730"
+        },
+        {
+          "title": "Page du magasin Steam",
+          "subtitle": "Liste de souhaits • Démo • Description officielle",
+          "url": "https://store.steampowered.com/app/3495730/Lucid_Blocks/"
+        }
+      ]
+    },
+    "modsBepInEx": {
+      "title": "Configuration des mods et de BepInEx de Lucid Blocks",
+      "subtitle": "Installez les mods proprement",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Installer BepInEx 5",
+          "text": "Téléchargez BepInEx 5 et extrayez-le dans le dossier racine du jeu."
+        },
+        {
+          "step": 2,
+          "title": "Lancez une fois pour générer des dossiers",
+          "text": "Démarrez le jeu jusqu'au menu principal, puis fermez-le. Cela crée la structure de dossiers BepInEx."
+        },
+        {
+          "step": 3,
+          "title": "Installer des mods",
+          "text": "Placez les fichiers .dll des mods dans le dossier plugins."
+        },
+        {
+          "step": 4,
+          "title": "Vérifiez l'installation",
+          "text": "Relancez le jeu et confirmez que la fonctionnalité du mod est disponible (bascule de la caméra, curseur de l'interface utilisateur, etc.)."
+        }
+      ],
+      "paths": [
+        {
+          "label": "Installation Steam typique",
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\"
+        },
+        {
+          "label": "Dossier Plugins",
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\BepInEx\\plugins\\"
+        }
+      ],
+      "multiplayerNote": "Pour les fonctionnalités de jeu en coopération modifiées, tout le monde doit installer BepInEx et les mêmes mods de gameplay."
+    },
+    "popularMods": {
+      "title": "Mods populaires de Lucid Blocks",
+      "subtitle": "Meilleures sélections de la communauté",
+      "mods": [
+        {
+          "title": "Menu de spawn",
+          "tags": [
+            "Amusant",
+            "Outils",
+            "Hôte uniquement"
+          ],
+          "description": "Ajoute un menu de spawn d'objets avec un mode de vol.",
+          "controls": [
+            {
+              "key": "F",
+              "action": "Ouvrir le menu de spawn"
+            },
+            {
+              "key": "V",
+              "action": "Activer le vol"
+            }
+          ],
+          "note": "Hôte uniquement ; les autres n'ont pas besoin de l'installer pour rejoindre."
+        },
+        {
+          "title": "Vue à la troisième personne",
+          "tags": [
+            "Caméra",
+            "QoL"
+          ],
+          "description": "Ajoute une vue de caméra à la troisième personne.",
+          "controls": [
+            {
+              "key": "F7",
+              "action": "Basculer entre la première personne / la troisième personne"
+            }
+          ]
+        },
+        {
+          "title": "Plus de chapeaux",
+          "tags": [
+            "Cosmétique"
+          ],
+          "description": "Ajoute des options de couleur de chapeau supplémentaires pour les gnomes.",
+          "colors": [
+            "Bleu",
+            "Vert",
+            "Orange",
+            "Violet",
+            "Noir",
+            "Rouge"
+          ]
+        },
+        {
+          "title": "DOOM à la télé",
+          "tags": [
+            "Amusant",
+            "Mini-jeu"
+          ],
+          "description": "Jouez à DOOM original sur un téléviseur dans le jeu, avec le son provenant du haut-parleur du téléviseur.",
+          "highlights": [
+            "Fonctionne en multijoueur afin que d'autres joueurs puissent regarder le même téléviseur",
+            "Inclut les données de l'épisode de DOOM en shareware (Épisode 1)"
+          ]
+        }
+      ]
+    },
+    "controllerSupport": {
+      "title": "Prise en charge de la manette de Lucid Blocks",
+      "subtitle": "Jeu complet à la manette",
+      "native": {
+        "title": "Paramètres dans le jeu",
+        "description": "Utilisez les menus de liaisons/paramètres du jeu pour ajuster les commandes."
+      },
+      "mod": {
+        "title": "Mod de prise en charge de la manette",
+        "description": "Ajoute une prise en charge complète de la manette/du contrôleur et un curseur d'interface utilisateur pour la navigation dans les menus."
+      },
+      "features": [
+        "Commandes de jeu complètes : mouvement, caméra, combat, interactions et capacités mappés à la manette",
+        "Navigation avec le curseur de l'interface utilisateur : un curseur de cercle blanc apparaît dans les menus ; appuyez sur A pour cliquer et faire glisser les curseurs",
+        "Navigation dans l'inventaire : maintenez Select enfoncé pour ouvrir l'inventaire ; utilisez le stick droit pour naviguer tout en le maintenant enfoncé",
+        "Menus déroulants : le stick droit fait défiler les recettes de fabrication, les paramètres et autres zones d'interface utilisateur déroulantes",
+        "Défilement de la barre d'accès rapide : la croix directionnelle gauche/droite fait défiler 4 emplacements de la barre d'accès rapide",
+        "Commutation d'entrée transparente : détecte automatiquement le clavier/la souris par rapport à la manette"
+      ]
+    },
+    "playerCount": {
+      "title": "Nombre de joueurs et tendance de Lucid Blocks",
+      "subtitle": "Instantané de popularité en direct",
+      "stats": {
+        "now": {
+          "value": "6 047",
+          "label": "Joueurs en ce moment"
+        },
+        "peak24h": {
+          "value": "13 859",
+          "label": "Pic sur 24 heures"
+        },
+        "allTimePeak": {
+          "value": "15 272",
+          "label": "Pic de tous les temps"
+        }
+      },
+      "milestones": [
+        {
+          "date": "30 janvier 2026",
+          "title": "Démo sortie sur Steam",
+          "detail": "La démo publique est devenue disponible sur PC (Steam)."
+        },
+        {
+          "date": "8 février 2026",
+          "title": "Pic de tous les temps atteint",
+          "detail": "La démo a atteint son plus grand nombre de joueurs simultanés enregistré."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Foire aux",
+    "titleHighlight": "Questions",
+    "subtitle": "Tout ce que vous devez savoir sur Lucid Blocks",
+    "questions": [
+      {
+        "question": "Comment télécharger la démo de Lucid Blocks ?",
+        "answer": "Visitez la page du magasin Steam et cliquez sur \"Télécharger la démo\". La démo est gratuite et nécessite 2,62 Gio à télécharger, 4,88 Gio d'espace disque."
+      },
+      {
+        "question": "Puis-je jouer à Lucid Blocks en solo ou ai-je besoin d'amis ?",
+        "answer": "Lucid Blocks prend en charge le jeu en solo et en coopération avec jusqu'à 6 joueurs. Le solo est plus difficile mais possible."
+      },
+      {
+        "question": "Quelles sont les tâches du Haut-Gnome dans Lucid Blocks ?",
+        "answer": "Le Haut-Gnome est votre patron qui vous assigne des objectifs comme \"casser la télévision\", \"inonder les toilettes\" ou \"voler des objets spécifiques\". Effectuez-les pour obtenir des récompenses supplémentaires."
+      },
+      {
+        "question": "Comment installer des mods pour Lucid Blocks ?",
+        "answer": "Installez BepInEx 5, lancez le jeu une fois, puis placez les DLL des mods dans le dossier BepInEx/plugins/. Tous les joueurs ont besoin des mêmes mods pour le multijoueur."
+      },
+      {
+        "question": "Lucid Blocks prend-il en charge les manettes ?",
+        "answer": "Oui ! Utilisez les paramètres du jeu pour la prise en charge de base de la manette, ou installez le Mod de manette de Nexus Mods pour une navigation complète dans l'interface utilisateur."
+      },
+      {
+        "question": "Quel est le nombre de joueurs pour Lucid Blocks ?",
+        "answer": "En février 2026, Lucid Blocks compte en moyenne plus de 6 000 joueurs simultanés, avec un pic de 15 272 le 8 février 2026."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Prêt à commencer à braquer ?",
+    "description": "Rejoignez la communauté Lucid Blocks sur Discord pour des groupes de coopération, des mises à jour et des discussions sur les mods !",
+    "joinCommunity": "Rejoindre Discord",
+    "joinGame": "Obtenir la démo sur Steam"
+  },
+  "footer": {
+    "title": "Lucid Blocks Wiki",
+    "description": "Votre centre de ressources complet pour les braquages furtifs, les stratégies de coopération, les mods et les guides communautaires de Lucid Blocks.",
+    "resources": "Ressources",
+    "community": "Communauté",
+    "legal": "Légal",
+    "discord": "Discord",
+    "twitter": "X / Twitter",
+    "steamCommunity": "Communauté Steam",
+    "steamStore": "Magasin Steam",
+    "about": "À propos",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "copyrightNotice": "Droits d'auteur",
+    "copyright": "© 2026 Lucid Blocks Wiki. Non affilié aux développeurs de Lucid Blocks.",
+    "disclaimer": "Site web de ressources non officiel créé par des fans."
+  },
+  "pages": {
+    "guides": {
+      "title": "Guides Lucid Blocks",
+      "description": "Guides de jeu complets, des bases pour débutants aux stratégies avancées d'Apotheosis. Maîtrisez la survie et l'artisanat.",
+      "metaTitle": "Guides Lucid Blocks - Stratégies de débutant à avancé",
+      "metaDescription": "Guides complets de Lucid Blocks couvrant les conseils pour débutants, le système Apotheosis, les stratégies de survie et les tactiques d'experts pour maîtriser ce bac à sable surréaliste.",
+      "categoryLabel": "GUIDES DE JEU",
+      "whatIs": "Que sont les Guides ?",
+      "whatIsDescription": "Guides complets couvrant les mécaniques de jeu, les stratégies de survie et le système d'artisanat Apotheosis. Apprenez tout, des premiers pas aux techniques avancées.",
+      "why": "Pourquoi lire les guides ?",
+      "whySteps": {
+        "step1Title": "Apprendre les mécaniques de base",
+        "step1Description": "Comprenez le système Apotheosis et évitez les erreurs courantes de débutant",
+        "step2Title": "Progression rapide",
+        "step2Description": "Suivez des parcours éprouvés pour survivre et prospérer dans ce monde surréaliste",
+        "step3Title": "Maîtriser les stratégies",
+        "step3Description": "Développez des tactiques avancées pour l'exploration et l'artisanat"
+      },
+      "featured": "En vedette et essentiels",
+      "all": "Tous les guides"
+    },
+    "crafting": {
+      "title": "Artisanat Lucid Blocks",
+      "description": "Maîtrisez le système de fusion Apotheosis avec les mécaniques d'essence, les recettes et les stratégies d'artisanat pour des objets puissants.",
+      "metaTitle": "Artisanat Lucid Blocks - Système Apotheosis et recettes",
+      "metaDescription": "Maîtrisez le système d'artisanat Apotheosis de Lucid Blocks. Apprenez les mécaniques d'essence, les recettes de fusion et les stratégies pour créer des outils et des armes puissants.",
+      "categoryLabel": "SYSTÈME D'ARTISANAT",
+      "whatIs": "Qu'est-ce que l'artisanat ?",
+      "whatIsDescription": "Le système Apotheosis est une mécanique de fusion unique basée sur l'essence où vous combinez jusqu'à six objets pour découvrir de nouvelles recettes. Pas de menus d'artisanat fixes : l'expérimentation est la clé.",
+      "why": "Pourquoi maîtriser l'artisanat ?",
+      "whySteps": {
+        "step1Title": "Débloquer des objets puissants",
+        "step1Description": "Découvrez des outils, des armes et des équipements de mobilité essentiels grâce à la fusion",
+        "step2Title": "Comprendre les essences",
+        "step2Description": "Apprenez comment les essences d'objets se combinent pour créer des résultats prévisibles",
+        "step3Title": "Optimiser les ressources",
+        "step3Description": "Utilisez les mécaniques de dilution pour maximiser le rendement à partir de matériaux bon marché"
+      },
+      "featured": "En vedette et essentiels",
+      "all": "Tous les guides d'artisanat"
+    },
+    "items": {
+      "title": "Objets Lucid Blocks",
+      "description": "Guides détaillés sur les objets couvrant les outils, les armes, l'équipement de mobilité et les solutions de stockage avec recettes d'artisanat et conseils d'utilisation.",
+      "metaTitle": "Objets Lucid Blocks - Guide des outils, armes et équipements",
+      "metaDescription": "Base de données complète des objets pour Lucid Blocks, incluant les outils, les armes, l'équipement de mobilité et le stockage. Apprenez à fabriquer et utiliser chaque objet efficacement.",
+      "categoryLabel": "OBJETS ET ÉQUIPEMENT",
+      "whatIs": "Que sont les objets ?",
+      "whatIsDescription": "Guides complets pour les outils, les armes, l'équipement de mobilité et les objets fonctionnels. Apprenez les recettes d'artisanat, les stratégies d'utilisation et les combinaisons optimales.",
+      "why": "Pourquoi consulter les guides d'objets ?",
+      "whySteps": {
+        "step1Title": "Apprendre les recettes d'artisanat",
+        "step1Description": "Découvrez comment fabriquer des outils et des armes essentiels en utilisant Apotheosis",
+        "step2Title": "Optimiser l'équipement",
+        "step2Description": "Choisissez les meilleurs objets pour votre style de jeu et votre stade de progression",
+        "step3Title": "Améliorer la survie",
+        "step3Description": "Équipez-vous de matériel de mobilité et d'armes pour naviguer dans ce monde dangereux"
+      },
+      "featured": "En vedette et essentiels",
+      "all": "Tous les objets"
+    },
+    "biomes": {
+      "title": "Biomes Lucid Blocks",
+      "description": "Explorez les régions du monde, les caractéristiques environnementales, l'emplacement des ressources et les conseils de survie pour chaque biome.",
+      "metaTitle": "Biomes Lucid Blocks - Régions du monde et exploration",
+      "metaDescription": "Explorez les biomes de Lucid Blocks, y compris les Tiamana Leylines, Fog Meadow et les régions surréalistes. Trouvez des ressources, évitez les dangers et naviguez dans le monde infini.",
+      "categoryLabel": "RÉGIONS DU MONDE",
+      "whatIs": "Que sont les biomes ?",
+      "whatIsDescription": "Guides des différentes régions du monde, des caractéristiques environnementales, de la distribution des ressources et des zones de danger. Apprenez à quoi vous attendre et comment vous préparer pour chaque zone.",
+      "why": "Pourquoi explorer les biomes ?",
+      "whySteps": {
+        "step1Title": "Trouver des ressources",
+        "step1Description": "Localisez des matériaux rares et des essences spécifiques à chaque région",
+        "step2Title": "Éviter les dangers",
+        "step2Description": "Comprenez les dangers environnementaux et les créatures hostiles",
+        "step3Title": "Planifier l'exploration",
+        "step3Description": "Préparez les bons outils et équipements pour chaque type de biome"
+      },
+      "featured": "En vedette et essentiels",
+      "all": "Tous les biomes"
+    },
+    "building": {
+      "title": "Construction Lucid Blocks",
+      "description": "Maîtrisez les dimensions personnelles Qualia, la construction de bases, la gestion du stockage et les techniques de construction créative.",
+      "metaTitle": "Construction Lucid Blocks - Qualia et construction de base",
+      "metaDescription": "Maîtrisez la construction dans Lucid Blocks avec les dimensions personnelles Qualia, la construction de bases, les solutions de stockage et les techniques de construction créative.",
+      "categoryLabel": "CONSTRUCTION ET BASES",
+      "whatIs": "Qu'est-ce que la construction ?",
+      "whatIsDescription": "Guides sur le système de dimension personnelle Qualia, la construction de bases, la gestion du stockage et la construction créative. Apprenez à créer votre havre de paix dans ce monde surréaliste.",
+      "why": "Pourquoi construire des bases ?",
+      "whySteps": {
+        "step1Title": "Créer des espaces sûrs",
+        "step1Description": "Établissez des bases sécurisées pour le stockage et les opérations d'artisanat",
+        "step2Title": "Gérer les ressources",
+        "step2Description": "Organisez les matériaux efficacement grâce aux solutions de stockage",
+        "step3Title": "Débloquer Qualia",
+        "step3Description": "Accédez à des dimensions de poche personnelles pour un confort ultime"
+      },
+      "featured": "En vedette et essentiels",
+      "all": "Tous les guides de construction"
+    },
+    "support": {
+      "title": "Support Lucid Blocks",
+      "description": "Support technique, compatibilité des plateformes, optimisation des performances et dépannage des problèmes courants.",
+      "metaTitle": "Support Lucid Blocks - Aide technique et correctifs",
+      "metaDescription": "Obtenez un support technique pour Lucid Blocks, incluant la configuration du Steam Deck, les correctifs de crash, l'optimisation des performances et les guides de compatibilité des plateformes.",
+      "categoryLabel": "SUPPORT TECHNIQUE",
+      "whatIs": "Qu'est-ce que le support ?",
+      "whatIsDescription": "Guides techniques couvrant la compatibilité des plateformes, l'optimisation des performances, les correctifs de crash et les problèmes courants. Obtenez de l'aide pour le Steam Deck, les questions sur le multijoueur et les paramètres.",
+      "why": "Pourquoi consulter le support ?",
+      "whySteps": {
+        "step1Title": "Résoudre les problèmes techniques",
+        "step1Description": "Résolvez les plantages, les problèmes de performance et les problèmes de compatibilité",
+        "step2Title": "Optimiser les performances",
+        "step2Description": "Configurez les paramètres pour la meilleure expérience sur votre plateforme",
+        "step3Title": "Compatibilité des plateformes",
+        "step3Description": "Apprenez-en plus sur le Steam Deck, le support des manettes et les configurations requises"
+      },
+      "featured": "En vedette et essentiels",
+      "all": "Tous les articles de support"
+    }
+  }
+}

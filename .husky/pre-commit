@@ -1,0 +1,31 @@
+#!/bin/sh
+# Pre-commit hook: 验证代码完整性
+
+echo "🔍 Running pre-commit checks..."
+
+# 1. 图标验证（最关键）
+echo "🎨 Validating icons..."
+node scripts/validate-icons.js
+if [ $? -ne 0 ]; then
+  echo "❌ Icon validation failed!"
+  echo "💡 Tip: If you added icons in locales/*.json, register them in src/lib/iconRegistry.ts"
+  exit 1
+fi
+
+# 2. 类型检查
+echo "🔧 Type checking..."
+npm run typecheck
+if [ $? -ne 0 ]; then
+  echo "❌ Type check failed! Please fix type errors before committing."
+  exit 1
+fi
+
+# 3. 构建测试
+echo "📦 Building project..."
+npm run build
+if [ $? -ne 0 ]; then
+  echo "❌ Build failed! Please fix errors before committing."
+  exit 1
+fi
+
+echo "✅ All pre-commit checks passed!"

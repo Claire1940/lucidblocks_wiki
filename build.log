@@ -1,0 +1,113 @@
+
+> nextjs-shadcn@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.9
+   - Environments: .env.local
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+   Creating an optimized production build ...
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of /Users/libin91/Documents/GameProjects/0208Slayerbound/node_modules/next-intl/dist/esm/production/extractor/format/index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of /Users/libin91/Documents/GameProjects/0208Slayerbound/node_modules/next-intl/dist/esm/production/extractor/format/index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of /Users/libin91/Documents/GameProjects/0208Slayerbound/node_modules/next-intl/dist/esm/production/extractor/format/index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ ⚠ Compiled with warnings in 6.4s
+
+./src/app/[locale]/[...slug]/page.tsx
+Module not found: Can't resolve '../../../../content' in '/Users/libin91/Documents/GameProjects/0208Slayerbound/src/app/[locale]/[...slug]'
+
+Import trace for requested module:
+./src/app/[locale]/[...slug]/page.tsx
+
+./src/app/[locale]/[...slug]/page.tsx
+Module not found: Can't resolve '../../../../content/en' in '/Users/libin91/Documents/GameProjects/0208Slayerbound/src/app/[locale]/[...slug]'
+
+Import trace for requested module:
+./src/app/[locale]/[...slug]/page.tsx
+
+./src/app/[locale]/[...slug]/page.tsx
+Module not found: Can't resolve '../../../../content' in '/Users/libin91/Documents/GameProjects/0208Slayerbound/src/app/[locale]/[...slug]'
+
+Import trace for requested module:
+./src/app/[locale]/[...slug]/page.tsx
+
+./src/app/[locale]/[...slug]/page.tsx
+Module not found: Can't resolve '../../../../content/en' in '/Users/libin91/Documents/GameProjects/0208Slayerbound/src/app/[locale]/[...slug]'
+
+Import trace for requested module:
+./src/app/[locale]/[...slug]/page.tsx
+
+./src/lib/content.ts
+Module not found: Can't resolve '../../content' in '/Users/libin91/Documents/GameProjects/0208Slayerbound/src/lib'
+
+Import trace for requested module:
+./src/lib/content.ts
+./src/app/sitemap.ts
+./node_modules/next/dist/build/webpack/loaders/next-metadata-route-loader.js?filePath=%2FUsers%2Flibin91%2FDocuments%2FGameProjects%2F0208Slayerbound%2Fsrc%2Fapp%2Fsitemap.ts&isDynamicRouteExtension=1!?__next_metadata_route__
+
+./src/lib/content.ts
+Module not found: Can't resolve '../../content/en' in '/Users/libin91/Documents/GameProjects/0208Slayerbound/src/lib'
+
+Import trace for requested module:
+./src/lib/content.ts
+./src/app/sitemap.ts
+./node_modules/next/dist/build/webpack/loaders/next-metadata-route-loader.js?filePath=%2FUsers%2Flibin91%2FDocuments%2FGameProjects%2F0208Slayerbound%2Fsrc%2Fapp%2Fsitemap.ts&isDynamicRouteExtension=1!?__next_metadata_route__
+
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/109) ...
+   Generating static pages (27/109) 
+   Generating static pages (54/109) 
+   Generating static pages (81/109) 
+ ✓ Generating static pages (109/109)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      127 B         102 kB
+├ ○ /_not-found                            992 B         103 kB
+├ ● /[locale]                            9.33 kB         148 kB
+├   ├ /en
+├   ├ /pt
+├   ├ /es
+├   └ [+5 more paths]
+├ ● /[locale]/[...slug]                   1.3 kB         129 kB
+├   ├ /en/codes
+├   ├ /en/tier-list
+├   ├ /en/units
+├   └ [+61 more paths]
+├ ● /[locale]/about                      3.34 kB         110 kB
+├   ├ /en/about
+├   ├ /pt/about
+├   ├ /es/about
+├   └ [+5 more paths]
+├ ● /[locale]/copyright                   3.6 kB         110 kB
+├   ├ /en/copyright
+├   ├ /pt/copyright
+├   ├ /es/copyright
+├   └ [+5 more paths]
+├ ● /[locale]/privacy-policy             3.09 kB         110 kB
+├   ├ /en/privacy-policy
+├   ├ /pt/privacy-policy
+├   ├ /es/privacy-policy
+├   └ [+5 more paths]
+├ ● /[locale]/terms-of-service           4.21 kB         111 kB
+├   ├ /en/terms-of-service
+├   ├ /pt/terms-of-service
+├   ├ /es/terms-of-service
+├   └ [+5 more paths]
+└ ○ /sitemap.xml                           127 B         102 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/255-cb395327542b56ef.js       45.9 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          2.04 kB
+
+
+ƒ Middleware                             45.5 kB
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

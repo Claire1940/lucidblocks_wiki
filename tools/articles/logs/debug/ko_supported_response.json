@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-20260113203426977992284o1dVBA8i",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1768307668,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "---\ntitle: \"두근두근타운 지원 플랫폼: 지원 기기 및 구매처 전체 목록\"\ndescription: \"2026년 현재 두근두근타운을 플레이할 수 있는 곳을 찾아보세요. 지원 기기, 스토어, 팁을 확인하고 아늑한 모험을 시작하세요.\"\nkeywords: [\"두근두근타운 플랫폼\", \"두근두근타운 지원 기기\", \"두근두근타운 PC\", \"두근두근타운 모바일\"]\ncanonical: \"/ko/platforms/supported\"\ndate: \"2026-01-13\"\nvideo:\n  enabled: true\n  youtubeId: \"l_Nzn5PiwYw\"\n  title: \"두근두근타운 게임플레이 - 글로벌 버전 Android iOS\"\n  description: \"두근두근타운 게임플레이 - 글로벌 버전 Android iOS\"\n  duration: \"PT20M28S\"\n  uploadDate: \"2025-12-14\"\n---\n\n두근두근타운은 빠르게 가장 화제가 되는 아늑한 라이프 시뮬레이션 게임 중 하나가 되었지만, 많은 플레이어들이 여전히 간단한 질문을 합니다. **실제로 어디에서 플레이할 수 있나요?** 올바른 플랫폼을 아는 것이 중요합니다. 성능, 기능, 심지어 구매 옵션까지 다를 수 있기 때문입니다. 이 가이드에서는 모바일이든 PC든 자신감을 가지고 게임을 시작할 수 있도록 **두근두근타운 플랫폼**을 알기 쉽게 설명합니다.\n\n## 2026년 두근두근타운 플랫폼 개요\n\n2026년 초 현재 **두근두근타운 플랫폼**은 공식적으로 모바일 및 PC 생태계를 모두 지원합니다. 커뮤니티 보고서 및 개발자 발표에 따르면 이 게임은 크로스 플랫폼 접근성을 염두에 두고 설계되었으며, 더 깊이 있는 진행과 함께 캐주얼 플레이 세션을 우선시합니다.\n\n현재 지원되는 환경은 다음과 같습니다.\n- Android 스마트폰 및 태블릿\n- iOS 기기 (iPhone 및 iPad)\n- Windows PC\n\n콘솔 버전은 커뮤니티 토론에서 흔한 주제이지만, 현재로서는 **커뮤니티 추측**일 뿐이며 확정된 릴리스는 아닙니다.\n\n## 모바일 기기: Android 및 iOS 지원\n\n모바일은 두근두근타운이 가장 빛나는 곳입니다. Android 및 iOS 버전은 터치 컨트롤과 짧은 플레이 세션에 최적화되어 있어 매일 확인하는 데 이상적입니다.\n\n**플레이어 피드백에 따르면**, 지난 4년 이내에 출시된 대부분의 중급 기기에서 게임이 원활하게 실행됩니다. 권장 사양은 다음과 같습니다.\n- Android 9.0 이상, 4GB RAM\n- iOS 14 이상, iPhone 8 이상\n\n모바일 플레이어는 다음의 이점을 누릴 수 있습니다.\n- 빠른 업데이트\n- 휴대 가능한 게임 플레이\n- 작은 화면에 최적화된 UI\n\n이로 인해 모바일은 캐주얼 플레이어 사이에서 가장 인기 있는 두근두근타운 플랫폼 중 하나가 되었습니다.\n\n이 비디오는 두근두근타운이 Android 및 iOS 기기에서 어떻게 실행되는지 보여주며, 인터페이스 레이아웃과 모바일 플랫폼 전반의 실시간 성능을 강조합니다.\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/l_Nzn5PiwYw\"\n    title=\"두근두근타운 게임플레이 - 글로벌 버전 Android iOS\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\n## PC 지원: Windows 버전 설명\n\n더 큰 화면과 정밀한 컨트롤을 선호하는 플레이어에게 PC 지원은 큰 장점입니다. Windows 버전은 더 높은 해상도 옵션과 긴 세션 동안 더 부드러운 성능을 제공합니다.\n\n이 버전을 사용해보고 싶다면 [Steam 버전](https://heartopiagame.com/platforms/steam-version/) 및 직접 [PC 다운로드](https://heartopiagame.com/platforms/pc-download/)에 대한 공식 가이드를 확인하세요. 설치 방법 및 계정 연결에 대해 설명합니다.\n\n**플레이어 경험 참고:** 커뮤니티 피드백에 따르면 PC 플레이어는 모바일에 비해 개선된 장식 컨트롤과 단축된 로딩 시간을 즐깁니다.\n\n## 구매처 및 가용성\n\n두근두근타운은 선택적 게임 내 구매가 가능한 무료 플레이 모델을 따릅니다. 가용성은 플랫폼에 따라 다릅니다.\n\n- **Android:** Google Play 스토어\n- **iOS:** Apple App Store\n- **PC:** Steam 및 공식 PC 런처\n\n보안 위험을 피하려면 항상 공식 스토어에서 다운로드하세요. PC Gamer와 같은 업계 매체는 특히 무료 플레이 타이틀을 설치할 때 검증된 플랫폼을 사용하는 것이 중요하다고 강조합니다 (https://www.pcgamer.com/ 참조).\n\n## 크로스 플랫폼 진행 및 계정\n\n**두근두근타운 플랫폼**의 가장 강력한 기능 중 하나는 계정 기반 진행입니다. 계정을 연결하면 다음과 같은 이점이 있습니다.\n- 진행 상황이 모바일과 PC 간에 동기화됩니다.\n- 구매 항목은 모든 기기에서 액세스할 수 있습니다.\n- 이벤트 및 시즌 보상이 유지됩니다.\n\n그러나 **커뮤니티 보고서에 따르면**, 일부 장식 아이템은 화면 해상도에 따라 다르게 표시될 수 있습니다. 이는 게임 플레이에 영향을 미치지 않지만 장식하는 사람들에게는 주목할 가치가 있습니다.\n\n## 미래 플랫폼 가능성\n\n플레이어는 종종 Nintendo Switch 또는 PlayStation과 같은 콘솔에 대해 질문합니다. 현재 단계에서 이러한 아이디어는 공식 발표가 아닌 **커뮤니티 추측**으로 남아 있습니다. 개발자는 도달 범위를 확장할 것이라고 암시했지만 확인된 일정은 없습니다.\n\n현재로서는 현재 지원되는 두근두근타운 플랫폼에 집중하고 이미 마련된 꾸준한 업데이트 주기를 즐기는 것이 가장 안전한 접근 방식입니다.\n\n## 최고의 플랫폼 선택을 위한 팁\n\n결정하지 못했다면 다음 팁을 고려하십시오.\n- 휴대성과 빠른 세션을 위해 **모바일**을 선택하십시오.\n- 긴 플레이 세션과 자세한 빌드를 위해 **PC**를 선택하십시오.\n- 동일한 계정을 사용하여 자유롭게 전환하십시오.\n\n이상적인 선택은 휴식을 취하는 방법과 장소에 따라 다릅니다.\n\n## 자주 묻는 질문\n\n**Q: 현재 지원되는 두근두근타운 플랫폼은 무엇입니까?**\nA: 두근두근타운은 공식 스토어 및 런처를 통해 Android, iOS 및 Windows PC에서 사용할 수 있습니다.\n\n**Q: 모바일 진행 상황을 잃지 않고 PC에서 두근두근타운을 플레이할 수 있습니까?**\nA: 예. 계정 동기화를 통해 두근두근타운 플랫폼에서 진행 상황을 공유할 수 있습니다.\n\n**Q: 두근두근타운이 콘솔로 출시될 예정입니까?**\nA: 현재 콘솔 버전은 확인되지 않았으며 커뮤니티 추측으로 간주됩니다.\n\n**Q: 어떤 플랫폼에서 두근두근타운이 가장 잘 실행됩니까?**\nA: 플레이어 피드백에 따르면 PC는 가장 부드러운 성능을 제공하는 반면 모바일은 가장 편리함을 제공합니다.\n\n지원되는 모든 옵션을 이해함으로써 라이프 스타일에 가장 적합한 두근두근타운 플랫폼을 선택하고 오늘 완벽한 아늑한 세계를 구축할 수 있습니다.\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1622,
+    "completion_tokens": 1796,
+    "total_tokens": 3418,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 1622,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

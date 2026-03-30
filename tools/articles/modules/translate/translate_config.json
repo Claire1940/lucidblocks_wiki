@@ -1,0 +1,39 @@
+{
+  "api_key": "sk-OxJJtxGZLYFWUZkaQoGgo68MacGSEuZ5oPg4oKLElGJ98WvB",
+  "api_base_url": "https://api.apifast.tech/v1",
+  "model": "gemini-2.5-flash",
+  "group": "default",
+  "temperature": 0.7,
+  "max_tokens": 24576,
+  "timeout": 1800,
+  "retry_attempts": 2,
+  "retry_delay": 5,
+
+  "languages": ["ru", "pt", "de", "es", "ja", "ko", "fr"],
+  "default_language": "en",
+  "output_dir": "content/",
+
+  "game_names": {
+    "en": "Lucid Blocks",
+    "ru": "Lucid Blocks",
+    "pt": "Lucid Blocks",
+    "de": "Lucid Blocks",
+    "es": "Lucid Blocks",
+    "ja": "Lucid Blocks",
+    "ko": "Lucid Blocks",
+    "fr": "Lucid Blocks"
+  },
+
+  "lang_names": {
+    "ru": "Russian",
+    "pt": "Portuguese (Brazil)",
+    "de": "German",
+    "es": "Spanish (Latin America)",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "fr": "French"
+  },
+
+  "batch_size": 20,
+  "batch_delay": 1
+}

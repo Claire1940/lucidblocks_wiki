@@ -1,0 +1,44 @@
+=== Translation Error Log ===
+Timestamp: 32565.2945485
+Article: anime-tactical-simulator-high-dps
+Language: ko
+Attempt: 1/2
+
+Error Type: ServerDisconnectedError
+Error Message: Server disconnected
+
+Full Traceback:
+Traceback (most recent call last):
+  File "D:\web\0301animetacticalsimulator\tools\articles\modules\translate\translator.py", line 251, in translate_and_save
+    async with session.post(
+               ~~~~~~~~~~~~^
+        url=self.api_url,
+        ^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        timeout=timeout
+        ^^^^^^^^^^^^^^^
+    ) as response:
+    ^
+  File "C:\Users\HUAWEI\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiohttp\client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiohttp\client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiohttp\client.py", line 757, in _connect_and_send_request
+    await resp.start(conn)
+  File "C:\Users\HUAWEI\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiohttp\client_reqrep.py", line 539, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiohttp\streams.py", line 703, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+
+
+Request Details:
+API URL: https://api.apifast.tech/v1
+Model: gemini-2.5-flash
+Max Tokens: 24576
+Temperature: 0.7
+Timeout: 1800
+Content Length: 16754 characters

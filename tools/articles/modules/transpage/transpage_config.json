@@ -1,0 +1,58 @@
+{
+  "api_key": "sk-OxJJtxGZLYFWUZkaQoGgo68MacGSEuZ5oPg4oKLElGJ98WvB",
+  "api_base_url": "https://api.apifast.tech/v1",
+  "model": "gemini-2.5-flash",
+  "group": "default",
+
+  "temperature": 0.1,
+  "max_tokens": 32768,
+  "timeout": 1800,
+  "retry_attempts": 8,
+  "retry_delay": 10,
+
+  "languages": ["ru", "pt", "de", "es", "ja", "ko", "fr"],
+  "default_language": "en",
+  "output_dir": "src/locales/",
+
+  "use_value_extraction": false,
+
+  "protected_terms": {
+    "game_names": ["Lucid Blocks"],
+    "character_names": [],
+    "technical_terms": [
+      "Apotheosis",
+      "Steam",
+      "Steam Deck",
+      "Vulkan",
+      "Fog Meadow",
+      "Heaven",
+      "Bubblebear",
+      "Angel",
+      "Hookshot",
+      "Bee Glider",
+      "Psychedelic",
+      "Surreal"
+    ]
+  },
+
+  "game_names": {
+    "en": "Lucid Blocks",
+    "ru": "Lucid Blocks",
+    "pt": "Lucid Blocks",
+    "de": "Lucid Blocks",
+    "es": "Lucid Blocks",
+    "ja": "Lucid Blocks",
+    "ko": "Lucid Blocks",
+    "fr": "Lucid Blocks"
+  },
+
+  "lang_names": {
+    "ru": "Russian",
+    "pt": "Portuguese (Brazil)",
+    "de": "German",
+    "es": "Spanish (Latin America)",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "fr": "French"
+  }
+}

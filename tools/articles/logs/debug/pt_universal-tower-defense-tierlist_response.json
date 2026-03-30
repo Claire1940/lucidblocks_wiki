@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-20251215160449639039199ocaiq5gd",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1765785900,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "---\ntitle: \"Tierlist de Defesa da Torre Universal: Visão Geral do Meta, Funções Explicadas e Escolhas Rápidas (2025)\"\ndescription: \"Tierlist rápida de Defesa da Torre Universal com visão geral do meta atual, explicações das funções das unidades e escolhas de equipe instantâneas. Atualização de dezembro de 2025.\"\nkeywords: [\"tierlist defesa da torre universal\", \"visão geral do meta\", \"funções das unidades\", \"tier list rápida\"]\ncanonical: \"/pt/tier-list/universal-tower-defense-tierlist/\"\ndate: \"2025-12-15\"\nvideo:\n  enabled: true\n  youtubeId: \"ppqydXVOV88\"\n  title: \"Tier List de *LANÇAMENTO* de Defesa da Torre Universal -- Melhores Unidades do Jogo!!\"\n  description: \"Classificação da tier list de lançamento\"\n  duration: \"PT14M18S\"\n  uploadDate: \"2024-12-13\"\n---\n\nPrecisa de uma tierlist rápida de Defesa da Torre Universal? Esta visão geral do meta mostra as principais unidades, explica cada função e oferece escolhas de equipe instantâneas para diferentes cenários. Atualizado para o meta de dezembro de 2025, focado em escalonamento infinito e dano explosivo contra chefes.\n\n## Visão Geral do Meta Atual (Dezembro de 2025)\n\n**Dominadores de Nível S**: Sung Jin-Woo, Dragão Prateado, Kirito, Ragna, Zaraki, Sasuke\n\n**Características do Meta**:\n- Unidades de escalonamento infinito dominam o final do jogo\n- Dano explosivo contra chefes é altamente valorizado\n- Traços impactam o desempenho significativamente\n- Limpeza de área importante para farm\n\nPara classificações de níveis abrangentes com explicações completas, consulte nossa [tier list detalhada de Defesa da Torre Universal](/tier-list/universal-tower-defense-tierlist/).\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/ppqydXVOV88\"\n    title=\"Tier List de *LANÇAMENTO* de Defesa da Torre Universal -- Melhores Unidades do Jogo!!\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\n## Funções das Unidades Explicadas\n\n**Carry/DPS**: Principal causador de dano (Sung Jin-Woo, Dragão Prateado)\n**Especialista em Explosão**: Janelas de alto dano para chefes (Ragna)\n**Limpeza de AoE**: Gerenciamento de ondas (Kirito, Mob Psycho)\n**Suporte/Buffer**: Aprimora aliados (Lelouch)\n**Tanque**: Absorve dano (menos meta atualmente)\n\n## Escolhas Rápidas de Equipe\n\n**Equipe Econômica** (Sem Míticos):\nMob Psycho + Gojo + Tanjiro + Zoro\n\n**Meio de Jogo** (Um Mítico):\nSung Jin-Woo OU Dragão Prateado + Sasuke + Lelouch + Gilgamesh\n\n**Final de Jogo** (Múltiplos Míticos):\nSung Jin-Woo + Dragão Prateado + Kirito + Zaraki + Ragna\n\n## Top 5 Unidades Essenciais\n\n1. **Sung Jin-Woo** - Melhor unidade geral, escalonamento infinito\n2. **Dragão Prateado** - Segundo melhor carry, monstro de final de jogo\n3. **Ragna** - Matador de chefes essencial\n4. **Kirito** - Dano AoE superior\n5. **Sasuke** - Utilidade versátil + dano\n\n## Impacto do Traço nos Níveis\n\n**Traço de Soberano**: Move unidades para cima 1-2 níveis no mínimo\n**Mago/Guerreiro**: Adiciona ~30% de aumento de desempenho\n**Traços Comuns**: Impacto mínimo (5-10%)\n\nUnidades com traço de Soberano podem saltar do nível A para o desempenho do nível S.\n\n## Mudanças de Meta para Observar\n\n**Nerfs Esperados**: A Legião das Sombras de Sung Jin-Woo pode ser nerfada\n**Unidades em Ascensão**: Unidades mais novas podem abalar a tierlist\n**Mudanças de Traço**: O rebalanceamento de traços pode mudar as classificações\n\nJunte-se ao [Discord de Defesa da Torre Universal](/discord/universal-tower-defense-discord/) para discussões de meta em tempo real.\n\n## Perguntas Frequentes\n\n**A raridade determina a colocação no nível?**\nNão. Algumas unidades épicas superam unidades lendárias específicas. O desempenho importa mais do que a raridade.\n\n**Devo invocar apenas unidades de nível S?**\nSe possível, sim. Mas as unidades de nível A funcionam bem para a maioria do conteúdo.\n\n**Com que frequência a tierlist muda?**\nA cada 2-3 semanas com patches de balanceamento. Unidades individuais raramente se movem mais de um nível.\n\nPara códigos para invocar essas unidades, confira nossa página de [códigos de Defesa da Torre Universal](/codes/universal-tower-defense-codes/).\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1303,
+    "completion_tokens": 1275,
+    "total_tokens": 2578,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 1303,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

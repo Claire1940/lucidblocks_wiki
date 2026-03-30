@@ -1,0 +1,202 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Guía de Lucid Blocks: Dominando el Crafteo y la Progresión 2026",
+  description: "Domina el sistema de Apoteosis con nuestra guía completa de Lucid Blocks. Aprende recetas de crafteo esenciales, estrategias de nivelación y combinaciones de objetos de alto nivel para 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/3b82f6/fff?text=Lucid+Blocks+Guide",
+  date: "2026-03-17",
+  author: "Equipo de Wiki de Lucid Blocks",
+  keywords: "lucid blocks, crafteo, sistema de apoteosis, guía de supervivencia, recetas, progresión"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Guía de Lucid Blocks**: Domina el exclusivo **Sistema de Apoteosis** para crear herramientas y armas poderosas.
+- **Mecánica Clave**: Usa la **cuadrícula de 6 espacios** para combinar esencias; menos objetos crean herramientas estables, mientras que más espacios aumentan la complejidad.
+- **Mejor Estrategia**: Prioriza el combo de **Guante de Abeja** (Bee Glove) y **Arpeo** (Grappler) para un desplazamiento y movilidad por el mundo inigualables.
+- **Consejo Crítico**: Sube de nivel a tu personaje **matando criaturas** (mobs) o **creando nuevos objetos** para desbloquear una progresión más profunda.
+- **Mejor Opción**: Comienza con un **Pico de Madera** (Palo + Tierra/Tronco/Arena) para establecer tu economía de recursos al inicio del juego.
+</Callout>
+
+Lucid Blocks es una experiencia sandbox surrealista y experimental que desafía los tropos tradicionales de supervivencia. A diferencia de los juegos de crafteo estándar con menús rígidos, este título introduce el Sistema de Apoteosis, una mecánica de fusión donde los jugadores deben experimentar con "esencias" para descubrir objetos funcionales. Ya sea que estés navegando por paisajes desorientadores o conociendo a los misteriosos Osos Burbuja (Bubble Bears), comprender los ciclos básicos de exploración y fusión es vital para sobrevivir. Esta **guía de Lucid Blocks** te orientará a través de la confusión inicial, proporcionando una hoja de ruta clara para subir de nivel, dominar la compleja cuadrícula de crafteo y asegurar los artefactos más poderosos disponibles en 2026.
+
+A medida que te sumerjas en este mundo, recuerda que la progresión no es lineal. No solo estás escalando una lista de niveles de materiales; estás llenando un rosario espiritual con cuentas brillantes y descubriendo los secretos de Quailia. Desde el simple acto de presionar F11 para una inmersión a pantalla completa hasta las tácticas avanzadas de "dilución de esencia", cada mecánica está diseñada para recompensar la curiosidad. Esta guía consolida el mejor conocimiento de la comunidad y estrategias de expertos para asegurar que tu viaje por Lucid Blocks sea productivo y emocionante.
+
+<Section icon={Map} title="Primeros Pasos: El Sistema de Apoteosis">
+
+El corazón de Lucid Blocks es el Sistema de Apoteosis. En lugar de seguir un libro de recetas, interactúas con una interfaz de seis espacios donde sacrificas objetos para ver qué produce la "esencia". Este sistema premia el ensayo y error, pero puede ser castigador si desperdicias materiales raros como el Tungsteno o la Magnetita.
+
+**Puntos Destacados:**
+- **Pantalla Completa**: Presiona siempre **F11** de inmediato para obtener la mejor experiencia visual y escalado de la interfaz.
+- **Herramientas Iniciales**: Usa objetos que no sean bloques, como **Huesos** o **Palos**, para crear tus primeras herramientas funcionales.
+- **Objetivo de Progresión**: Enfócate en llenar el **Rosario** en tu inventario con cuentas brillantes para llegar al final del juego.
+- **Nivelación**: Ganas experiencia tanto mediante el combate como por el acto de descubrir nuevas recetas de crafteo.
+
+<YouTubeEmbed videoId="2lHd-nnh4mU" title="Guía de Inicio de Lucid Blocks" />
+
+<Callout type="tip" title="El Truco de la Dilución">
+Para recetas básicas, puedes llenar los espacios vacíos de la cuadrícula con materiales baratos como **Tierra** o **Arena**. Esto "diluye" la esencia, pero a menudo aumenta la **cantidad** del producto final que recibes, haciendo que tus recursos duren mucho más.
+</Callout>
+
+### Entendiendo la Lógica de las Esencias
+Cada objeto en el juego posee un valor de esencia oculto. Cuando combinas objetos, el juego calcula la esencia dominante para determinar el resultado. Si mezclas esencias en conflicto, a menudo terminarás con "basura" o artefactos extraños que pueden tener efectos secundarios no deseados.
+
+| Tipo de Esencia | Fuentes Comunes | Categoría Resultante |
+| :--- | :--- | :--- |
+| **Orgánica** | Palos, Hojas, Lana | Herramientas Básicas, Equipo de Utilidad |
+| **Mineral** | Bloques de Guijarros, Magnetita | Armas Pesadas, Herramientas de Minería |
+| **Etérea** | Glándulas, Zarcillos de Mercurio | Varitas Mágicas, Artefactos |
+| **Volátil** | Azufre, Tokens Glaggle | Explosivos, Armas de Fuego |
+
+</Section>
+
+<Section icon={Target} title="Recetas de Crafteo Esenciales para el Inicio del Juego">
+
+Tu primera hora en Lucid Blocks debe dedicarse a asegurar un conjunto confiable de herramientas de recolección. Sin estas, no podrás reunir los materiales necesarios para las fusiones de alto nivel. La siguiente tabla detalla las recetas iniciales más confiables que todo jugador debería memorizar.
+
+| Nombre del Objeto | Ingredientes | Uso Primario |
+| :--- | :--- | :--- |
+| **Pico de Madera** | Palo + (Tierra / Tronco / Arena) | Recolección básica de bloques |
+| **Pico de Hoja** | Palo + Pico de Madera | Recolección rápida de hojas/bayas |
+| **Pico de Hueso** | Hueso + Cuerda | Minería duradera para el inicio del juego |
+| **Pico de Escarcha** | Palo + Osmio | Minería de alta velocidad en biomas fríos |
+| **Pico (Estándar)** | Pico de Madera + Aluminio (x3) | Herramienta de minería estándar de nivel medio |
+| **Hacha de Ciruela** | Pico de Madera + Magnetita | Recolección eficiente de madera |
+
+<Callout type="warning" title="Durabilidad de Herramientas">
+Las herramientas del inicio del juego, como el **Pico de Hoja**, se rompen extremadamente rápido. Úsalas solo para su propósito previsto (recolectar hojas) para evitar desperdiciar recursos en reparaciones constantes.
+</Callout>
+
+### Pasos de Progresión de Herramientas
+Para pasar de la supervivencia básica a la recolección eficiente de recursos, sigue esta ruta de progresión específica:
+
+<Steps>
+  <Step num="1" title="La Fase del Palo">
+    Recoge palos del suelo o rompiendo arbustos pequeños. Combina un **Palo** con cualquier bloque común (Tierra/Arena) para crear tu primer **Pico de Madera**.
+  </Step>
+  <Step num="2" title="La Mejora de Hueso">
+    Caza criaturas pequeñas o encuentra restos para adquirir **Huesos**. Combina un **Hueso** con **Cuerda** (de ovejas o botines del mundo) para crear el **Pico de Hueso**, que es significativamente más duradero.
+  </Step>
+  <Step num="3" title="Integración de Metal">
+    Una vez que encuentres **Bloques de Aluminio**, fusiónalos con tu Pico de Madera existente para mejorarlo a un **Pico** estándar. Esto te permitirá minar materiales más duros como la **Magnetita**.
+  </Step>
+</Steps>
+
+</Section>
+
+<Section icon={Swords} title="Maestría en Combate y Armamento">
+
+El combate en Lucid Blocks varía desde simples encuentros cuerpo a cuerpo hasta complejos duelos mágicos usando varitas que alteran el entorno. Tu elección de arma debe reflejar tu estilo de juego, ya sea que prefieras mazas de golpe pesado o estoques rápidos.
+
+<CardGrid cols={3}>
+  <Card title="El Azrael">
+    - **Ingredientes**: Apéndice de Tungsteno + Palo
+    - **Estilo**: Cuerpo a cuerpo estándar
+    - **Pros**: Daño sólido, fácil de crear a mitad del juego.
+  </Card>
+  <Card title="Cuchillo de Amatista">
+    - **Ingredientes**: Maza + Lana
+    - **Estilo**: Alta velocidad
+    - **Pros**: Extremadamente letal pero requiere corto alcance.
+  </Card>
+  <Card title="Espada Sulfurosa">
+    - **Ingredientes**: Azufre + Apéndice de Tungsteno
+    - **Estilo**: Control de masas
+    - **Pros**: Incendia pasivamente a los enemigos al golpear.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Sinergia de Armas">
+Combinar el **Gel Bruiser** con artefactos de movimiento te permite cazar criaturas "Jelly" voladoras con facilidad, proporcionando un suministro constante de **Goo** para fusiones avanzadas.
+</Callout>
+
+### Varitas Mágicas y Manipulación Ambiental
+Las varitas se crean combinando una base de **Varita de Bola** (Ball Wand) con varios componentes biológicos o minerales. Estos objetos no solo infligen daño; cambian las reglas del mundo que te rodea.
+
+| Nombre de Varita | Receta | Efecto |
+| :--- | :--- | :--- |
+| **Varita de Bola** | Varita Amiga + Cuerda | Dispara proyectiles básicos débiles |
+| **Varita Amiga** | Varita de Bola + Glándula | Invoca aliados menores o mejoras |
+| **Varita de Odio** | Varita de Bola + Carne de Oveja Cruda | Daño de área masivo y destrucción de bloques |
+| **Varita de Fe** | Varita Amiga + Pico de Hueso | Cambios ambientales impredecibles |
+
+</Section>
+
+<Section icon={Sparkles} title="Los 5 Mejores Objetos para Desplazamiento">
+
+El movimiento es la parte más satisfactoria de la **guía de Lucid Blocks**. Al combinar artefactos específicos, puedes volar efectivamente por el mapa, anulando el daño por caída y alcanzando alturas inaccesibles.
+
+**Mejores Objetos de Movilidad:**
+- **Guante de Abeja (Bee Glove)**: El imprescindible absoluto. Permite planear y anula el daño por caída cuando se usa correctamente.
+- **Arpeo (Grappler)**: Al emparejarse con el Guante de Abeja, lanza al jugador a velocidades increíbles.
+- **Mano de Bruma (Haze Hand)**: Aunque inflige cero daño, puede lanzar a los enemigos (o a ti mismo) violentamente por los aires.
+- **Anillo de Ardilla**: Aumenta la altura del salto, esencial para el plataformas vertical.
+- **Botas Doradas**: Aumentan la salud en +4 pero alteran drásticamente la física de tu peso, permitiendo técnicas de movimiento únicas.
+
+<Callout type="info" title="El Lápiz">
+No pases por alto el **Lápiz**. Aunque no es un arma, te permite nombrar a tus **Osos Burbuja**, lo cual es esencial para gestionar tu Quailia personal y organizar a tus compañeros.
+</Callout>
+
+### Creando el Set de Movilidad Definitivo
+Para lograr el "vuelo infinito", necesitas crear los siguientes objetos en orden:
+
+| Objeto | Ingredientes | Bonificación |
+| :--- | :--- | :--- |
+| **Pluma** | Lana + Palo + Arena | Componente base |
+| **Guante de Abeja** | Pluma + Lana | Planeo / Anulación de caída |
+| **Gancho de Metal** | Aluminio + Cuerda | Componente de agarre |
+| **Anillo de Bicho** | Magnetita + Flionida | +1 Velocidad de movimiento |
+
+</Section>
+
+<Section icon={Shield} title="Construcción de Base y Utilidad">
+
+Eventualmente, necesitarás un lugar para almacenar tu creciente colección de artefactos y materiales. Lucid Blocks utiliza un sistema de "Embudo" (Funnel) para la automatización y "Gabinetes" para el almacenamiento manual.
+
+<Checklist
+  id="base-essentials"
+  title="Componentes Esenciales de la Base:"
+  items={[
+    "Crea un Gabinete (Cuerda + Bloque de Madera Cortada) para almacenamiento",
+    "Construye un Embudo (Magnetita + Bloque de Madera Cortada) para clasificar objetos",
+    "Instala Bloques Accelo (Kila + Goo) para elevadores verticales",
+    "Crea una Pinza de Luz (Token Glaggle + Gancho de Metal) para iluminación",
+    "Establece una granja de Osos Burbuja para obtener recursos sostenibles"
+  ]}
+/>
+
+<Callout type="tip" title="Gestión del Agua">
+Usa la **Bomba de Agua** para llenar piscinas decorativas o fosos funcionales alrededor de tu base. El cubo estándar suele ser ineficiente en comparación con el poder de llenado explosivo de la Bomba de Agua.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Preguntas Frecuentes de Lucid Blocks">
+
+<FAQ items={[
+  {
+    question: "¿Cómo subo de nivel rápido en Lucid Blocks?",
+    answer: "La forma más eficiente de subir de nivel es descubriendo nuevas recetas de crafteo en el Sistema de Apoteosis. Cada fusión única otorga un aumento significativo de XP. Alternativamente, cazar criaturas con mucha vida como los Gels proporciona una progresión constante."
+  },
+  {
+    question: "¿Cuál es la mejor arma para principiantes?",
+    answer: "El Azrael es el arma inicial más confiable. Requiere un Apéndice de Tungsteno y un Palo. Ofrece un alcance y perfil de daño equilibrados que funcionan contra la mayoría de las amenazas del inicio del juego."
+  },
+  {
+    question: "¿Cómo dejo de recibir daño por caída?",
+    answer: "Debes crear el Guante de Abeja (también conocido como Guante Planeador). Al mantener presionada la tecla de acción mientras caes, entrarás en un estado de planeo que anula todo el daño por impacto."
+  },
+  {
+    question: "¿Dónde puedo encontrar Tungsteno para recetas avanzadas?",
+    answer: "El Tungsteno se encuentra típicamente en las capas más profundas de las cuevas o fusionando Aluminio con esencias Etéreas específicas. Revisa la receta del 'Apéndice de Tungsteno' (Zarcillo de Mercurio + Aluminio) para una fuente confiable."
+  }
+]} />
+
+</Section>
