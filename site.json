@@ -1,0 +1,113 @@
+{
+  "lastUpdated": "2026-03-30",
+  "sites": [
+    {
+      "launchDate": "2026-03-22",
+      "domain": "animeoverloadwiki.wiki",
+      "keywords": "anime overload",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-22",
+      "domain": "bealuckyblockwiki.wiki",
+      "keywords": "be a lucky block",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-21",
+      "domain": "crimsondesertwiki.wiki",
+      "keywords": "crimson desert",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-22",
+      "domain": "cursedgear.wiki",
+      "keywords": "cursed gear",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-25",
+      "domain": "cursedgearwiki.wiki",
+      "keywords": "cursedgearwiki",
+      "status": "已上线",
+      "template": "template2"
+    },
+    {
+      "launchDate": "2026-03-24",
+      "domain": "dissidiaduellumfinalfantasy.wiki",
+      "keywords": "dissidia duellum final fantasy",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-24",
+      "domain": "dragdrivesimulator.wiki",
+      "keywords": "drag drive simulator",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-27",
+      "domain": "ragnarokoriginclassic.wiki",
+      "keywords": "ragnarokoriginclassic",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-22",
+      "domain": "retrorewindvideostoresimulator.wiki",
+      "keywords": "retro rewind video store simulator",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-21",
+      "domain": "starsavior.wiki",
+      "keywords": "starsavior",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-26",
+      "domain": "tomodachilifelivingthedream.wiki",
+      "keywords": "tomodachilifelivingthedream",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-28",
+      "domain": "lifeisstrangereunion.wiki",
+      "keywords": "lifeisstrangereunion",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-28",
+      "domain": "bitebynight.wiki",
+      "keywords": "bitebynight",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-28",
+      "domain": "reawakened.wiki",
+      "keywords": "reawakened",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-29",
+      "domain": "bridgerwestern.wiki",
+      "keywords": "bridgerwestern",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-30",
+      "domain": "lastepoch.wiki",
+      "keywords": "lastepoch",
+      "status": "已上线"
+    }
+  ]
+}
