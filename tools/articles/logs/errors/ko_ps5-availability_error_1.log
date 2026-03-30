@@ -1,0 +1,44 @@
+=== Translation Error Log ===
+Timestamp: 23360.411781166
+Article: ps5-availability
+Language: ko
+Attempt: 1/2
+
+Error Type: ServerDisconnectedError
+Error Message: Server disconnected
+
+Full Traceback:
+Traceback (most recent call last):
+  File "/Users/libin91/Documents/GameProjects/0113Heartopia/tools/articles/modules/translate/translator.py", line 242, in translate_and_save
+    async with session.post(
+               ~~~~~~~~~~~~^
+        url=self.api_base_url,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        timeout=timeout
+        ^^^^^^^^^^^^^^^
+    ) as response:
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/aiohttp/client.py", line 757, in _connect_and_send_request
+    await resp.start(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/aiohttp/client_reqrep.py", line 539, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/aiohttp/streams.py", line 680, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+
+
+Request Details:
+API URL: https://api.apimart.ai/v1/chat/completions
+Model: gemini-2.0-flash
+Max Tokens: 12288
+Temperature: 0.7
+Timeout: 900
+Content Length: 8327 characters

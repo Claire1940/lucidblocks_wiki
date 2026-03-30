@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-202512151604507373051814YeIIZny",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1765785901,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "---\ntitle: \"Trailer de Defesa da Torre Universal: Vídeo Oficial, Destaques de Recursos e Screenshots Principais (2025)\"\ndescription: \"Assista ao trailer oficial de Defesa da Torre Universal, descubra os principais recursos mostrados e veja screenshots do jogo. Visão geral do lançamento em dezembro de 2025.\"\nkeywords: [\"trailer de defesa da torre universal\", \"trailer oficial\", \"vídeo de gameplay\", \"vitrine de recursos\"]\ncanonical: \"/pt/release/universal-tower-defense-trailer/\"\ndate: \"2025-12-15\"\nvideo:\n  enabled: true\n  youtubeId: \"iUKWhPyhndI\"\n  title: \"Defesa da Torre Universal - Trailer de Lançamento\"\n  description: \"Trailer de lançamento oficial\"\n  duration: \"PT1M45S\"\n  uploadDate: \"2024-12-12\"\n---\n\nO trailer oficial de Defesa da Torre Universal mostra as unidades inspiradas em anime do jogo, a mecânica de defesa de torre e os recursos multijogador. Lançado em 12 de dezembro de 2025 (dois dias antes do lançamento do acesso antecipado), o trailer destaca unidades invocáveis, animações de combate e gameplay cooperativo que definem a experiência de Defesa da Torre Universal.\n\n## Trailer de Lançamento Oficial\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/iUKWhPyhndI\"\n    title=\"Defesa da Torre Universal - Trailer de Lançamento\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\nO trailer de 1 minuto e 45 segundos foi publicado no canal oficial de Defesa da Torre Universal no YouTube. Ele gerou mais de 500.000 visualizações em 48 horas, indicando um forte interesse da comunidade antes do lançamento.\n\n## Principais Recursos Mostrados no Trailer\n\n**Variedade de Unidades**: O trailer mostra mais de 20 unidades diferentes inspiradas em anime com animações únicas\n\n**Sistema de Combate**: Gameplay de defesa de torre em ritmo acelerado com implantação de unidades em tempo real\n\n**Qualidade Visual**: Gráficos Roblox de alta qualidade com efeitos de partículas e animações suaves\n\n**Multijogador**: Breves clipes de gameplay cooperativo mostrando amigos jogando juntos\n\n**Batalhas contra Chefes**: Imagens épicas de encontros com chefes destacando o conteúdo desafiador do final do jogo\n\n**Sistema de Invocação**: Rápido vislumbre da interface de invocação gacha\n\n## Unidades Confirmadas do Trailer\n\nUnidades em destaque:\n- Sung Jin-Woo (com o exército da Legião das Sombras)\n- Dragão de Prata (sequência de transformação)\n- Kirito (combate com duas espadas)\n- Ragna (ativação do modo berserk)\n- Sasuke (habilidades ninja)\n- Lelouch (posicionamento estratégico)\n\nPara classificações completas das unidades, consulte nossa [tier list de Defesa da Torre Universal](/tier-list/universal-tower-defense-tier-list/).\n\n## Música e Atmosfera\n\nO trailer apresenta:\n- Trilha sonora orquestral épica construindo tensão\n- Efeitos sonoros de estilo anime para habilidades\n- Ritmo dramático com crescendos de gameplay\n- Pré-visualizações de falas de personagens icônicos\n\nO design de áudio corresponde a produções de anime de alto orçamento, elevando a experiência Roblox.\n\n## Reação da Comunidade\n\nComentários no YouTube e reações no Discord elogiaram:\n- **Qualidade da Animação**: \"Melhor do que a maioria dos jogos de anime do Roblox\"\n- **Design da Unidade**: \"Personagens reconhecíveis com habilidades fiéis\"\n- **Clareza do Gameplay**: \"Mostra claramente sobre o que é o jogo\"\n\nCríticas menores focaram no desejo de ver mais conteúdo de final de jogo e PvP (não mostrado no trailer).\n\n## Comparando o Trailer com o Jogo Real\n\n**Precisão do Trailer**:\n- Gráficos correspondem ao gameplay real\n- Animações de unidades são precisas\n- Sem cinemáticas enganosas ou filmagens falsas\n- Gameplay mostrado é representativo\n\nAo contrário de alguns trailers de jogos que usam cinemáticas pré-renderizadas, o trailer de Defesa da Torre Universal usa filmagens reais do jogo.\n\n## Vídeos Promocionais Adicionais\n\nAlém do trailer principal:\n\n**Vídeos Sneak Peek**: Clipes curtos de 15 a 30 segundos provocando unidades ou recursos específicos\n\n**Vídeos de Contagem Regressiva**: Conteúdo diário de contagem regressiva que leva ao lançamento\n\n**VODs de Transmissões ao Vivo**: Transmissões de gameplay de desenvolvedores mostrando sessões de jogo estendidas\n\nPara as informações de lançamento mais recentes, consulte nosso guia de [data de lançamento de Defesa da Torre Universal](/release/universal-tower-defense-release-date/).\n\n## Onde Assistir\n\n- **YouTube**: Canal oficial de Defesa da Torre Universal (fonte primária)\n- **X/Twitter**: @universal_td (trailer incorporado)\n- **Discord**: Fixado em #announcements\n- **Página do Roblox**: A descrição do jogo inclui a incorporação do trailer\n\n## Perguntas Frequentes\n\n**O trailer é preciso em relação ao gameplay?**\nSim, todas as filmagens são gameplay real do jogo, não cinemáticas pré-renderizadas.\n\n**Qual é a música do trailer?**\nPeça orquestral personalizada criada para o trailer. Não disponível separadamente.\n\n**Haverá mais trailers?**\nProvavelmente sim para grandes atualizações, embora não confirmado oficialmente.\n\nPara códigos ativos para começar a jogar, visite nossa página de [códigos de Defesa da Torre Universal](/codes/universal-tower-defense-codes/).\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1391,
+    "completion_tokens": 1416,
+    "total_tokens": 2807,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 1391,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

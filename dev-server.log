@@ -1,0 +1,115 @@
+
+> nextjs-shadcn@0.1.0 dev
+> next dev -H 0.0.0.0
+
+   ▲ Next.js 15.5.9
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+   - Environments: .env.local
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+ ✓ Starting...
+ ✓ Ready in 4.9s
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of /Users/libin91/Documents/GameProjects/0201AnimeParadox/node_modules/next-intl/dist/esm/production/extractor/format/index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ ✓ Compiled /middleware in 317ms (146 modules)
+ ○ Compiling /[locale] ...
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of /Users/libin91/Documents/GameProjects/0201AnimeParadox/node_modules/next-intl/dist/esm/production/extractor/format/index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ ✓ Compiled /[locale] in 9.4s (992 modules)
+ ✓ Compiled in 52ms (379 modules)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of /Users/libin91/Documents/GameProjects/0201AnimeParadox/node_modules/next-intl/dist/esm/production/extractor/format/index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ GET / 200 in 10068ms
+ ○ Compiling /[locale]/[...slug] ...
+ ✓ Compiled /[locale]/[...slug] in 6.1s (1314 modules)
+ GET /zh 404 in 6834ms
+ GET /codes 200 in 150ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ GET /tier-list 200 in 134ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ GET /units 200 in 98ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ GET /farming 200 in 77ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ GET /guide 200 in 84ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ GET /gameplay 200 in 62ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ GET /resources 200 in 80ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ GET /community 200 in 63ms
+ GET /codes 200 in 56ms
+ GET /codes/anime-paradox-working-codes 200 in 166ms
+ GET /codes/how-to-redeem-anime-paradox-codes 200 in 179ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ GET /units 200 in 61ms
+ GET /units/anime-paradox-dio 200 in 191ms
+ ○ Compiling /[locale]/privacy-policy ...
+ ✓ Compiled /[locale]/privacy-policy in 571ms (1280 modules)
+ GET /privacy-policy 200 in 1102ms
+ ✓ Compiled /[locale]/terms-of-service in 279ms (1287 modules)
+ GET /terms-of-service 200 in 701ms
+ ✓ Compiled /[locale]/about in 337ms (1294 modules)
+ GET /about 200 in 743ms
+ ✓ Compiled /[locale] in 442ms (962 modules)
+ GET / 200 in 766ms
+ GET / 200 in 73ms
+ GET /codes 200 in 76ms
+ GET / 200 in 70ms
+ GET / 200 in 73ms
+ GET /codes 200 in 41ms
+ GET /codes/anime-paradox-working-codes 200 in 242ms
+ GET /codes/anime-paradox-working-codes 200 in 106ms
+ GET / 200 in 66ms
+ GET /codes/anime-paradox-working-codes 200 in 143ms
+ GET / 200 in 110ms
+ GET /codes 200 in 43ms
+ GET /codes/anime-paradox-working-codes 200 in 118ms
+ ✓ Compiled in 1787ms (1334 modules)
+ ✓ Compiled in 539ms (1334 modules)
+ GET / 200 in 376ms
+ GET /codes 200 in 124ms
+ GET / 200 in 152ms
+ GET /build 404 in 56ms
+ GET /codes/solo-hunters-working-codes 404 in 58ms
+ GET / 200 in 151ms
+ GET /codes 200 in 72ms
+ GET /units 200 in 137ms
+ GET /tier-list 200 in 68ms
+ GET /farming 200 in 77ms
+ GET /guide 200 in 86ms
+ GET /gameplay 200 in 60ms
+ GET /resources 200 in 80ms
+ GET /community 200 in 53ms
+ GET /codes/anime-paradox-working-codes 200 in 130ms
+ GET /units/anime-paradox-dio 200 in 124ms
+ ✓ Compiled /[locale]/privacy-policy in 500ms (952 modules)
+ GET /privacy-policy 200 in 713ms
+ ✓ Compiled /[locale]/terms-of-service in 249ms (957 modules)
+ GET /terms-of-service 200 in 397ms
+ ✓ Compiled /[locale]/about in 431ms (962 modules)
+ GET /about 200 in 584ms
+ ✓ Compiled /[locale]/copyright in 389ms (1342 modules)
+ GET /copyright 200 in 812ms
+ GET / 200 in 187ms
+ GET / 200 in 79ms
+ GET /codes 200 in 129ms
+ GET /codes 200 in 72ms
+ GET /codes/anime-paradox-working-codes 200 in 131ms
+ GET /codes/anime-paradox-working-codes 200 in 117ms
+ GET /codes/anime-paradox-working-codes 200 in 177ms
+ GET / 200 in 100ms
+ GET / 200 in 74ms
+ GET /codes 200 in 89ms
+ GET /codes/anime-paradox-working-codes 200 in 166ms
+ GET /codes 200 in 40ms
+ GET /codes/anime-paradox-working-codes 200 in 112ms
+   Reload env: .env.local
+ ✓ Compiled in 10.1s (553 modules)
+ ✓ Compiled in 355ms (389 modules)
+ ✓ Compiled in 165ms (389 modules)
+ ✓ Compiled in 213ms (389 modules)
+ ✓ Compiled in 200ms (389 modules)
+[?25h

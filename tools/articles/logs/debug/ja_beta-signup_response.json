@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-20260113203515319361603nF1QpYAx",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1768307716,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "---\ntitle: \"ハートピアベータ版へのサインアップ：ハートピアベータ版サインアップの完了方法とテスト機会へのアクセス方法\"\ndescription: \"2026年にハートピアベータ版に参加する方法、参加資格の確認方法、早期アクセスを確保する方法を学びましょう。最新の手順とヒントをご紹介します。今すぐサインアップしてください。\"\nkeywords: [\"ハートピアベータ版サインアップ\", \"ハートピアベータ版登録\", \"ハートピアベータ版テスト\", \"ハートピア早期アクセス\"]\ncanonical: \"/ja/release/beta-signup\"\ndate: \"2026-01-13\"\nvideo:\n  enabled: true\n  youtubeId: \"-RT6YxXuF1s\"\n  title: \"NEW Cozy Life Sim Heartopia FINAL Beta Is Almost HERE… And This NEW Trailer Is CRAZY!\"\n  description: \"NEW Cozy Life Sim Heartopia FINAL Beta Is Almost HERE… And This NEW Trailer Is CRAZY!\"\n  duration: \"PT10M18S\"\n  uploadDate: \"2025-12-14\"\n---\n\nクローズドベータに参加できるかどうかで、発売日にプレイできるか、数ヶ月待つかが決まります。もしあなたが「ハートピアスローライフ」をいち早く体験したいなら、**ハートピアベータ版サインアップ**は、ハンズオンテスト、限定報酬、そしてゲームの形成に声を届けるための入り口となります。ベータ版の枠は限られており、アクティビティやタイミングによって優先順位が付けられるため、これは重要です。以下に、登録方法、当選確率を上げる方法、テストで何を期待できるかについての明確で最新のガイドをご紹介します。\n\n## ハートピアベータ版とは何か、そしてなぜ重要なのか\nハートピアのベータテストは、選ばれたプレイヤーがリリース前のビルドを試す構造化されたプレイ期間です。その目的は、グローバルローンチ前にサーバーに負荷をかけ、システムをバランスさせ、フィードバックを収集することです。**ハートピアベータ版サインアップ**を早期に完了すると、以下のロックを解除できます。\n- 新機能やイベントへの早期アクセス\n- 期間限定のコスメティック報酬（テストによって異なります）\n- 開発チームへの直接的なフィードバックチャネル\n\nコミュニティの報告によると、複数のテストに参加したプレイヤーは、将来招待される可能性が高くなります。これは公式な確認ではなく、プレイヤーの経験に基づいたものですが、積極的に参加することで認知度を高めることができます。\n\n## ハートピアベータ版サインアップ：ステップごとの登録\n**ハートピアベータ版サインアップ**のプロセスは簡単ですが、正確さが重要です。以下の手順に注意深く従ってください。\n1. 公式ベータページにアクセスし、ゲームアカウントでログインします。\n2. 登録フォームに、プラットフォームの希望（PC、iOS、Android）を記入します。\n3. メールや通知をオプトインして、招待を見逃さないようにします。\n4. 送信して、確認を保存します。\n\nプレイヤーからのフィードバックによると、完全な情報を入力し、複数のプラットフォームを選択する（利用可能な場合）と、選択される可能性が高まります。これはコミュニティの経験であり、公式な保証ではありません。\n\n## 参加資格、プラットフォーム、選考基準\n参加資格はテストフェーズによって変更される可能性があります。通常、テスターは基本的な年齢と地域の要件を満たす必要があります。選考基準には、以下が含まれることがよくあります。\n- アカウントの年齢とアクティビティ\n- プラットフォームの可用性\n- サーバー負荷のバランス\n\nリリースのタイミングを追跡している場合は、確認のために[公式日付](https://heartopiagame.com/release/official-date/)ページと合わせて公式発表を確認してください。これにより、現在のスケジュールとの期待値を調整できます。\n\n## ベータテスト中に何を期待するか\n承認されると、ベータクライアントをダウンロードするための指示が届きます。以下を期待してください。\n- フェーズ間の進行状況のワイプ\n- 頻繁なアップデートとホットフィックス\n- ゲーム内アンケートまたはフィードバックフォーム\n\nコミュニティの憶測では、バグを報告し、アンケートに回答すると、後のテストでのチャンスが増える可能性があります。これを保証された利点ではなく、役立つ参加として扱ってください。\n\n## 最終ベータ版の機能と準備方法\n最終ベータ版には通常、発売直前の機能が含まれています。準備するには：\n- デバイスのストレージを解放する\n- ドライバーとOSをアップデートする\n- 公式Discordまたはフォーラムに参加する\n\n発売関連のコンテキストとプラットフォーム固有の情報については、[Steam発売](https://heartopiagame.com/release/steam-launch/)ページに追加の洞察が提供されています。ベータテストと早期アクセスのトレンドに関するより広範な業界のコンテキストについては、PC Gamerが主要なリリースとテストフェーズを定期的にカバーしています（https://www.pcgamer.com/）。\n\nこのビデオでは、プレイヤーが最終ベータフェーズに何を期待すべきかについて説明し、リリースに先駆けて発表された新しいシステムとコンテンツを強調しています。\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/-RT6YxXuF1s\"\n    title=\"NEW Cozy Life Sim Heartopia FINAL Beta Is Almost HERE… And This NEW Trailer Is CRAZY!\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\n## 招待される可能性を高めるためのヒント\n保証された方法はありませんが、経験豊富なプレイヤーは以下を推奨しています。\n- 登録が開始されたらすぐに**ハートピアベータ版サインアップ**を完了する\n- 公式チャネルで積極的に活動する\n- 明確で建設的なフィードバックを提供する\n\nコミュニティの報告によると、早期登録者は優先メールを受信することがよくあります。これも公式ポリシーではなく、プレイヤーの観察に基づいています。\n\nこの発表トレーラーでは、クローズドベータの範囲と目標、およびプレイヤーが参加する方法について概説しています。\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/6J8-LRcId-A\"\n    title=\"Heartopia - Official Closed Beta Test Announcement Trailer\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\n## 避けるべき一般的な間違い\n**ハートピアベータ版サインアップ**のプロセス中に、これらの落とし穴を避けてください。\n- 非アクティブなメールアドレスを使用する\n- プラットフォームの要件を無視する\n- ベータ版の進行状況が引き継がれると想定する\n\nベータ環境はテスト用であるため、リセットは正常です。これを事前に理解しておくと、フラストレーションを防ぐことができます。\n\n## よくある質問\n**Q: ハートピアベータ版サインアップを完了するにはどうすればよいですか？**\nA: 公式ベータページで登録し、詳細を送信し、必要に応じてメールで確認します。\n\n**Q: ハートピアベータ版は無料で参加できますか？**\nA: はい、ベータ版への参加は無料ですが、枠は限られています。\n\n**Q: ベータ版の進行状況は発売に引き継がれますか？**\nA: 通常はありません。ほとんどのベータテストでは、リリース前に進行状況がリセットされます。\n\n**Q: ハートピアベータ版サインアップを送信した後、チャンスを増やすことはできますか？**\nA: コミュニティで積極的に活動し、アンケートに回答すると役立つ可能性があると、プレイヤーからのフィードバックがあります。\n\nこのガイドに従い、早期に登録することで、発売前に「ハートピアスローライフ」を体験し、最終的な磨きに貢献するチャンスを最大限に高めることができます。\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1829,
+    "completion_tokens": 1883,
+    "total_tokens": 3712,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 1829,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

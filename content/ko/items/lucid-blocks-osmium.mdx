@@ -1,0 +1,205 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Lucid Blocks 오스뮴: 2026년 최고의 초반 채광 및 제작 가이드",
+  description: "Lucid Blocks에서 오스뮴 사용법을 마스터하세요. Frost Pick 제작 방법, Apotheosis 시스템 활용법, 2026년 초반 게임 진행 속도를 높이는 방법을 배워보세요.",
+  category: "가이드",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Lucid+Blocks+Osmium+Guide",
+  date: "2026-03-17",
+  author: "Lucid 위키 팀",
+  keywords: "Lucid Blocks, 오스뮴, 제작 가이드, Frost Pick, Apotheosis"
+}
+
+<Callout type="info" title="빠른 가이드">
+- **Lucid Blocks 오스뮴**: 주로 고속 채광 도구 제작에 사용되는 중요한 초반 자원입니다.
+- **Frost Pick**: **오스뮴**과 **Stick(막대기)**을 결합하여 만드는 필수적인 첫 번째 업그레이드 도구입니다.
+- **Apotheosis 시스템**: 정해진 제작법보다 실험을 중시하는 핵심적인 자유 형태 융합 메커니즘입니다.
+- **우선 목표**: 안전한 기지와 저장 허브를 구축하기 위해 조기에 **Personal Qualia**를 해제하세요.
+- **전투 메타**: 중반 생존을 위해 **Azrael** 검에서 **Tendril Rapier**로 전환하세요.
+</Callout>
+
+Lucid Blocks는 전통적인 제작 방식 대신 신비로운 Apotheosis 시스템이 존재하는 초현실적인 복셀 생존 경험을 제공합니다. **Lucid Blocks 오스뮴**을 활용하는 방법을 이해하는 것은 이 꿈 같은 샌드박스 세계에 발을 들인 모든 신규 플레이어에게 결정적인 전환점이 됩니다. 나무, 돌, 철로 이어지는 선형적인 진행을 강요하는 다른 생존 게임과 달리, Lucid Blocks는 융합을 통해 표준적인 한계를 뛰어넘도록 장려합니다. 오스뮴을 조기에 확보하면 무한한 세계에서 자원 수집 시간을 획기적으로 줄여주는 도구인 Frost Pick을 사용할 수 있게 됩니다.
+
+이 가이드는 초기 발견부터 고급 도구 통합에 이르기까지 **Lucid Blocks 오스뮴** 생태계에 대한 포괄적인 분석을 제공합니다. Apotheosis 융합 UI의 미묘한 차이, 초반 생존을 위한 최고의 제작법, 그리고 Personal Qualia 구축의 전략적 중요성을 살펴볼 것입니다. Tiamana Leylines을 탐험하든 Fog Meadow에서 Manikin을 물리치든, 오스뮴을 마스터하는 것은 2026년의 초현실적인 풍경을 완전히 지배하기 위한 첫 번째 단계입니다.
+
+<Section icon={Target} title="오스뮴과 Apotheosis 시스템의 이해">
+
+오스뮴은 Lucid Blocks의 초반 진행에서 초석이 되는 재료입니다. 흙이나 모래 같은 일반적인 블록은 풍부하지만, 오스뮴은 특수한 "Frost(서리)" 등급 장비를 제작할 수 있게 해주는 독특한 "Essence(정수)"를 지니고 있습니다. Apotheosis 시스템은 깔끔한 제작법 목록을 제공하지 않습니다. 대신, 6개의 슬롯 그리드에 아이템을 배치하고 그 결과로 나타나는 변이를 관찰해야 합니다.
+
+**비디오 하이라이트:**
+- **Apotheosis 로직**: 에너지를 방출하고 작업 게이지를 채우기 위해 블록을 선택하는 방법을 배웁니다.
+- **튜토리얼 기초**: 전략 퍼즐 게임과 유사하게 작업 색상을 이해하고 다음 이동을 계획합니다.
+- **라인 메커니즘**: 포인트와 자원 수집을 극대화하기 위해 블록을 통해 연속적인 선을 그립니다.
+
+<YouTubeEmbed videoId="kNiNwJAk86Q" title="Lucid Blocks 게임 플레이 메커니즘" />
+
+융합 UI는 희생하는 아이템들의 집합적인 속성을 살펴봅니다. 오스뮴을 막대기나 나무와 같은 유기 재료와 섞으면 시스템이 안정화되어 기능적인 도구가 됩니다. 그러나 너무 이질적인 요소를 많이 추가하면 "희석"이 발생하여 오스뮴의 핵심 속성을 잃게 되고, 쓸모없는 쓰레기나 예측 불가능한 효과를 가진 기괴한 유물이 만들어질 수 있습니다.
+
+| 자원 유형 | 주요 용도 | 정수 속성 |
+| --- | --- | --- |
+| **오스뮴** | 도구 제작 | 서리/속도 |
+| **알루미늄** | 구조물/무기 | 내구도/강도 |
+| **자철석** | 이동/기술 | 끌어당김/유틸리티 |
+| **텅스텐** | 전투/고급 | 경도/데미지 |
+| **수은** | 슬라임 파밍 | 성장/유기물 |
+
+<Callout type="tip" title="프로의 팁">
+Apotheosis 시스템을 사용할 때 6개 슬롯을 모두 채울 필요는 없습니다. 적은 수의 아이템을 사용하면 **Frost Pick**과 같은 더 안정적이고 기본적인 도구가 만들어지는 경우가 많으며, 모든 슬롯을 채우면 희귀 재료를 망칠 수 있는 "변이" 확률이 높아집니다.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Frost Pick: 첫 번째 주요 이정표">
+
+**Lucid Blocks 오스뮴**에 관해 가장 자주 묻는 질문은 이를 어떻게 효과적으로 채광 도구로 만드느냐는 것입니다. **Frost Pick**은 기본적인 나무나 잎사귀 곡괭이보다 일반 블록을 훨씬 빠르게 채집할 수 있기 때문에 최고의 초반 해금 아이템으로 널리 간주됩니다. 이러한 속도 향상은 전통적인 경로를 고수하는 플레이어보다 훨씬 일찍 기지 건설 및 고급 융합에 필요한 재료를 모을 수 있게 해줍니다.
+
+<Steps>
+  <Step num="1" title="원재료 수집">
+    시작 바이옴에서 오스뮴 매장지를 찾으세요. 또한 나무를 채집하거나 잎사귀에 **Leaf Pick**을 사용하여 얻을 수 있는 **Sticks(막대기)**도 기본적으로 필요합니다.
+  </Step>
+  <Step num="2" title="Apotheosis UI 접속">
+    제작 인터페이스를 엽니다. 융합 슬롯에 **Osmium** 블록 하나와 **Stick** 하나를 배치합니다.
+  </Step>
+  <Step num="3" title="융합 실행">
+    Apotheosis 프로세스를 시작합니다. 결과물은 **Frost Pick**(때때로 Ice Pick으로 불림)이어야 합니다. 즉시 저널에 이 기록을 남기세요.
+  </Step>
+  <Step num="4" title="채광 가속화">
+    Frost Pick을 장착하여 알루미늄과 자철석 채광을 시작하세요. 이 자원들은 다음 단계의 무기와 이동 장비에 필요합니다.
+  </Step>
+</Steps>
+
+| 도구 이름 | 재료 | 최적의 사용 사례 |
+| --- | --- | --- |
+| **Wooden Pick** | Stick + Dirt/Log | 극초반 수집 |
+| **Leaf Pick** | Stick + Wooden Pick | 막대기/베리 채집 |
+| **Frost Pick** | Stick + Osmium | 빠른 일반 채광 |
+| **Bone Pick** | Bone + String | 높은 내구도 채광 |
+| **Pickaxe** | Wooden Pick + Aluminum (x3) | 중장비 굴착 |
+
+<Callout type="warning" title="내구도 주의">
+**Frost Pick**은 매우 빠르지만 내구도는 Aluminum Pickaxe보다 낮습니다. 기지에서 멀리 떨어져 있을 때를 대비해 교체용을 제작할 수 있도록 항상 인벤토리에 여분의 오스뮴 블록을 보관하세요.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="전투 및 방어: 기본 채광 그 이상">
+
+**Lucid Blocks 오스뮴**으로 자원 흐름을 확보했다면, 이제 Lucid Blocks의 적대적인 생명체들에 대비해야 합니다. 이 게임에는 준비되지 않은 플레이어를 쉽게 압도할 수 있는 Manikin이나 거대 거미와 같은 초현실적인 적들이 등장합니다. 2026년의 전투는 근접 무기, 투사체 지팡이, 환경 조작의 혼합에 의존합니다.
+
+<CardGrid cols={3}>
+  <Card title="근접 화력">
+    - **Azrael**: Stick과 Tungsten Appendage로 제작.
+    - **Tendril Rapier**: Azrael을 자철석으로 업그레이드.
+    - 높은 단일 대상 데미지.
+  </Card>
+  <Card title="원거리 유틸리티">
+    - **Ball Wand**: 기본 투사체 무기 (Friend Wand + String).
+    - **Hate Wand**: 범위 데미지 및 블록 파괴.
+    - 거리 유지에 이상적임.
+  </Card>
+  <Card title="군중 제어">
+    - **Sulfurous Sword**: 타격 시 적에게 불을 붙임.
+    - **Haze Hand**: 적을 공중으로 날려 보냄.
+    - 대규모 그룹 관리에 최적.
+  </Card>
+</CardGrid>
+
+초반에서 중반 전투로의 전환은 단순한 막대기와 뼈에서 벗어나 정련된 금속과 마법의 정수로 이동하는 것을 의미합니다. **Tendril Rapier**는 속도와 사거리의 균형 덕분에 현재 대부분의 플레이어에게 메타 선택지로 꼽히며, 빠르게 움직이는 Manikin을 상대로 효과적입니다.
+
+| 무기 이름 | 필요 재료 | 특수 효과 |
+| --- | --- | --- |
+| **Azrael** | Stick + Tungsten Appendage | 높은 기본 데미지 |
+| **Tendril Rapier** | Azrael + Magnetite | 사거리/속도 증가 |
+| **Mace** | Bone + Pebble Blocks | 높은 밀쳐내기 |
+| **Amethyst Knife** | Mace + Wool | 치명적인 치명타 데미지 |
+| **Sulfurous Sword** | Sulfur + Tungsten Appendage | 지속 화염 데미지 |
+
+<Callout type="success" title="전투 팁">
+적 무리를 상대하는 데 어려움을 겪고 있다면 **Sulfurous Sword**를 제작하세요. 지속적인 점화 효과 덕분에 "치고 빠지기" 전략이 가능하며, 위치를 재선정하는 동안 화염 데미지가 적의 체력을 깎아내립니다.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="이동 장비 및 생존 유틸리티">
+
+Lucid Blocks에서 이동은 전투만큼이나 중요합니다. 무한한 세계 생성 특성상 걸어서 건널 수 없는 수직 절벽, 깊은 바다, 광활한 틈새를 자주 마주하게 됩니다. **Lucid Blocks 오스뮴**을 사용하여 초반 채광 속도를 높이면 Hookshot이나 Glider Glove와 같은 이동 장비의 구성 요소를 빠르게 모을 수 있습니다.
+
+이러한 아이템은 단순한 편의 시설이 아니라, 고티어 바이옴에 도달하고 Tiamana Leyline 챌린지를 완료하는 데 필수적입니다. 이동 장비는 종종 유기 재료(양모, 깃털)와 정련된 광물(알루미늄, 자철석)의 혼합을 필요로 합니다.
+
+| 장비 이름 | 필요 재료 | 기능 |
+| --- | --- | --- |
+| **Hookshot** | Aluminum + String | 수직/수평 그래플링 |
+| **Glider Glove** | Feather + Wool | 낙하 속도 감소 및 슬라이딩 |
+| **Bee Glider** | Feather + Wool (Advanced) | 효율적인 장거리 비행 |
+| **Bug Ring** | Magnetite + Flionide | 이동 속도 +1 |
+| **Squirrel Ring** | Bug Ring + Cut Wood | 점프 높이 +1 |
+| **Golden Boots** | Leaky Pendant + Mercury | 무게 물리 법칙 변경 |
+
+<Callout type="info" title="저장 전략">
+인벤토리가 원재료로 넘쳐나게 두지 마세요. 초기에 **Cache Cubes**나 **Cabinets**(String + Cut Wood)를 제작하세요. **Personal Qualia**를 해제하면 모든 저장 시설을 그곳으로 옮겨 중앙 집중식 허브를 만드세요.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="초반 게임 진행 체크리스트">
+
+Lucid Blocks에서의 시간을 최대한 활용하려면 다음 우선순위 체크리스트를 따르세요. 초반에 **Lucid Blocks 오스뮴**에 집중하면 이 리스트의 모든 후속 작업을 훨씬 쉽게 달성할 수 있습니다.
+
+<Checklist
+  id="lucid-blocks-progression"
+  title="2026년 필수 이정표:"
+  items={[
+    "첫 번째 오스뮴 매장지 찾아 채광하기",
+    "Apotheosis 시스템을 사용하여 Frost Pick 제작하기",
+    "기지 건설을 위한 Personal Qualia 이정표 해제하기",
+    "방어를 위해 Azrael 같은 기본 무기 제작하기",
+    "슬라임 파밍을 위한 Mercury Capsule 루프 구축하기",
+    "더 나은 이동성을 위해 Hookshot 또는 Glider Glove 획득하기",
+    "Tiamana Leyline을 발견하고 저널에 기록하기"
+  ]}
+/>
+
+기초적인 루틴을 확립하는 것이 장기적인 성공의 열쇠입니다. 여기에는 Mercury Capsule을 사용하여 슬라임을 소환하는 것과 같은 반복 가능한 재료 루프를 설정하는 것이 포함됩니다. 슬라임은 **Tendril Rapier**와 **Accelo Block**(엘리베이터 같은 발판) 제작에 필수적인 Tendril과 Goo를 드롭합니다.
+
+| 파밍 아이템 | 필요 용도 | 출처 |
+| --- | --- | --- |
+| **Mercury Tendril** | Azrael / Tungsten Appendage | 슬라임 (Mercury Capsules) |
+| **Goo** | Accelo Blocks / 접착제 | 슬라임 |
+| **Glass Shards** | 고급 지팡이 / 창문 | 모래 제련/파밍 |
+| **Osmium** | Frost Picks / 기술 | 시작 바이옴 채광 |
+
+<Callout type="tip" title="파밍 팁">
+**Funnels**(Magnetite + Cut Wood)를 사용하여 기지를 자동화할 수 있습니다. 이것은 호퍼 상자 역할을 하여 파밍된 재료를 수동 개입 없이 저장용 Cache Cubes로 직접 보낼 수 있게 해줍니다.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Lucid Blocks FAQ">
+
+<FAQ items={[
+  {
+    question: "Lucid Blocks 오스뮴을 찾기에 가장 좋은 장소는 어디인가요?",
+    answer: "오스뮴은 일반적으로 시작 바이옴과 Fog Meadows에서 발견됩니다. 독특한 푸르스름한 은색 빛을 띠는 블록을 찾으세요. 첫 번째 조각을 얻은 후 Frost Pick을 사용하면 더 빨리 채광할 수 있습니다."
+  },
+  {
+    question: "Apotheosis 시스템에서 융합을 취소할 수 있나요?",
+    answer: "아니요, 일단 융합을 시작하면 재료가 소모됩니다. 그렇기 때문에 오스뮴이나 텅스텐 같은 희귀 자원을 낭비하지 않도록 성공적인 제작법을 저널에 기록하는 것이 중요합니다."
+  },
+  {
+    question: "Personal Qualia란 무엇이며 왜 필요한가요?",
+    answer: "Personal Qualia는 개인 홈 베이스 역할을 하는 주요 진행 이정표입니다. 재료를 저장하고, 융합을 계획하며, Manikin과 같은 적대적인 생명체로부터 벗어나 재정비할 수 있는 안전한 공간을 제공합니다."
+  },
+  {
+    question: "Frost Pick이 Aluminum Pickaxe보다 좋은가요?",
+    answer: "Frost Pick은 일반적인 채광 속도가 더 빠르지만 내구도가 낮습니다. Aluminum Pickaxe는 속도보다 내구성이 더 중요한 대규모 굴착 프로젝트에 적합한 '중장비' 도구입니다."
+  }
+]} />
+
+</Section>

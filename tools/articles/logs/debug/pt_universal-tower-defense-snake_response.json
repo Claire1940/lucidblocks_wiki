@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-20251215160449681644167umy7DxZ2",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1765785899,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "---\ntitle: \"Universal Tower Defense Snake: Links de \\\"Sneak\\\" Teaser e as Atualizações Mais Recentes (2025)\"\ndescription: \"Procurou por 'Universal Tower Defense snake'? Provavelmente quis dizer 'sneak' (teaser). Encontre todos os vídeos de sneak peek, as últimas atualizações e onde assistir.\"\nkeywords: [\"universal tower defense snake\", \"erro de digitação sneak peek\", \"teasers\", \"vídeos de pré-visualização\"]\ncanonical: \"/pt/release/universal-tower-defense-snake/\"\ndate: \"2025-12-15\"\nvideo:\n  enabled: true\n  youtubeId: \"wsr8o-PRYTk\"\n  title: \"Universal Tower Defense - Teaser Exclusivo do Rogue Oni\"\n  description: \"Teaser exclusivo da unidade Rogue Oni\"\n  duration: \"PT0M45S\"\n  uploadDate: \"2024-12-10\"\n---\n\nProcurou por \"Universal Tower Defense snake\" e não encontrou nada? Provavelmente quis dizer \"sneak\" (prévia/teaser). Esse erro de digitação comum acontece ao procurar por conteúdo de sneak peek sobre os próximos recursos. Este guia redireciona você para todos os sneak peeks de Defesa da Torre Universal, os teasers mais recentes e onde encontrar novos conteúdos de pré-visualização.\n\n## O Termo de Pesquisa Correto\n\nVocê está procurando por **\"Universal Tower Defense sneak\"** (não \"snake\"). \"Sneak\" se refere a sneak peek ou sneak preview - vídeos teaser curtos mostrando o conteúdo que está por vir antes do lançamento oficial.\n\nPara informações completas sobre sneak peek, consulte nosso [guia de sneak de Defesa da Torre Universal](/release/universal-tower-defense-sneak/).\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/wsr8o-PRYTk\"\n    title=\"Universal Tower Defense - Teaser Exclusivo do Rogue Oni\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\n## Por que \"Snake\" em vez de \"Sneak\"?\n\nRazões comuns para esse erro de digitação:\n- Autocorreção alterando \"sneak\" para \"snake\"\n- Digitação rápida causando troca de letras\n- Voz para texto ouvindo errado\n- \"Snake\" é uma palavra mais comum que \"sneak\"\n\nVocê não está sozinho - isso está entre os erros de digitação de pesquisa de jogos mais comuns.\n\n## Últimos Sneaks de Defesa da Torre Universal\n\n**Sneak Peeks Recentes**:\n- Teaser do personagem Rogue Oni (10 de dezembro de 2024)\n- Melhorias na animação de invocação\n- Pré-visualização do multiplayer cooperativo\n- Novos efeitos visuais de habilidade\n\nEsses teasers aparecem no Discord oficial, X/Twitter e YouTube antes dos lançamentos de conteúdo.\n\n## Onde Assistir Sneaks (Não Snakes!)\n\n**Fontes Oficiais**:\n- Discord: discord.com/invite/universaltd (#announcements)\n- X/Twitter: @universal_td\n- YouTube: Canal oficial da Universal TD\n\nJunte-se ao [Discord de Defesa da Torre Universal](/discord/universal-tower-defense-discord/) para notificações instantâneas quando novos sneaks forem lançados.\n\n## Nenhum Conteúdo Relacionado a Cobra\n\nPara esclarecer: Defesa da Torre Universal não apresenta:\n- Unidades ou personagens de cobra\n- Fases com tema de cobra\n- Inimigos de cobra\n\nSe você realmente quer conteúdo de cobra, isso não faz parte do tema deste jogo. Defesa da Torre Universal se concentra em defesa de torre inspirada em anime com personagens de várias séries de anime.\n\n## Outros Erros de Digitação Comuns\n\nErros de digitação semelhantes que os jogadores cometem:\n- \"Snea k\" (espaço inserido)\n- \"Sneke\" (troca de letras)\n- \"Sneek\" (e duplo)\n- \"Snek\" (ortografia de meme da internet)\n\nSempre use \"sneak\" para conteúdo de pré-visualização.\n\n## Conteúdo Sneak Real para Assistir\n\nNavegue por estas pré-visualizações oficiais:\n1. Teaser do Rogue Oni (unidade mais recente)\n2. Pré-visualizações da mecânica de jogo\n3. Próximos anúncios de recursos\n4. Teasers de eventos\n\nPara conteúdo de pré-visualização abrangente, visite nosso [guia de sneak peek](/release/universal-tower-defense-sneak/).\n\n## Perguntas Frequentes\n\n**Existe uma unidade de cobra em Defesa da Torre Universal?**\nNão, nenhum conteúdo com tema de cobra existe atualmente. Provavelmente quis dizer \"sneak\" (pré-visualização).\n\n**Por que os resultados da pesquisa mostram \"snake\"?**\nOs mecanismos de pesquisa às vezes corrigem automaticamente ou sugerem \"snake\" em vez de \"sneak\" devido à frequência da palavra.\n\n**Onde posso encontrar conteúdo sneak?**\nDiscord oficial, YouTube e X/Twitter postam sneak peeks regularmente.\n\nPara informações e atualizações de lançamento, consulte nosso guia de [data de lançamento de Defesa da Torre Universal](/release/universal-tower-defense-release-date/).\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1335,
+    "completion_tokens": 1258,
+    "total_tokens": 2593,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 1335,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

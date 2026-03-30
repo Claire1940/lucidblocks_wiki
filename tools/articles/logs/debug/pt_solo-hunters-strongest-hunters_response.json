@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-202601280308071292088581PWyVMI1",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1769540888,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'\nimport { Callout } from '@/components/mdx/Callout'\nimport { Card, CardGrid } from '@/components/mdx/CardGrid'\nimport { Checklist } from '@/components/mdx/Checklist'\nimport { FAQ } from '@/components/mdx/FAQ'\nimport { Steps, Step } from '@/components/mdx/Steps'\nimport { Section } from '@/components/mdx/Section'\nimport { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'\n\nexport const metadata = {\n  title: \"Caçadores Solitários Mais Fortes: Ranking & Análise 2026\",\n  description: \"Descubra os caçadores solitários mais poderosos em Solo Leveling, conhecidos como Caçadores de Nível Nacional. Este guia classifica sua força, habilidades únicas e impacto no cenário mundial em 2026.\",\n  category: \"Ranking de Caçadores\",\n  image: \"https://placehold.co/800x400/8B5CF6/fff?text=Solo+Leveling+Strongest+Hunters\",\n  date: \"2026-01-25\",\n  author: \"Equipe Wiki de Solo Leveling\"\n}\n\n<Callout type=\"info\" title=\"Guia Rápido para os Caçadores Solitários Mais Fortes\">\n- Os **caçadores solitários mais fortes** são conhecidos como Caçadores de Nível Nacional, exercendo um poder comparável ao de nações inteiras.\n- Esses indivíduos de elite frequentemente derivam sua imensa força de serem **receptáculos para os Governantes**, concedendo-lhes habilidades únicas.\n- **Thomas Andre** e **Liu Zhigang** consistentemente se classificam entre os melhores, mostrando proezas de combate e profundidade estratégica incomparáveis.\n- **Sung Jinwoo** acaba transcendendo todos os rankings convencionais, evoluindo para a entidade mais forte indiscutível do universo.\n- Entender suas habilidades únicas, como **Autoridade do Governante** e **Manifestação do Corpo Espiritual**, é crucial para apreciar seu poder.\n</Callout>\n\nNo universo emocionante de Solo Leveling, onde Portais interdimensionais liberam bestas mágicas aterrorizantes, o destino da humanidade repousa sobre os ombros de seus defensores mais poderosos: os Caçadores. Enquanto o título de Rank S denota força incrível, um escalão raro existe acima dele. Estes são os Caçadores de Nível Nacional — indivíduos cujo poder bruto, influência e capacidades de combate são tão imensos que são considerados equivalentes a militares nacionais inteiros. Eles são os **caçadores solitários mais fortes**, figuras capazes de alterar o equilíbrio global de poder e confrontar ameaças que aniquilariam forças menores. Este guia abrangente, atualizado para 2026, investiga as origens, os poderes únicos e o ranking definitivo dessas figuras lendárias, culminando no mais forte indiscutível de todos.\n\n<Section icon={Trophy} title=\"A Gênese dos Caçadores de Nível Nacional\">\n\nA designação de um Caçador de Nível Nacional não é meramente um título; é um testemunho de força incomparável e um reconhecimento da capacidade de um caçador de defender sozinho uma nação. Esta classe de elite surgiu após uma das crises mais angustiantes da humanidade: o aparecimento do dragão Kamish, o chefe do primeiro Portal de Rank S. Cinco Caçadores de Rank S se uniram para derrotar esta entidade monstruosa, um feito que consolidou seu status e lhes rendeu autoridade comparável à de estados soberanos. Este evento crucial estabeleceu os critérios e a lenda do Caçador de Nível Nacional.\n\nEsses indivíduos não são apenas poderosos; eles possuem habilidades que superam em muito as dos Caçadores de Rank S regulares. Suas capacidades únicas geralmente derivam de uma profunda conexão com os Governantes, uma antiga raça angelical. Ao se tornarem receptáculos para esses Governantes, os caçadores ganham acesso a um imenso poder divino, manifestando-se em habilidades potentes como Manifestação do Corpo Espiritual e Autoridade do Governante. Isso os torna não apenas lutadores, mas armas vivas capazes de remodelar campos de batalha.\n\n**Destaques do Vídeo:**\n- Explica a origem e o significado dos Caçadores de Nível Nacional na narrativa de Solo Leveling.\n- Detalha a escala de poder que os distingue dos Caçadores de Rank S e sua influência política.\n- Apresenta o conceito de Governantes e Monarcas e sua conexão direta com a força de um caçador.\n- Fornece contexto para o sistema de ranking único e os desafios enfrentados por esses indivíduos poderosos.\n- Destaca o evento fundamental da derrota de Kamish como o catalisador para seu reconhecimento.\n\n<YouTubeEmbed videoId=\"oFEFe_-sYG8\" title=\"Top Five STRONGEST Hunters in Solo Leveling!\" />\n\nO poder concedido a esses receptáculos é transformador. Permite-lhes aproveitar uma força cósmica, concedendo-lhes feitos de força e controle que são simplesmente impossíveis para não receptáculos. Esta intervenção divina é o que verdadeiramente os eleva, tornando cada Caçador de Nível Nacional um monumento ao poder bruto e um símbolo de esperança para a humanidade.\n\n<Callout type=\"tip\" title=\"Empoderamento Divino\">\nO verdadeiro diferenciador para a maioria dos Caçadores de Nível Nacional é seu status como **receptáculos para os Governantes**. Isso lhes concede acesso a habilidades como **Manifestação do Corpo Espiritual** e **Autoridade do Governante**, elevando seu poder muito além dos limites convencionais de Rank S.\n</Callout>\n\n</Section>\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2739,
+    "completion_tokens": 1292,
+    "total_tokens": 4031,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 2739,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

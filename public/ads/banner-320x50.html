@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adsterra 320x50 Mobile Banner</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 320px;
+      max-width: 320px;
+      height: 50px;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* 限制广告容器的最大宽度 */
+    body > * {
+      max-width: 320px !important;
+      width: 320px !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- 1. 先设置 atOptions -->
+  <script type="text/javascript">
+    atOptions = {
+      'key': '7a00d37a070d0b32f15cef63182987e7',
+      'format': 'iframe',
+      'height': 50,
+      'width': 320,
+      'params': {}
+    };
+  </script>
+  <!-- 2. 再加载 invoke.js -->
+  <script type="text/javascript" src="//www.highperformanceformat.com/7a00d37a070d0b32f15cef63182987e7/invoke.js"></script>
+</body>
+</html>

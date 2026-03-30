@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-20260128030807189229896Jj7AOPws",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1769540888,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'\nimport { Callout } from '@/components/mdx/Callout'\nimport { Card, CardGrid } from '@/components/mdx/CardGrid'\nimport { Checklist } from '@/components/mdx/Checklist'\nimport { FAQ } from '@/components/mdx/FAQ'\nimport { Steps, Step } from '@/components/mdx/Steps'\nimport { Section } from '@/components/mdx/Section'\nimport { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'\n\nexport const metadata = {\n  title: \"Solo Avcıları En Güçlü Avcılar: 2026 Sıralaması ve Analizi\",\n  description: \"Solo Avcıları'nda, Ulusal Seviye Avcıları olarak bilinen en güçlü solo avcıları keşfedin. Bu kılavuz, 2026'da güçlerini, benzersiz yeteneklerini ve dünya sahnesindeki etkilerini sıralıyor.\",\n  category: \"Avcı Sıralaması\",\n  image: \"https://placehold.co/800x400/8B5CF6/fff?text=Solo+Leveling+Strongest+Hunters\",\n  date: \"2026-01-25\",\n  author: \"Solo Leveling Wiki Ekibi\"\n}\n\n<Callout type=\"info\" title=\"En Güçlü Solo Avcılara Hızlı Bakış\">\n- **En güçlü solo avcılar**, ulusal seviyedeki ordulara denk güçlere sahip oldukları bilinen Ulusal Seviye Avcıları olarak bilinir.\n- Bu elit bireyler, genellikle eşsiz yetenekler bahşeden **Hükümdarlar için birer kap** olmaktan gelen muazzam güçlerini alırlar.\n- **Thomas Andre** ve **Liu Zhigang** sürekli olarak en üst sıralarda yer alarak benzersiz dövüş yeteneklerini ve stratejik derinliklerini sergiliyorlar.\n- **Sung Jinwoo** sonuç olarak tüm geleneksel sıralamaları aşarak evrendeki tartışmasız en güçlü varlık haline gelir.\n- **Hükümdar Otoritesi** ve **Ruhsal Beden Tezahürü** gibi benzersiz yeteneklerini anlamak, güçlerini takdir etmek için çok önemlidir.\n</Callout>\n\nSolo Avcıları'nın heyecan verici evreninde, boyutlar arası Geçitler korkunç büyülü canavarları serbest bırakırken, insanlığın kaderi en güçlü savunucularının omuzlarında yatıyor: Avcılar. S-Sınıfı unvanı inanılmaz gücü ifade ederken, bunun üzerinde nadir bir kademe vardır. Bunlar, ham güçleri, etkileri ve savaş yetenekleri o kadar büyük olan ve tüm ulusal ordulara eşdeğer kabul edilen Ulusal Seviye Avcıları'dır. Onlar, küresel güç dengesini değiştirebilen ve daha küçük kuvvetleri yok edecek tehditlerle yüzleşebilen **en güçlü solo avcılar**dır. 2026 için güncellenen bu kapsamlı kılavuz, bu efsanevi figürlerin kökenlerini, benzersiz güçlerini ve kesin sıralamasını inceliyor ve sonuçta tartışmasız en güçlü olanıyla sonuçlanıyor.\n\n<Section icon={Trophy} title=\"Ulusal Seviye Avcıların Kökeni\">\n\nUlusal Seviye Avcı unvanı sadece bir unvan değildir; benzersiz gücün bir kanıtı ve bir avcının tek başına bir ulusu savunma kapasitesinin kabulüdür. Bu elit sınıf, insanlığın en üzücü krizlerinden birinin ardından ortaya çıktı: ilk S-Sınıfı Geçidin patronu olan Kamish ejderhasının ortaya çıkışı. Beş S-Sınıfı Avcı, bu canavar varlığı yenmek için birleşti ve bu, statülerini pekiştiren ve onlara egemen devletlerinkiyle karşılaştırılabilir bir otorite kazandıran bir başarıydı. Bu önemli olay, Ulusal Seviye Avcı kriterlerini ve efsanesini oluşturdu.\n\nBu bireyler sadece güçlü değiller; normal S-Sınıfı Avcılarınkini büyük ölçüde aşan yeteneklere sahipler. Benzersiz yetenekleri genellikle eski bir melek ırkı olan Hükümdarlarla derin bir bağlantıdan kaynaklanır. Bu Hükümdarlar için birer kap olarak, avcılar Ruhsal Beden Tezahürü ve Hükümdar Otoritesi gibi güçlü becerilerde tezahür eden muazzam ilahi güce erişirler. Bu onları sadece savaşçılar değil, savaş alanlarını yeniden şekillendirebilen yaşayan silahlar yapar.\n\n**Video Öne Çıkanları:**\n- Solo Avcıları anlatısında Ulusal Seviye Avcıların kökenini ve önemini açıklar.\n- Onları S-Sınıfı Avcılardan ayıran güç ölçeğini ve siyasi etkilerini detaylandırır.\n- Hükümdarlar ve Hükümdarlar kavramını ve bir avcının gücüyle doğrudan bağlantılarını tanıtır.\n- Benzersiz sıralama sistemi ve bu güçlü bireylerin karşılaştığı zorluklar için bağlam sağlar.\n- Kamish'in yenilgisinin tanınmaları için katalizör olarak temel olayını vurgular.\n\n<YouTubeEmbed videoId=\"oFEFe_-sYG8\" title=\"Solo Leveling'deki En Güçlü Beş AVCI!\" />\n\nBu kaplara bahşedilen güç dönüştürücüdür. Kozmik bir güce girmelerini sağlayarak, kap olmayanlar için imkansız olan güç ve kontrol başarıları elde etmelerini sağlar. Bu ilahi müdahale onları gerçekten yükselten, her Ulusal Seviye Avcı'yı ham gücün bir anıtı ve insanlık için bir umut sembolü haline getiren şeydir.\n\n<Callout type=\"tip\" title=\"İlahi Güçlendirme\">\nÇoğu Ulusal Seviye Avcı için gerçek ayırt edici faktör, **Hükümdarlar için birer kap** olmalarıdır. Bu, **Ruhsal Beden Tezahürü** ve **Hükümdar Otoritesi** gibi yeteneklere erişmelerini sağlayarak güçlerini geleneksel S-Sınıfı sınırlarının çok ötesine taşır.\n</Callout>\n\n</Section>\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2735,
+    "completion_tokens": 1442,
+    "total_tokens": 4177,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 2735,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

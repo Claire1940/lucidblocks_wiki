@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-2025121516044948232051924JEfxfu",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1765785899,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "---\ntitle: \"Servidor de Discord de Defensa de Torre Universal: Únete, Verifícate y Encuentra Actualizaciones en Minutos (2025)\"\ndescription: \"Guía paso a paso para unirte al servidor de Discord de Defensa de Torre Universal, completar la verificación y navegar por todos los canales. Más de 118 mil miembros activos.\"\nkeywords: [\"servidor de discord de defensa de torre universal\", \"cómo unirse a discord\", \"verificación de discord\", \"canales del servidor\"]\ncanonical: \"/es/discord/universal-tower-defense-discord-server/\"\ndate: \"2025-12-15\"\nvideo:\n  enabled: true\n  youtubeId: \"W92GXSlKYbw\"\n  title: \"LANZAMIENTO EN VIVO de Defensa de Torre Universal\"\n  description: \"Gameplay del lanzamiento en vivo\"\n  duration: \"PT2H15M30S\"\n  uploadDate: \"2024-12-13\"\n---\n\nUnirte al servidor de Discord de Defensa de Torre Universal toma menos de 2 minutos y te da acceso instantáneo a códigos, ayuda de la comunidad y anuncios de los desarrolladores. Con más de 118,000 miembros, este servidor oficial es el centro principal para toda la información del juego. Esta guía te explica cómo unirte, verificarte y encontrar los canales más importantes.\n\n## Cómo Unirte al Servidor\n\n1. Visita discord.com/invite/universaltd (o haz clic en el enlace dentro del juego si está disponible)\n2. Inicia sesión en tu cuenta de Discord (o crea una si es necesario)\n3. Haz clic en \"Aceptar Invitación\" para unirte al servidor\n4. El servidor aparece en tu barra lateral izquierda\n\nSi aún no tienes una cuenta de Discord:\n1. Visita discord.com\n2. Haz clic en \"Registrarse\"\n3. Ingresa tu correo electrónico, nombre de usuario y contraseña\n4. Verifica tu dirección de correo electrónico\n5. Luego usa el enlace de invitación de arriba\n\nPara obtener información completa de Discord, incluyendo todos los canales, consulta nuestra guía completa de [Discord de Defensa de Torre Universal](/discord/universal-tower-defense-discord/).\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/W92GXSlKYbw\"\n    title=\"LANZAMIENTO EN VIVO de Defensa de Torre Universal\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\n## Proceso de Verificación (Si es Requerido)\n\nAlgunos servidores requieren verificación para prevenir bots:\n\n1. Busca un canal #verificación o #reglas\n2. Reacciona al mensaje de verificación (usualmente con un emoji)\n3. O haz clic en un botón de verificación\n4. Espera 5-10 segundos para la asignación de rol\n5. Los canales se vuelven visibles una vez verificado\n\nSi la verificación parece estar atascada, espera unos minutos y actualiza Discord.\n\n## Canales Esenciales a Seguir\n\n- **#anuncios** - Actualizaciones oficiales y noticias importantes\n- **#códigos** - Nuevos códigos (¡activa las notificaciones aquí!)\n- **#chat-general** - Discusiones de la comunidad\n- **#ayuda-y-soporte** - Haz preguntas\n- **#intercambios** - Intercambia unidades e ítems\n\nActiva las notificaciones para #anuncios y #códigos para nunca perderte actualizaciones importantes.\n\n## Primeras Cosas que Hacer Después de Unirte\n\n1. Lee #reglas para entender las directrices del servidor\n2. Revisa #códigos para todos los códigos activos\n3. Preséntate en #chat-general (opcional)\n4. Activa las notificaciones para los canales importantes\n5. Revisa los mensajes fijados en los canales para enlaces útiles\n\n## Resumen de las Reglas del Servidor\n\n- Sé respetuoso con todos los miembros\n- No hagas spam, publicidad o mendigues\n- Usa los canales apropiados para diferentes temas\n- Sigue las directrices de intercambio en #intercambios\n- No publiques contenido NSFW o comportamiento inapropiado\n\nRomper las reglas resulta en advertencias o expulsiones.\n\n## Solución de Problemas Comunes\n\n**No puedo ver ningún canal**: Completa el proceso de verificación primero\n\n**No puedo enviar mensajes**: Los nuevos miembros pueden tener un período de espera de 5-10 minutos\n\n**El enlace de invitación no funciona**: El enlace puede ser discord.gg/universaltd o discord.com/invite/universaltd (ambos funcionan)\n\n**Fui expulsado del servidor**: Puede que te hayas salido accidentalmente. Vuelve a unirte usando el mismo enlace\n\n## Preguntas Frecuentes\n\n**¿Necesito Discord Nitro?**\nNo, todas las funciones funcionan con cuentas de Discord gratuitas.\n\n**¿Puedo unirme en el móvil?**\nSí, descarga la aplicación móvil de Discord y usa el enlace de invitación.\n\n**¿Es este el único servidor oficial?**\nSí, discord.com/invite/universaltd es el único Discord oficial de Defensa de Torre Universal.\n\n**¿Puedo ser baneado por usar códigos?**\nNo, usar códigos es alentado y no resultará en expulsiones.\n\nPara obtener códigos activos para canjear, consulta nuestra página de [códigos de Defensa de Torre Universal](/codes/universal-tower-defense-codes/).\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1359,
+    "completion_tokens": 1301,
+    "total_tokens": 2660,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 1359,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

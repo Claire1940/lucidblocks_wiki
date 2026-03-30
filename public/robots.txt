@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.lucidblocks.wiki/sitemap.xml
+
+# Optional: Block admin and API routes if they exist
+# Disallow: /admin/
+# Disallow: /api/

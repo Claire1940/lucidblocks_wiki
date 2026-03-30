@@ -1,0 +1,17 @@
+# 环境变量配置文件（包含敏感信息）
+.env
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 输出目录
+out/
+test_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

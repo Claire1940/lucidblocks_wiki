@@ -1,0 +1,965 @@
+{
+  "seo": {
+    "home": {
+      "title": "Lucid Blocks Wiki - Demo İndirme, İşbirliği Rehberi, Üretim & Modlar",
+      "description": "Eksiksiz Lucid Blocks kaynak merkezi! Steam gizli soygun oyunu için demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri, üretim ipuçları, kontroller, modlar ve topluluk bağlantıları edinin.",
+      "keywords": "Lucid Blocks Wiki, Lucid Blocks, demo indirme, başlangıç rehberi, işbirliği rehberi, üretim, ekipman, modlar, BepInEx, Steam oyunu, gizli oyun",
+      "ogTitle": "Lucid Blocks Wiki - Demo İndirme, İşbirliği Rehberi, Üretim & Modlar",
+      "ogDescription": "Eksiksiz Lucid Blocks kaynak merkezi! Steam gizli soygun oyunu için demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri, üretim ipuçları ve modlar edinin.",
+      "twitterTitle": "Lucid Blocks Wiki - Demo İndirme, İşbirliği Rehberi, Üretim & Modlar",
+      "twitterDescription": "Eksiksiz Lucid Blocks kaynak merkezi! Demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri ve üretim ipuçları edinin."
+    }
+  },
+  "nav": {
+    "guides": "Rehberler",
+    "crafting": "Üretim",
+    "items": "Eşyalar",
+    "biomes": "Biyomlar",
+    "building": "İnşa",
+    "support": "Destek"
+  },
+  "common": {
+    "home": "Ana Sayfa",
+    "more": "Daha Fazla",
+    "playNow": "Demo İndir",
+    "switchLanguage": "Dil Değiştir",
+    "switchTheme": "Tema Değiştir",
+    "lightMode": "Açık Mod",
+    "darkMode": "Koyu Mod",
+    "notFound": "Sayfa Bulunamadı",
+    "notFoundDescription": "Aradığınız sayfa mevcut değil.",
+    "backToHome": "Ana Sayfaya Dön",
+    "relatedArticles": "İlgili Makaleler",
+    "readMore": "Daha Fazla Oku"
+  },
+  "hero": {
+    "badge": "Ufak cüceler. Büyük evler. Arkadaşlarla gizli soygunlar.",
+    "title": "Lucid Blocks wiki",
+    "description": "Lucid Blocks için merkeziniz: soygunlar nasıl işliyor, Yüksek Cüce işleri, üretim & geliştirmeler, düşmanlar, kontroller ve her koşuda hayatta kalmanın en hızlı yolları.",
+    "getFreeCodesCTA": "Demo İndir",
+    "playOnSteamCTA": "Steam'de İstek Listesine Ekle",
+    "stats": {
+      "stat1": {
+        "value": "15B",
+        "label": "En Yüksek Eş Zamanlı Kullanıcı (Demo)"
+      },
+      "stat2": {
+        "value": "6",
+        "label": "İşbirliği Oyuncusu"
+      },
+      "stat3": {
+        "value": "31.01.2026",
+        "label": "Demo Yayın Tarihi"
+      },
+      "stat4": {
+        "value": "PC (Steam)",
+        "label": "Platform"
+      }
+    }
+  },
+  "gameFeature": {
+    "title": "Lucid Blocks Oynanışı",
+    "description": "Ufak cücelerin kaotik 6 oyunculu işbirliği gizli görevlerinde büyük soygunlar yapmasını izleyin!"
+  },
+  "tools": {
+    "title": "Lucid Blocks",
+    "titleHighlight": "Kaynaklar",
+    "subtitle": "Soygunlarda ve işbirliği gizliliğinde ustalaşmak için ihtiyacınız olan her şey",
+    "cards": [
+      {
+        "icon": "İndir",
+        "title": "Demo İndirme",
+        "description": "Ücretsiz Steam demosunu edinin"
+      },
+      {
+        "icon": "KitapAçık",
+        "title": "Başlangıç Rehberi",
+        "description": "Temel döngü ve yaygın tuzaklar"
+      },
+      {
+        "icon": "Kullanıcılar",
+        "title": "İşbirliği Rehberi",
+        "description": "6 oyunculu roller ve kurtarma taktikleri"
+      },
+      {
+        "icon": "PanoKontrol",
+        "title": "Görevler & Amaçlar",
+        "description": "Yüksek Cüce'nin sizden istedikleri"
+      },
+      {
+        "icon": "Klavye",
+        "title": "Kontroller & Tuş Atamaları",
+        "description": "Varsayılan tuşlar ve nasıl değiştirileceği"
+      },
+      {
+        "icon": "Kalkan",
+        "title": "İçerik Ayarları",
+        "description": "Yetişkinlere yönelik içerik ve geçiş seçenekleri"
+      },
+      {
+        "icon": "Çekiç",
+        "title": "Üretim & Ekipman",
+        "description": "Çalınan malzemelerle donanın"
+      },
+      {
+        "icon": "Paket",
+        "title": "Ganimet & Eşyalar",
+        "description": "Ne çalınır ve taşıma ipuçları"
+      },
+      {
+        "icon": "UyarıÜçgeni",
+        "title": "Düşmanlar & Tehlikeler",
+        "description": "Tehditler ve onlarla nasıl başa çıkılır"
+      },
+      {
+        "icon": "Göz",
+        "title": "Gizlilik & Kaçış",
+        "description": "Gizli kalın ve güvenli bir şekilde çıkış yapın"
+      },
+      {
+        "icon": "Ana Sayfa",
+        "title": "Ev Geliştirmeleri",
+        "description": "Yüzen ada üssünüzü geliştirin"
+      },
+      {
+        "icon": "MesajDairesi",
+        "title": "Topluluk & Discord",
+        "description": "Resmi bağlantılar ve grup bulma"
+      },
+      {
+        "icon": "Ayarlar",
+        "title": "Modlar & BepInEx",
+        "description": "Çerçeve ve mod kurulumunu yapın"
+      },
+      {
+        "icon": "Yıldız",
+        "title": "Popüler Modlar",
+        "description": "En iyi topluluk seçimleri ve özellikleri"
+      },
+      {
+        "icon": "OyunKonsolu2",
+        "title": "Kontrol Cihazı Desteği",
+        "description": "UI imleci ile tam gamepad oyunu"
+      },
+      {
+        "icon": "YükselişTrendi",
+        "title": "Oyuncu Sayısı & Trendi",
+        "description": "Canlı istatistikler ve zirve takibi"
+      }
+    ]
+  },
+  "modules": {
+    "demoDownload": {
+      "title": "Lucid Blocks Demo İndirme",
+      "subtitle": "Steam'de ücretsiz demoyu edinin",
+      "downloadSize": "2,62 GiB",
+      "diskSize": "4,88 GiB",
+      "releaseDate": "30 Ocak 2026",
+      "price": "Ücretsiz",
+      "platform": "PC (Steam) / Windows",
+      "engine": "Unity",
+      "primaryCTA": "Demo İndir",
+      "secondaryCTA": "Teknik Bilgileri Görüntüle",
+      "installPath": "Steam\\steamapps\\common\\Lucid Blocks Demo",
+      "sections": [
+        {
+          "heading": "Nereden indirilir",
+          "items": [
+            "Resmi Steam mağaza sayfasını açın ve 'Demo İndir' bölümünü kullanın.",
+            "Steam sizden oturum açmanızı isterse, önce oturum açın ve tekrar deneyin."
+          ]
+        },
+        {
+          "heading": "Kurulum & başlatma hızlı kontrolleri",
+          "items": [
+            "Varsayılan kurulum konumu: Steam Kütüphanesi klasörü → steamapps → common → (oyun klasörü).",
+            "Başlatılamıyorsa: Steam'de oyun dosyalarını doğrulayın, ardından Steam'i yeniden başlatın."
+          ]
+        }
+      ]
+    },
+    "beginnerGuide": {
+      "title": "Lucid Blocks Başlangıç Rehberi",
+      "subtitle": "Temel döngüde ustalaşın ve yaygın hatalardan kaçının",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Eve Girin",
+          "description": "Yüzen ada üssünüzden bir insan evine inin. Dışarıda doğun ve kilitli olmayan kapılardan veya pencerelerden içeri sızın."
+        },
+        {
+          "number": 2,
+          "title": "Görevleri Tamamlayın",
+          "description": "Yüksek Cüce görevlerini süre dolmadan bitirin. Tab tuşu aracılığıyla hedefleri kontrol edin ve öncelikle riskli görevlere öncelik verin."
+        },
+        {
+          "number": 3,
+          "title": "Eşyaları Çalın",
+          "description": "Değerli eşyaları ve üretim malzemelerini kapın. Gürültü yapmaktan veya ev sahibine yakalanmaktan kaçının."
+        },
+        {
+          "number": 4,
+          "title": "Tornado ile Kaçın",
+          "description": "Zamanlayıcı sona erdiğinde, bahçede bir tornado oluşur—güvenli bir şekilde çıkış yapmak için ona ulaşın. Erken hareket etmeye başlayın!"
+        },
+        {
+          "number": 5,
+          "title": "Geliştirin & Tekrarlayın",
+          "description": "Ödülleri ve malzemeleri evde ekipman üretmek için kullanın, ardından daha iyi ekipmanlarla bir sonraki soygununuza başlayın."
+        }
+      ],
+      "pitfalls": [
+        {
+          "title": "Yakalanmak",
+          "description": "Ev sahibi sizi kovalayacaktır. Saklanın, dikkat dağıtıcı unsurları kullanın ve kaçmak için görüş hattını kırın.",
+          "icon": "UyarıÜçgeni"
+        },
+        {
+          "title": "Sürenin Bitmesi",
+          "description": "Tornado zamanlayıcısı katıdır. Aşırı yağmalamak yerine erken bir şekilde çıkışa doğru ilerlemeye başlayın.",
+          "icon": "Saat"
+        },
+        {
+          "title": "Takım Arkadaşlarını Görmezden Gelmek",
+          "description": "Buzdolabı/fırın tuzaklarına yakalanan müttefikleri hızlıca kurtarın—kurtarmalar için hemen bağırın.",
+          "icon": "Kullanıcılar"
+        }
+      ]
+    },
+    "coopGuide": {
+      "title": "Lucid Blocks İşbirliği Rehberi",
+      "subtitle": "Maksimum kaos için 6 oyuncuya kadar koordine olun",
+      "maxPlayers": 6,
+      "roles": [
+        {
+          "name": "Gözcü",
+          "description": "Tehditleri kontrol edin, güvenli yolları işaretleyin ve takım hareketine rehberlik edin",
+          "icon": "Göz"
+        },
+        {
+          "name": "Taşıyıcı",
+          "description": "Sırt çantası geliştirmeleriyle ağır eşyalara odaklanın ve görev ilerlemesini güvence altına alın",
+          "icon": "Paket"
+        },
+        {
+          "name": "Dikkat Dağıtıcı",
+          "description": "Güvenli pencereler oluşturmak için ev sahibini/evcil hayvanları takımdan uzağa çekin",
+          "icon": "Kullanıcılar"
+        },
+        {
+          "name": "Kurtarıcı",
+          "description": "Tuzaktan kurtarma",
+          "icon": "Kalkan"
+        }
+      ],
+      "threats": [
+        "Ev Sahibi (sizi kovalar ve tuzağa düşürür)",
+        "Kediler & Fareler (devriye yolları)",
+        "Robot Süpürge (anında tehlike)",
+        "Süre Sınırı (tornado tahliyesi)"
+      ],
+      "communication": "Görevleri ve kurtarmaları koordine etmek için sesli sohbeti (V tuşu) kullanın. Şunu söyleyin: 'Görüldü', 'Rota', 'Kurtarmaya ihtiyacım var', 'Yakında çıkış yap'."
+    },
+    "tasksObjectives": {
+      "title": "Lucid Blocks Görevler & Amaçlar",
+      "subtitle": "Yüksek Cüce'nin istedikleri: görev örnekleri",
+      "taskTypes": [
+        {
+          "type": "Eşyaları Çalın",
+          "examples": [
+            "Yüksek Cüce hedefleri tarafından işaretlenen belirli eşyaları kapın"
+          ]
+        },
+        {
+          "type": "Konumlara Ulaşın",
+          "examples": [
+            "Evin içindeki belirtilen alanlara gidin"
+          ]
+        },
+        {
+          "type": "Yaramazlık Yapın",
+          "examples": [
+            "Bir TV'yi kırın",
+            "Bir tuvaleti su baskını yapın",
+            "Kaos yaratın"
+          ]
+        }
+      ],
+      "efficiency": [
+        "Takım bir aradayken önce riskli görevleri yapın",
+        "Takip sırasında kaybolmamaları için görev eşyaları için bir taşıyıcı atayın",
+        "Süre dolmadan çıkışa doğru hareket etmeye başlayın"
+      ]
+    },
+    "controlsKeybinds": {
+      "title": "Lucid Blocks Kontroller & Tuş Atamaları",
+      "subtitle": "Varsayılan klavye kontrolleri (ve bunları nerede değiştireceğiniz)",
+      "keybinds": [
+        {
+          "action": "Sola Hareket Et",
+          "key": "A"
+        },
+        {
+          "action": "Sağa Hareket Et",
+          "key": "D"
+        },
+        {
+          "action": "İleri Hareket Et",
+          "key": "W"
+        },
+        {
+          "action": "Geri Hareket Et",
+          "key": "S"
+        },
+        {
+          "action": "Çömelme",
+          "key": "Sol Ctrl"
+        },
+        {
+          "action": "Saldırı",
+          "key": "Sol Tık"
+        },
+        {
+          "action": "Koş",
+          "key": "Sol Shift"
+        },
+        {
+          "action": "Eşyayı Bırak",
+          "key": "G"
+        },
+        {
+          "action": "Etkileşim",
+          "key": "E"
+        },
+        {
+          "action": "Zıpla",
+          "key": "Boşluk"
+        },
+        {
+          "action": "Bas-Konuş",
+          "key": "V"
+        },
+        {
+          "action": "İtme",
+          "key": "Sağ Tık"
+        },
+        {
+          "action": "Bez Bebek",
+          "key": "Q"
+        },
+        {
+          "action": "Ekipman Yuvası 1",
+          "key": "1"
+        },
+        {
+          "action": "Ekipman Yuvası 2",
+          "key": "2"
+        },
+        {
+          "action": "Ekipman Yuvası 3",
+          "key": "3"
+        },
+        {
+          "action": "Ekipman Yuvası 4",
+          "key": "4"
+        },
+        {
+          "action": "Envanter",
+          "key": "Tab"
+        }
+      ],
+      "changePath": "Başlık menüsünden: AYARLAR'ı açın, ardından klavye ayarlarını kontrol edin. Tuş atama satırlarını filtrelemek için arama alanını kullanın."
+    },
+    "contentSettings": {
+      "title": "Lucid Blocks İçerik Ayarları",
+      "subtitle": "Yetişkinlere yönelik içerik, çıplaklık geçişi ve Steam tercihleri",
+      "descriptors": [
+        "Bazı Çıplaklık veya Cinsel İçerik",
+        "Genel Yetişkinlere Yönelik İçerik"
+      ],
+      "details": [
+        {
+          "heading": "Geliştiricilerin belirttiği şey",
+          "items": [
+            "Bir insan banyo gibi aktiviteler yaparken çıplak görünebilir.",
+            "Çıplaklık sansürlenmiştir ve isteğe bağlı olarak tamamen kapatılabilir.",
+            "Cüceler parçalanabilir ve acımasız şekillerde ölebilir."
+          ]
+        },
+        {
+          "heading": "Steam topluluk sayfasını engellerse",
+          "items": [
+            "Steam, içerik tercihlerinize bağlı olarak topluluk merkezini gizleyebilir.",
+            "Steam'in ne göstermesine izin verdiğinizi ayarlamak için Steam'in 'İçerik Tercihlerini Güncelle' seçeneğini kullanın."
+          ]
+        }
+      ]
+    },
+    "craftingEquipment": {
+      "title": "Lucid Blocks Üretim & Ekipman",
+      "subtitle": "Donanın: üretim örnekleri ve her aracın ne yaptığı",
+      "equipment": [
+        {
+          "item": "Sırt Çantası",
+          "benefit": "Her koşu için daha fazla ganimet için envanter kapasitesini genişletir"
+        },
+        {
+          "item": "Cüce Eldivenleri",
+          "benefit": "Kapıları açmanızı ve daha fazla nesneyle etkileşim kurmanızı sağlar"
+        },
+        {
+          "item": "Yaylı Ayakkabılar",
+          "benefit": "Kaçışlar sırasında yüksek düşmelerden kaynaklanan hasarı önler"
+        },
+        {
+          "item": "Silah",
+          "benefit": "Köşeye sıkıştığınızda fareler gibi tehditlerle savaşmanıza yardımcı olur"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Üretim yağmalamaya nasıl bağlanır",
+          "items": [
+            "Bir koşu sırasında, eşyaları çalın ve üretim malzemesi olarak geri getirin.",
+            "Tahliyeden sonra, ödüller/malzemeler yeni üretimleri destekler."
+          ]
+        },
+        {
+          "heading": "Üs iyileştirmesi",
+          "items": [
+            "Mobilya üretin ve yüzen ada evinizi yükseltin (tam oyun özelliği)."
+          ]
+        }
+      ]
+    },
+    "lootItems": {
+      "title": "Lucid Blocks Ganimet & Eşyalar",
+      "subtitle": "Ne çalınır: eşya türleri, risk ve taşıma ipuçları",
+      "categories": [
+        {
+          "type": "Görev Eşyaları",
+          "examples": [
+            "Yüksek Cüce tarafından hedefler için gerekli olan eşyalar"
+          ]
+        },
+        {
+          "type": "Üretim Malzemeleri",
+          "examples": [
+            "Cüce teçhizatına ve yükseltmelerine dönüştürülen ev eşyaları"
+          ]
+        },
+        {
+          "type": "Yaramazlık Hedefleri",
+          "examples": [
+            "Kırma veya su baskını gibi görevlerde yer alan nesneler"
+          ]
+        }
+      ],
+      "carryTips": [
+        "Görev ilerlemesine öncelik verin, ardından kalan kapasiteyi üretim malzemeleriyle doldurun",
+        "Tehditler yakındaysa, eşyaları uzun açık taşımalar yerine kısa güvenli sıçramalarla hareket ettirin",
+        "Zamanlayıcı sona ermeden bahçe tahliyesine giden rotayı planlayın"
+      ],
+      "riskLevels": [
+        {
+          "level": "Düşük",
+          "description": "Girişlerin veya güvenli köşelerin yakınında"
+        },
+        {
+          "level": "Orta",
+          "description": "Daha derin odalar veya dolaşan tehditlerin yakınında"
+        },
+        {
+          "level": "Yüksek",
+          "description": "Ev sahibi devriyesinin veya robot süpürgenin yakınında"
+        }
+      ]
+    },
+    "enemiesHazards": {
+      "title": "Lucid Blocks Düşmanlar & Tehlikeler",
+      "subtitle": "Sizi neyin yakalayabileceğini bilin",
+      "threats": [
+        {
+          "name": "Ev Sahibi",
+          "trigger": "Soygun yaparken veya görev yaparken yakalanmak",
+          "behavior": "Sizi kovalar ve yakalamaya çalışır",
+          "counter": "Gizli kalın, görüş hatlarını kırın ve bir ekip olarak hareket etmeye devam edin"
+        },
+        {
+          "name": "Kediler",
+          "trigger": "Çok yaklaşmak veya yollarını kesmek",
+          "behavior": "Siz gizlice dolaşırken doğrudan bir tehdit haline gelirler",
+          "counter": "Yollarından kaçının ve sessizce geçin"
+        },
+        {
+          "name": "Fareler",
+          "trigger": "Farelerin dolaştığı alanlara girmek",
+          "behavior": "Koşular sırasında kırılgan cüceleri tehdit ederler",
+          "counter": "Dar alanlarda tetikte olun ve geri çekilmeye hazır olun"
+        },
+        {
+          "name": "Robot Süpürge",
+          "trigger": "Temizleme yolunda olmak",
+          "behavior": "Cüceleri emebilir",
+          "counter": "Onu dinleyin, yolunda durmayın ve hızlıca yeniden konumlanın"
+        },
+        {
+          "name": "Buzdolabı / Fırın Tuzağı",
+          "trigger": "Ev sahibi tarafından yakalanmak",
+          "behavior": "İçeri kilitlenebilirsiniz; takım arkadaşları zamanında kurtarmazsa ölürsünüz",
+          "counter": "Hemen bağırın; takım arkadaşları kurtarma yoluna öncelik verir"
+        },
+        {
+          "name": "Süre Sınırı",
+          "trigger": "Koşu zamanlayıcısının sınıra ulaşması",
+          "behavior": "Bahçede tahliye tornadosu belirir; kaçmak için ona ulaşmalısınız",
+          "counter": "Aşırı yağmalamayı bırakın, yeniden toplanın ve erken bir şekilde tahliyeye başlayın"
+        }
+      ]
+    },
+    "stealthEscape": {
+      "title": "Lucid Blocks Gizlilik & Kaçış İpuçları",
+      "subtitle": "Daha fazla çalın, daha az ölün",
+      "do": [
+        "Gizli kalın ve nesnelerle etkileşim kurmadan önce siper alın",
+        "Ekip çalışmasını kullanın: tehditleri söyleyin ve rotaları koordine edin",
+        "Biri tuzağa düştüğünde veya yere serildiğinde takım arkadaşlarını hızlıca kurtarın",
+        "Kayıplarınızı azaltın ve zaman daraldığında tahliyeye gidin"
+      ],
+      "dont": [
+        "Tahliye yaklaştığında açgözlü olun",
+        "Ev sahibi aktifken takımdan çok uzağa ayrılın",
+        "Robot süpürge yollarını veya hayvan devriyelerini görmezden gelin",
+        "Bir takım arkadaşı kilitlendiğinde kurtarmaları geciktirin"
+      ],
+      "quickTips": [
+        {
+          "title": "3 Saniye Kuralı",
+          "text": "Bir sonraki hareketinizi 3 saniyede açıklayamazsanız, yakalanmak üzeresiniz demektir."
+        },
+        {
+          "title": "Önce Kurtarma",
+          "text": "Hızlı bir kurtarma koşuyu canlı tutar; yağmalama bekleyebilir."
+        },
+        {
+          "title": "Tahliye Disiplini",
+          "text": "Erken toplanın ve panik başlamadan önce tornadoya başlayın."
+        }
+      ]
+    },
+    "homeUpgrades": {
+      "title": "Lucid Blocks Ev Geliştirmeleri",
+      "subtitle": "Üret, inşa et, yükselt",
+      "branches": [
+        {
+          "branch": "Depolama",
+          "summary": "Daha fazla taşıyın ve daha fazlasını geri getirin",
+          "items": [
+            "Sırt Çantası (envanter genişletme)"
+          ]
+        },
+        {
+          "branch": "Yardımcı Program",
+          "summary": "Evle daha etkili etkileşim kurun",
+          "items": [
+            "Cüce Eldivenleri (kapıları ve daha fazlasını açmanızı sağlar)"
+          ]
+        },
+        {
+          "branch": "Hareketlilik",
+          "summary": "Dikey alanlarda daha güvenli hareket edin",
+          "items": [
+            "Yaylı Ayakkabılar (düşme hasarını azaltır)"
+          ]
+        },
+        {
+          "branch": "Savunma",
+          "summary": "Gerekirse küçük tehditlerle başa çıkın",
+          "items": [
+            "Silahlar (fareler gibi tehditler için)"
+          ]
+        },
+        {
+          "branch": "Ana Üs",
+          "summary": "Mobilya üretin ve yüzen ada evinizi yükseltin",
+          "items": [
+            "Fonksiyonel mobilya yükseltmeleri"
+          ]
+        }
+      ],
+      "priority": [
+        {
+          "rank": 1,
+          "title": "Önce depolama",
+          "reason": "Daha fazla taşıma kapasitesi her koşunun getirisini artırır"
+        },
+        {
+          "rank": 2,
+          "title": "Sıradaki yardımcı program",
+          "reason": "Daha iyi etkileşimler tehlike bölgelerinde geçirilen süreyi azaltır"
+        },
+        {
+          "rank": 3,
+          "title": "Hayatta kalmak için hareketlilik",
+          "reason": "Düşme güvenliği kaçarken önlenebilir ölümleri önler"
+        }
+      ]
+    },
+    "community": {
+      "title": "Lucid Blocks Topluluk & Discord",
+      "subtitle": "Kadrolar, güncellemeler, tartışmalar bulun",
+      "links": [
+        {
+          "title": "Resmi Discord",
+          "subtitle": "Duyurular • Geri Bildirim • LFG",
+          "url": "https://discord.com/invite/lucidblocks"
+        },
+        {
+          "title": "Resmi X (Twitter)",
+          "subtitle": "Güncellemeler & geliştirici gönderileri",
+          "url": "https://x.com/lucidblocks"
+        },
+        {
+          "title": "Steam Topluluk Merkezi",
+          "subtitle": "Tartışmalar • Ekran Görüntüleri • Rehberler",
+          "url": "https://steamcommunity.com/app/3495730"
+        },
+        {
+          "title": "Steam Mağaza Sayfası",
+          "subtitle": "İstek Listesi • Demo • Resmi açıklama",
+          "url": "https://store.steampowered.com/app/3495730/Lucid_Blocks/"
+        }
+      ]
+    },
+    "modsBepInEx": {
+      "title": "Lucid Blocks Modlar & BepInEx Kurulumu",
+      "subtitle": "Modları temiz bir şekilde kurun",
+      "steps": [
+        {
+          "step": 1,
+          "title": "BepInEx 5'i Kurun",
+          "text": "BepInEx 5'i indirin ve oyun kök klasörüne çıkarın."
+        },
+        {
+          "step": 2,
+          "title": "Klasörleri oluşturmak için bir kez başlatın",
+          "text": "Oyunu ana menüye başlatın, ardından kapatın. Bu, BepInEx klasör yapısını oluşturur."
+        },
+        {
+          "step": 3,
+          "title": "Modları kurun",
+          "text": "Mod .dll dosyalarını eklenti klasörüne yerleştirin."
+        },
+        {
+          "step": 4,
+          "title": "Kurulumu doğrulayın",
+          "text": "Oyunu yeniden başlatın ve mod özelliğinin (kamera geçişi, UI imleci vb.) kullanılabilir olduğunu onaylayın."
+        }
+      ],
+      "paths": [
+        {
+          "label": "Tipik Steam kurulumu",
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\"
+        },
+        {
+          "label": "Eklenti klasörü",
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\BepInEx\\plugins\\"
+        }
+      ],
+      "multiplayerNote": "Modlanmış işbirliği oynanış özellikleri için herkes BepInEx'i ve aynı oynanış modlarını kurmalıdır."
+    },
+    "popularMods": {
+      "title": "Lucid Blocks Popüler Modlar",
+      "subtitle": "En iyi topluluk seçimleri",
+      "mods": [
+        {
+          "title": "Doğma Menüsü",
+          "tags": [
+            "Eğlence",
+            "Araçlar",
+            "Yalnızca Ev Sahibi"
+          ],
+          "description": "Uçuş modu ile bir eşya doğma menüsü ekler.",
+          "controls": [
+            {
+              "key": "F",
+              "action": "Doğma menüsünü aç"
+            },
+            {
+              "key": "V",
+              "action": "Uçmayı etkinleştir"
+            }
+          ],
+          "note": "Yalnızca Ev Sahibi; başkalarının katılmak için yüklemesi gerekmez."
+        },
+        {
+          "title": "Üçüncü Şahıs Görünümü",
+          "tags": [
+            "Kamera",
+            "Yaşam Kalitesi"
+          ],
+          "description": "Üçüncü şahıs kamera görünümü ekler.",
+          "controls": [
+            {
+              "key": "F7",
+              "action": "Birinci şahıs / üçüncü şahıs arasında geçiş yap"
+            }
+          ]
+        },
+        {
+          "title": "Daha Fazla Şapka",
+          "tags": [
+            "Kozmetik"
+          ],
+          "description": "Cüceler için ek şapka rengi seçenekleri ekler.",
+          "colors": [
+            "Mavi",
+            "Yeşil",
+            "Turuncu",
+            "Mor",
+            "Siyah",
+            "Kırmızı"
+          ]
+        },
+        {
+          "title": "TV'de DOOM",
+          "tags": [
+            "Eğlence",
+            "Mini oyun"
+          ],
+          "description": "Orijinal DOOM'u oyun içi bir TV'de oynayın, ses TV hoparlöründen gelsin.",
+          "highlights": [
+            "Çok oyunculu modda çalışır, böylece diğer oyuncular aynı TV'de izleyebilir",
+            "Shareware DOOM bölüm verilerini içerir (Bölüm 1)"
+          ]
+        }
+      ]
+    },
+    "controllerSupport": {
+      "title": "Lucid Blocks Kontrol Cihazı Desteği",
+      "subtitle": "Tam gamepad oyunu",
+      "native": {
+        "title": "Oyun İçi Ayarlar",
+        "description": "Kontrolleri ayarlamak için oyunun bağlamaları/ayarlar menülerini kullanın."
+      },
+      "mod": {
+        "title": "Kontrol Cihazı Desteği Modu",
+        "description": "Menüde gezinme için eksiksiz gamepad/kontrol cihazı desteği ve bir UI imleci ekler."
+      },
+      "features": [
+        "Tam Oynanış Kontrolleri: hareket, kamera, savaş, etkileşimler ve yetenekler gamepad'e eşlenmiştir",
+        "UI İmleç Gezinmesi: menülerde beyaz bir daire imleci görünür; tıklamak ve kaydırıcıları sürüklemek için A'ya basın",
+        "Envanter Gezinmesi: envanteri açmak için Seç'i basılı tutun; basılı tutarken gezinmek için sağ çubuğu kullanın",
+        "Kaydırılabilir Menüler: sağ çubuk, üretim tariflerini, ayarları ve diğer kaydırılabilir UI alanlarını kaydırır",
+        "Hızlı Erişim Çubuğu Döngüsü: D-pad sol/sağ, 4 hızlı erişim çubuğu yuvası arasında döngü yapar",
+        "Sorunsuz Giriş Değiştirme: klavye/fare ile kontrol cihazını otomatik olarak algılar"
+      ]
+    },
+    "playerCount": {
+      "title": "Lucid Blocks Oyuncu Sayısı & Trendi",
+      "subtitle": "Canlı popülerlik anlık görüntüsü",
+      "stats": {
+        "now": {
+          "value": "6.047",
+          "label": "Şu anda oyuncu"
+        },
+        "peak24h": {
+          "value": "13.859",
+          "label": "24 saatlik zirve"
+        },
+        "allTimePeak": {
+          "value": "15.272",
+          "label": "Tüm zamanların zirvesi"
+        }
+      },
+      "milestones": [
+        {
+          "date": "30 Ocak 2026",
+          "title": "Steam'de demo yayınlandı",
+          "detail": "Herkese açık demo PC'de (Steam) kullanıma sunuldu."
+        },
+        {
+          "date": "8 Şubat 2026",
+          "title": "Tüm zamanların zirvesine ulaşıldı",
+          "detail": "Demo, kaydedilen en yüksek eş zamanlı oyuncu sayısına ulaştı."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Sıkça Sorulan",
+    "titleHighlight": "Sorular",
+    "subtitle": "Lucid Blocks hakkında bilmeniz gereken her şey",
+    "questions": [
+      {
+        "question": "Lucid Blocks demosunu nasıl indirebilirim?",
+        "answer": "Steam mağaza sayfasını ziyaret edin ve 'Demo İndir'e tıklayın. Demo ücretsizdir ve indirmek için 2,62 GiB, disk alanı için 4,88 GiB gerektirir."
+      },
+      {
+        "question": "Lucid Blocks'u tek başıma mı oynayabilirim yoksa arkadaşlara mı ihtiyacım var?",
+        "answer": "Lucid Blocks hem tek oyunculu hem de 6 oyuncuya kadar işbirliğini destekler. Tek başına oynamak daha zordur ancak mümkündür."
+      },
+      {
+        "question": "Lucid Blocks'da Yüksek Cüce görevleri nelerdir?",
+        "answer": "Yüksek Cüce, 'TV'yi kır', 'tuvaleti su baskını yap' veya 'belirli eşyaları çal' gibi hedefler atayan patronunuzdur. Ekstra ödüller için bunları tamamlayın."
+      },
+      {
+        "question": "Lucid Blocks için modları nasıl kurarım?",
+        "answer": "BepInEx 5'i kurun, oyunu bir kez başlatın, ardından mod DLL'lerini BepInEx/plugins/ klasörüne yerleştirin. Çok oyunculu mod için tüm oyuncuların aynı modlara ihtiyacı vardır."
+      },
+      {
+        "question": "Lucid Blocks kontrol cihazlarını destekliyor mu?",
+        "answer": "Evet! Temel kontrol cihazı desteği için oyun içi ayarları kullanın veya tam UI gezinmesi için Nexus Mods'tan Kontrol Cihazı Modunu kurun."
+      },
+      {
+        "question": "Lucid Blocks için oyuncu sayısı nedir?",
+        "answer": "Şubat 2026 itibarıyla, Lucid Blocks ortalama 6.000'den fazla eş zamanlı oyuncuya sahip ve 8 Şubat 2026'da 15.272 zirveye ulaştı."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Soygun Yapmaya Hazır mısınız?",
+    "description": "İşbirliği grupları, güncellemeler ve mod tartışmaları için Discord'da Lucid Blocks topluluğuna katılın!",
+    "joinCommunity": "Discord'a Katıl",
+    "joinGame": "Steam'de Demo Al"
+  },
+  "footer": {
+    "title": "Lucid Blocks Wiki",
+    "description": "Lucid Blocks gizli soygunları, işbirliği stratejileri, modlar ve topluluk rehberleri için eksiksiz kaynak merkeziniz.",
+    "resources": "Kaynaklar",
+    "community": "Topluluk",
+    "legal": "Yasal",
+    "discord": "Discord",
+    "twitter": "X / Twitter",
+    "steamCommunity": "Steam Topluluğu",
+    "steamStore": "Steam Mağazası",
+    "about": "Hakkında",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Hizmet Şartları",
+    "copyrightNotice": "Telif Hakkı",
+    "copyright": "© 2026 Lucid Blocks Wiki. Lucid Blocks geliştiricileriyle bağlantılı değildir.",
+    "disclaimer": "Resmi olmayan hayran yapımı kaynak web sitesi."
+  },
+  "pages": {
+    "guides": {
+      "title": "Lucid Blocks Rehberleri",
+      "description": "Başlangıç seviyesinden ileri düzey Apotheosis stratejilerine kadar eksiksiz oynanış rehberleri. Hayatta kalma ve üretimde ustalaşın.",
+      "metaTitle": "Lucid Blocks Rehberleri - Başlangıçtan İleri Düzey Stratejilere",
+      "metaDescription": "Başlangıç ipuçlarını, Apotheosis sistemini, hayatta kalma stratejilerini ve gerçeküstü sandbox dünyasında ustalaşmak için uzman taktiklerini kapsayan eksiksiz Lucid Blocks rehberleri.",
+      "categoryLabel": "OYUN REHBERLERİ",
+      "whatIs": "Rehberler Nedir?",
+      "whatIsDescription": "Oynanış mekaniklerini, hayatta kalma stratejilerini ve Apotheosis üretim sistemini kapsayan kapsamlı rehberler. İlk adımlardan ileri tekniklere kadar her şeyi öğrenin.",
+      "why": "Neden rehberleri okumalısınız?",
+      "whySteps": {
+        "step1Title": "Temel Mekanikleri Öğrenin",
+        "step1Description": "Apotheosis sistemini anlayın ve yaygın başlangıç hatalarından kaçının",
+        "step2Title": "Hızlı İlerleme",
+        "step2Description": "Gerçeküstü dünyada hayatta kalmak ve gelişmek için kanıtlanmış yolları izleyin",
+        "step3Title": "Stratejilerde Ustalaşın",
+        "step3Description": "Keşif ve üretim için ileri düzey taktikler geliştirin"
+      },
+      "featured": "Öne Çıkanlar ve Temel Bilgiler",
+      "all": "Tüm Rehberler"
+    },
+    "crafting": {
+      "title": "Lucid Blocks Üretim",
+      "description": "Öz mekanikleri, tarifler ve güçlü eşyalar için üretim stratejileri ile Apotheosis füzyon sisteminde ustalaşın.",
+      "metaTitle": "Lucid Blocks Üretim - Apotheosis Sistemi ve Tarifler",
+      "metaDescription": "Lucid Blocks Apotheosis üretim sisteminde ustalaşın. Öz mekaniklerini, füzyon tariflerini ve güçlü araçlar ile silahlar oluşturma stratejilerini öğrenin.",
+      "categoryLabel": "ÜRETİM SİSTEMİ",
+      "whatIs": "Üretim Nedir?",
+      "whatIsDescription": "Apotheosis sistemi, yeni tarifler keşfetmek için altı adede kadar eşyayı birleştirdiğiniz benzersiz bir öz odaklı füzyon mekaniğidir. Sabit üretim menüleri yoktur; deney yapmak anahtardır.",
+      "why": "Neden üretimde ustalaşmalısınız?",
+      "whySteps": {
+        "step1Title": "Güçlü Eşyaların Kilidini Açın",
+        "step1Description": "Füzyon yoluyla temel araçları, silahları ve hareket ekipmanlarını keşfedin",
+        "step2Title": "Özleri Anlayın",
+        "step2Description": "Eşya özlerinin öngörülebilir sonuçlar oluşturmak için nasıl birleştiğini öğrenin",
+        "step3Title": "Kaynakları Optimize Edin",
+        "step3Description": "Ucuz malzemelerden çıktıyı maksimize etmek için seyreltme mekaniklerini kullanın"
+      },
+      "featured": "Öne Çıkanlar ve Temel Bilgiler",
+      "all": "Tüm Üretim Rehberleri"
+    },
+    "items": {
+      "title": "Lucid Blocks Eşyaları",
+      "description": "Üretim tarifleri ve kullanım ipuçlarıyla birlikte araçları, silahları, hareket ekipmanlarını ve depolama çözümlerini kapsayan ayrıntılı eşya rehberleri.",
+      "metaTitle": "Lucid Blocks Eşyaları - Araçlar, Silahlar ve Ekipman Rehberi",
+      "metaDescription": "Araçlar, silahlar, hareket ekipmanları ve depolama dahil olmak üzere Lucid Blocks için eksiksiz eşya veritabanı. Her eşyayı nasıl üreteceğinizi ve etkili bir şekilde kullanacağınızı öğrenin.",
+      "categoryLabel": "EŞYALAR VE EKİPMANLAR",
+      "whatIs": "Eşyalar Nedir?",
+      "whatIsDescription": "Araçlar, silahlar, hareket ekipmanları ve işlevsel eşyalar için kapsamlı rehberler. Üretim tariflerini, kullanım stratejilerini ve en uygun kombinasyonları öğrenin.",
+      "why": "Neden eşya rehberlerine bakmalısınız?",
+      "whySteps": {
+        "step1Title": "Üretim Tariflerini Öğrenin",
+        "step1Description": "Apotheosis kullanarak temel araçları ve silahları nasıl üreteceğinizi keşfedin",
+        "step2Title": "Ekipmanı Optimize Edin",
+        "step2Description": "Oyun tarzınız ve ilerleme aşamanız için en iyi eşyaları seçin",
+        "step3Title": "Hayatta Kalmayı Geliştirin",
+        "step3Description": "Tehlikeli dünyada gezinmek için hareket ekipmanları ve silahlar kuşanın"
+      },
+      "featured": "Öne Çıkanlar ve Temel Bilgiler",
+      "all": "Tüm Eşyalar"
+    },
+    "biomes": {
+      "title": "Lucid Blocks Biyomları",
+      "description": "Her biyom için dünya bölgelerini, çevresel özellikleri, kaynak konumlarını ve hayatta kalma ipuçlarını keşfedin.",
+      "metaTitle": "Lucid Blocks Biyomları - Dünya Bölgeleri ve Keşif",
+      "metaDescription": "Tiamana Leylines, Fog Meadow ve gerçeküstü bölgeler dahil olmak üzere Lucid Blocks biyomlarını keşfedin. Kaynakları bulun, tehlikelerden kaçının ve sonsuz dünyada gezinin.",
+      "categoryLabel": "DÜNYA BÖLGELERİ",
+      "whatIs": "Biyomlar Nedir?",
+      "whatIsDescription": "Farklı dünya bölgeleri, çevresel özellikler, kaynak dağılımı ve tehlike bölgeleri rehberleri. Her alan için ne bekleyeceğinizi ve nasıl hazırlanacağınızı öğrenin.",
+      "why": "Neden biyomları keşfetmelisiniz?",
+      "whySteps": {
+        "step1Title": "Kaynakları Bulun",
+        "step1Description": "Her bölgeye özgü nadir malzemeleri ve özleri bulun",
+        "step2Title": "Tehlikelerden Kaçının",
+        "step2Description": "Çevresel tehlikeleri ve düşman yaratıkları anlayın",
+        "step3Title": "Keşfi Planlayın",
+        "step3Description": "Her biyom türü için doğru araçları ve ekipmanları hazırlayın"
+      },
+      "featured": "Öne Çıkanlar ve Temel Bilgiler",
+      "all": "Tüm Biyomlar"
+    },
+    "building": {
+      "title": "Lucid Blocks İnşa Etme",
+      "description": "Master Qualia kişisel boyutları, üs inşası, depolama yönetimi ve yaratıcı inşa tekniklerinde ustalaşın.",
+      "metaTitle": "Lucid Blocks İnşa Etme - Qualia ve Üs İnşası",
+      "metaDescription": "Qualia kişisel boyutları, üs inşası, depolama çözümleri ve yaratıcı inşa teknikleri ile Lucid Blocks inşa etme sisteminde ustalaşın.",
+      "categoryLabel": "İNŞA VE ÜSLER",
+      "whatIs": "İnşa Etme Nedir?",
+      "whatIsDescription": "Qualia kişisel boyut sistemi, üs inşası, depolama yönetimi ve yaratıcı inşa rehberleri. Gerçeküstü dünyada güvenli limanınızı oluşturmayı öğrenin.",
+      "why": "Neden üs inşa etmelisiniz?",
+      "whySteps": {
+        "step1Title": "Güvenli Alanlar Oluşturun",
+        "step1Description": "Depolama ve üretim operasyonları için güvenli üsler kurun",
+        "step2Title": "Kaynakları Yönetin",
+        "step2Description": "Depolama çözümleriyle malzemeleri verimli bir şekilde düzenleyin",
+        "step3Title": "Qualia Kilidini Açın",
+        "step3Description": "Üstün kolaylık için kişisel cep boyutlarına erişin"
+      },
+      "featured": "Öne Çıkanlar ve Temel Bilgiler",
+      "all": "Tüm İnşa Rehberleri"
+    },
+    "support": {
+      "title": "Lucid Blocks Destek",
+      "description": "Teknik destek, platform uyumluluğu, performans optimizasyonu ve yaygın sorunlar için sorun giderme.",
+      "metaTitle": "Lucid Blocks Destek - Teknik Yardım ve Çözümler",
+      "metaDescription": "Steam Deck kurulumu, çökme düzeltmeleri, performans optimizasyonu ve platform uyumluluk rehberleri dahil olmak üzere Lucid Blocks için teknik destek alın.",
+      "categoryLabel": "TEKNİK DESTEK",
+      "whatIs": "Destek Nedir?",
+      "whatIsDescription": "Platform uyumluluğu, performans optimizasyonu, çökme düzeltmeleri ve yaygın sorunları kapsayan teknik rehberler. Steam Deck, çok oyunculu soruları ve ayarlar hakkında yardım alın.",
+      "why": "Neden desteği kontrol etmelisiniz?",
+      "whySteps": {
+        "step1Title": "Teknik Sorunları Düzeltin",
+        "step1Description": "Çökmeleri, performans sorunlarını ve uyumluluk problemlerini çözün",
+        "step2Title": "Performansı Optimize Edin",
+        "step2Description": "Platformunuzda en iyi deneyim için ayarları yapılandırın",
+        "step3Title": "Platform Uyumluluğu",
+        "step3Description": "Steam Deck, kontrolcü desteği ve sistem gereksinimleri hakkında bilgi edinin"
+      },
+      "featured": "Öne Çıkanlar ve Temel Bilgiler",
+      "all": "Tüm Destek Makaleleri"
+    }
+  }
+}

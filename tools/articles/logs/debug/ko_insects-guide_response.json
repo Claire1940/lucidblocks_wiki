@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-20260113203444639209483GEzQsocN",
+  "model": "gemini-2.0-flash",
+  "object": "chat.completion",
+  "created": 1768307686,
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "---\ntitle: \"두근두근타운 완벽 곤충 컬렉션: 20가지 종, 위치 및 계절별 스폰 | insects heartopia\"\ndescription: \"이 페이지는 두근두근타운에서 전체 곤충 컬렉션을 완료하는 데 도움을 줍니다 (2026년 1월 업데이트). 모든 종을 더 빨리 잡기 위한 위치, 계절 및 팁을 알아보세요.\"\nkeywords: [\"insects heartopia\", \"두근두근타운 곤충\", \"두근두근타운 곤충 위치\", \"두근두근타운 계절별 곤충\"]\ncanonical: \"/ko/content/insects-guide\"\ndate: \"2026-01-13\"\nvideo:\n  enabled: true\n  youtubeId: \"MnJWQfrlBgk\"\n  title: \"두근두근타운 플레이하기 전에 꼭 보세요! 정식 출시 완벽 가이드\"\n  description: \"두근두근타운 플레이하기 전에 꼭 보세요! 정식 출시 완벽 가이드\"\n  duration: \"PT12M13S\"\n  uploadDate: \"2025-12-30\"\n---\n\n두근두근타운에서 모든 곤충을 수집하는 것은 단순한 휴식 활동이 아니라 취미를 발전시키고, 통화를 얻고, 업적을 잠금 해제하는 가장 효율적인 방법 중 하나입니다. 많은 플레이어들이 계절이나 시간대를 이해하지 못해서 희귀한 스폰을 놓칩니다. 이 가이드는 **insects heartopia** 수집가들이 알아야 할 사항을 분석하여 게임 내 시간을 낭비하지 않도록 도와줍니다. 100% 완료를 목표로 한다면 **insects heartopia** 스폰이 실제로 어떻게 작동하는지 이해하는 것이 필수적입니다.\n\n## 두근두근타운의 곤충 시스템 작동 방식\n\n두근두근타운은 아늑한 생활 시뮬레이션에서 영감을 받은 소프트 리얼리즘 곤충 시스템을 사용합니다. 곤충은 **계절, 날씨, 시간 및 위치 유형**에 따라 동적으로 스폰됩니다. 플레이어 경험에 따르면 게임은 고정된 시점보다는 몇 분마다 스폰 테이블을 확인하므로 인내심이 중요합니다.\n\n알아야 할 주요 메커니즘:\n- 계절은 고정된 게임 내 달력에 따라 순환합니다.\n- 비와 맑은 날씨는 희귀 곤충의 출현에 영향을 미칩니다.\n- 너무 가까이 질주하면 겁이 많은 종이 사라질 수 있습니다.\n- 그물 업그레이드는 포획 반경을 증가시킵니다 (플레이어 테스트).\n\n특정 벌레를 찾기 어려운 경우 **[대화형 지도](https://heartopiagame.com/content/interactive-map/)**를 사용하면 생물 군계별 스폰 영역을 좁혀 시간을 절약할 수 있습니다.\n\n## 두근두근타운의 20가지 곤충 (카테고리별)\n\n다음은 글로벌 출시 시점부터 두근두근타운 플레이어가 수집할 수 있는 모든 알려진 곤충에 대한 완전한 분석입니다. 일부 세부 사항은 커뮤니티 보고서를 기반으로하며 패치에 따라 변경될 수 있습니다.\n\n### 일반 곤충 (쉬운 스폰)\n- **메뚜기** – 초원, 낮, 봄/여름\n- **갈색 나비** – 마을 정원, 낮\n- **무당벌레** – 집 근처, 맑은 날씨\n- **개미** – 길과 피크닉 장소, 모든 계절\n\n이 곤충은 자주 재생성되며 초기 취미 레벨링에 이상적입니다.\n\n### 계절 및 날씨 기반 곤충\n- **푸른 모포 나비** – 숲, 여름, 맑은 하늘\n- **반딧불이** – 강둑, 밤, 여름\n- **눈 나방** – 겨울 밤, 숲 가장자리\n- **비 딱정벌레** – 비가 오는 동안 모든 초원\n\n커뮤니티 피드백에 따르면 날씨 기반 곤충은 스폰율이 낮지만 정확한 한 지점으로 제한되지는 않습니다.\n\n### 희귀 곤충 (낮은 스폰율)\n- **황금 사슴벌레** – 오래된 나무, 여름 밤\n- **수정 매미** – 산길, 늦은 오후\n- **달빛 사마귀** – 숲, 보름달 밤 (커뮤니티 추측)\n\n희귀 곤충 **insects heartopia** 수집가는 종종 여러 게임 내 주기를 기다려야 합니다.\n\n## 모든 곤충을 잡기 위한 최고의 시간과 장소\n\n타이밍은 움직임보다 중요합니다. 플레이어 테스트에 따르면 올바른 생물 군계에서 가만히 서 있는 것이 끊임없이 돌아다니는 것보다 더 나은 결과를 얻습니다.\n\n일반적인 최적화 팁:\n- 희귀 스폰을 위해 황혼에 숲을 방문하십시오.\n- 그물을 사용할 때는 달리는 것을 피하십시오.\n- 아무것도 스폰되지 않으면 10 게임 내 분 후에 영역을 회전하십시오.\n- 계절별 곤충을 사냥할 때 시간을 빨리 감기려면 잠을 자십시오.\n\nNPC 대화는 또한 미묘한 힌트를 제공합니다. 계절별 이벤트 동안 **[Npc Blanc](https://heartopiagame.com/content/npc-blanc/)**과 대화하면 플레이어가 아직 잡지 못한 곤충에 연결된 위치 단서를 잠금 해제할 수 있습니다.\n\n## 곤충 컬렉션 보상 및 완료할 가치가 있는 이유\n\n곤충 세트를 완료하는 것은 외형적인 것만이 아닙니다. 커뮤니티 추적에 따르면:\n- 전체 컬렉션은 취미 EXP 부스트를 제공합니다.\n- 특정 곤충은 프리미엄 통화로 판매됩니다.\n- 박물관 기증은 장식과 칭호를 잠금 해제합니다.\n- 업적은 일일 보상 상한을 증가시킵니다.\n\n낚시와 달리 곤충 사냥은 후반 게임으로 잘 확장되어 주택 및 농업이 최적화된 후에도 곤충 **insects heartopia** 콘텐츠를 관련성 있게 만듭니다.\n\n## 곤충 진행 속도를 늦추는 초보자 실수\n\n많은 플레이어들이 무심코 컬렉션 속도를 방해합니다. 일반적인 오류는 다음과 같습니다.\n- 날씨 변화 무시\n- 너무 일찍 희귀 곤충 사냥\n- 향후 퀘스트에 필요한 중복 판매\n- 밤 주기를 완전히 건너뜀\n\n이 비디오는 시간 관리, 탐험 습관 및 진행 속도를 포함하여 곤충 수집에 직접적인 영향을 미치는 기본 시스템을 다룹니다.\n\n이 완벽한 가이드는 플레이어가 곤충 수집과 같은 장기 활동에 참여하기 전에 이해해야 할 필수 메커니즘을 설명합니다.\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/MnJWQfrlBgk\"\n    title=\"두근두근타운 플레이하기 전에 꼭 보세요! 정식 출시 완벽 가이드\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\n## 숙련된 수집가의 고급 팁\n\n장기 플레이어 보고서에 따르면 곤충 스폰은 멀티플레이어 영역의 **플레이어 밀도**에 영향을 받습니다. 더 조용한 인스턴스로 전환하면 희귀 목격이 증가합니다.\n\n고급 전략:\n- 가능하면 희귀 곤충을 솔로로 농장하십시오.\n- 수확량이 높은 나무를 표시하고 매일 다시 방문하십시오.\n- 곤충 사냥과 일일 경로를 결합하십시오.\n- 창을 놓치지 않도록 계절을 수동으로 추적하십시오.\n\n아늑한 게임이 이와 같은 컬렉션 루프를 강조하는 이유에 대한 더 넓은 산업적 맥락을 위해 PC Gamer의 생활 시뮬레이션 보도는 현대 디자인 트렌드에 대한 유용한 통찰력을 제공합니다. [PC Gamer](https://www.pcgamer.com/).\n\n이 초보자 중심 비디오는 또한 곤충 **insects heartopia** 수집 경로에 직접 적용되는 초기 실수와 효율성 팁을 강조합니다.\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0; border-radius: 0.5rem; overflow: hidden;\">\n  <iframe\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\n    src=\"https://www.youtube.com/embed/Q7pHY-DePl8\"\n    title=\"두근두근타운 초보자 가이드 [첫날 알았으면 좋았을 30가지 이상의 팁]\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n  ></iframe>\n</div>\n\n## FAQ: 두근두근타운의 곤충\n\n**Q: 두근두근타운에는 곤충이 몇 종류나 있나요?**\nA: 2026년 1월 현재 20종의 수집 가능한 곤충이 확인되었으며 향후 업데이트에서 더 추가될 수 있습니다.\n\n**Q: 곤충 **insects heartopia** 스폰은 무작위인가요?**\nA: 반무작위입니다. 플레이어 테스트에 따르면 스폰은 계절, 시간, 날씨 및 위치에 따라 달라집니다.\n\n**Q: 잡기 가장 희귀한 곤충은 무엇인가요?**\nA: 커뮤니티 합의는 좁은 스폰 창과 낮은 출현율로 인해 황금 사슴벌레를 지적합니다.\n\n**Q: 곤충은 매일 재생성되나요?**\nA: 예, 하지만 즉시 재생성되지는 않습니다. 대부분의 영역은 시간이 지나거나 플레이어가 영역을 변경하면 스폰을 새로 고칩니다.\n\n스폰 규칙을 이해하고, 경로를 계획하고, 계절 주기를 존중함으로써 전체 곤충 **insects heartopia** 컬렉션을 완료하는 것은 좌절스러운 고생보다는 만족스러운 장기 목표가 됩니다.\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2043,
+    "completion_tokens": 2453,
+    "total_tokens": 4496,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 2043,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "input_tokens_details": null
+  }
+}

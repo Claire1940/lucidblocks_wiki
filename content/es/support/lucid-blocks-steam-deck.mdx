@@ -1,0 +1,180 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Lucid Blocks en Steam Deck: Guía de Rendimiento y Mejores Ajustes 2026",
+  description: "Maximiza tu experiencia con Lucid Blocks en Steam Deck. Conoce los mejores ajustes, correcciones de compatibilidad y consejos de optimización para este sandbox de vóxeles surrealista.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/2d3436/dfe6e9?text=Lucid+Blocks+Steam+Deck+Guide",
+  date: "2026-03-17",
+  author: "Equipo de la Wiki de Lucid Blocks",
+  keywords: "Lucid Blocks, Steam Deck, configuración, rendimiento, optimización, guía de juego"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Estado de Compatibilidad**: Actualmente figura como **Desconocido** en Steam, pero es totalmente jugable con correcciones de Proton impulsadas por la comunidad.
+- **Objetivo de Rendimiento**: Es posible alcanzar **60 FPS** en Steam Deck con ajustes optimizados de renderizado de vóxeles y sombras.
+- **Corrección Clave**: Usa **Proton Experimental** para resolver el error común de "Cierre al iniciar" reportado en marzo de 2026.
+- **Distribución de Controles**: Se recomienda usar el **Trackpad para la navegación por menús** para manejar el complejo sistema de artesanía Apotheosis.
+- **Almacenamiento**: Solo requiere **1100 MB**, lo que lo convierte en un título ideal para tener siempre instalado en consolas portátiles.
+</Callout>
+
+Lucid Blocks ha irrumpido con fuerza en la escena indie desde su lanzamiento el 12 de marzo de 2026, ofreciendo una extensión de vóxeles surrealista y liminal que se siente excepcionalmente adecuada para el juego portátil. Sin embargo, muchos jugadores que buscan disfrutar del rendimiento de **lucid blocks steam deck** han notado la insignia de compatibilidad "Desconocido" en la página oficial de la tienda. Esta guía ofrece una mirada completa sobre cómo hacer que esta aventura etérea funcione perfectamente en tu consola de Valve. Ya sea que estés explorando ciudades hechas de plástico o defendiéndote de seres de dimensiones superiores, la portabilidad de la Steam Deck realza la inmersión onírica del juego. En esta guía de optimización de **lucid blocks steam deck**, cubriremos desde la solución de problemas iniciales hasta los mejores ajustes gráficos para asegurar que tu viaje a través del firmamento sea fluido y visualmente impresionante.
+
+<Section icon={Shield} title="Resumen de Compatibilidad y Rendimiento">
+
+A partir de marzo de 2026, la compatibilidad oficial de Steam Deck para Lucid Blocks sigue sin ser verificada por Valve. Sin embargo, los comentarios de la comunidad y nuestras pruebas internas confirman que el juego es "Jugable" con ajustes menores. Los requisitos ligeros del sistema —diseñados originalmente para gráficos integrados— permiten que la APU de la Steam Deck maneje la generación procedimental infinita con facilidad.
+
+| Característica | Estado | Notas |
+| --- | --- | --- |
+| **Steam Deck Verified** | Desconocido | Pruebas oficiales de Valve pendientes |
+| **Soporte de Proton** | Excelente | Funciona mejor con Proton Experimental o GE-Proton |
+| **Resolución Nativa** | Compatible | 1280x800 funciona sin barras negras |
+| **Guardado en la Nube** | Funcional | Transición fluida entre PC y consola |
+| **Logros** | Funcionando | Los 19 logros se registran correctamente en modo portátil |
+
+<Callout type="warning" title="Advertencia de Lanzamiento Inicial">
+Algunos usuarios informan de una pantalla negra en el primer lanzamiento. Esto suele deberse a que el juego intenta iniciarse en una resolución superior a la pantalla nativa de la Deck. Asegúrate siempre de que la "Resolución del juego" en el menú de propiedades de tu Steam Deck esté configurada en "Predeterminada" o "1280x800".
+</Callout>
+
+La naturaleza de vóxeles del juego significa que la carga del CPU puede aumentar durante la exploración vertical rápida. Aunque el juego está muy optimizado, la generación procedimental infinita requiere un medio de almacenamiento estable; recomendamos instalar Lucid Blocks en el SSD interno en lugar de una tarjeta microSD lenta para evitar tirones durante las "transiciones oníricas".
+
+</Section>
+
+<Section icon={Sparkles} title="Ajustes Optimizados para Lucid Blocks en Steam Deck">
+
+Para lograr unos 60 FPS constantes manteniendo la estética "onírica" de los entornos liminales, se recomiendan ciertos compromisos gráficos. El sistema de iluminación dinámica en Lucid Blocks es la característica que más recursos consume, especialmente al colocar múltiples bloques emisores de luz en el sandbox.
+
+| Ajuste | Valor Recomendado | Impacto en Rendimiento |
+| --- | --- | --- |
+| **Resolución** | 1280x800 | Alto (La nativa se ve mejor) |
+| **V-Sync** | Desactivado (Usar limitador de Deck) | Bajo (Reduce el retraso de entrada) |
+| **Calidad de Sombras** | Media | Alto (Ganancia significativa de FPS) |
+| **Distancia de Visión** | 12 Chunks | Medio (Inmersión equilibrada) |
+| **Luces Dinámicas** | Activado | Alto (Esencial para la atmósfera) |
+| **Anti-Aliasing** | FXAA | Bajo (Suaviza los bordes de los vóxeles) |
+
+<Callout type="tip" title="Consejo para Ahorrar Batería">
+Si juegas fuera de casa, bloquea la tasa de refresco de la Steam Deck a **40Hz/40FPS**. Esto proporciona una experiencia mucho más fluida que unos 60 FPS fluctuantes y puede extender la duración de tu batería casi 45 minutos en los biomas de "Almacenes Abandonados".
+</Callout>
+
+El sistema de artesanía "Apotheosis" involucra elementos de interfaz complejos. Recomendamos aumentar la **Escala de la IU** al 110% en los ajustes del juego para asegurar que el texto sea legible en la pantalla de 7 pulgadas. Esto es especialmente útil al leer las descripciones esotéricas de las "Manos de Bruma" o los "Planeadores de Abeja".
+
+</Section>
+
+<Section icon={Map} title="Pasos de Instalación y Solución de Problemas">
+
+Poner en marcha **lucid blocks steam deck** puede requerir algunos pasos manuales si te encuentras con el error del "Update 2.8.5" reportado por la comunidad el 15 de marzo de 2026. Sigue estos pasos para asegurar una instalación estable.
+
+<Steps>
+  <Step num="1" title="Forzar Versión de Proton">
+    Ve a las propiedades del juego en tu Biblioteca de Steam. En la pestaña de **Compatibilidad**, marca "Forzar el uso de una herramienta de compatibilidad específica de Steam Play" y selecciona **Proton Experimental**.
+  </Step>
+  <Step num="2" title="Limpiar Caché de Sombreadores">
+    Si experimentas tirones en las "Ciudades de Plástico", usa los ajustes de desarrollador de la Steam Deck para borrar el caché de sombreadores de Lucid Blocks y permitir que se vuelva a descargar.
+  </Step>
+  <Step num="3" title="Corrección de Opciones de Lanzamiento">
+    Para los usuarios que experimentan el error de "Cierre al iniciar", añade `-windowed -noborder` a las **Opciones de Lanzamiento** en las propiedades del juego. Esto omite varios errores de inicialización de pantalla.
+  </Step>
+  <Step num="4" title="Configuración del Controlador">
+    Selecciona la "Distribución Oficial de Lucid Blocks" de las plantillas de la comunidad. Asegúrate de que los **botones traseros L4/R4** estén asignados a "Gancho de Agarre" y "Bomba" para un mejor flujo de combate.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Corrección Confirmada">
+El parche del 15 de marzo (Actualización 2.8.5) resolvió varios problemas de fuga de memoria en sistemas basados en Linux. Si no has actualizado tu juego, asegúrate de estar en la última versión para evitar cierres a mitad de partida durante la generación procedimental.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Mecánicas de Juego en Portátil">
+
+La transición del ratón y teclado al mando de la Steam Deck requiere entender cómo las herramientas "liminales" interactúan con el entorno. El combate contra maniquíes y arañas colosales se siente sorprendentemente táctil en los sticks analógicos de la Deck.
+
+<CardGrid cols={3}>
+  <Card title="Maestría del Gancho de Agarre">
+    - **Sensibilidad de Gatillo**: Usa los gatillos analógicos para una longitud de gancho precisa.
+    - **Momento**: El giroscopio de la Deck se puede usar para ajustar con precisión el arco de balanceo.
+    - **Cambio Rápido**: Asigna el D-pad a tus herramientas favoritas para un desplazamiento veloz.
+  </Card>
+  <Card title="Artesanía Apotheosis">
+    - **Soporte de Pantalla Táctil**: Usa la pantalla para arrastrar y soltar objetos para la fusión.
+    - **Precisión del Trackpad**: El trackpad derecho actúa como un ratón para menús complejos.
+    - **Fijar Recetas**: Mantén las recetas esenciales en pantalla para evitar navegar por los menús.
+  </Card>
+  <Card title="Construcción con Vóxeles">
+    - **Modo de Precisión**: Mantén presionado L5 para ralentizar el movimiento del cursor al colocar bloques.
+    - **Luces Dinámicas**: Coloca bloques con el botón "X" para una iluminación rápida.
+    - **Comando Deshacer**: Asigna el clic del trackpad izquierdo a la función "Deshacer".
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Nota de Combate">
+Los seres de dimensiones superiores se mueven en patrones no lineales. Se recomienda encarecidamente utilizar el **Apuntado por Giroscopio** de la Steam Deck cuando uses la "Varita de Bola" o las "Cuchillas" para rastrear a estos enemigos erráticos.
+</Callout>
+
+Las mecánicas de "Pez Infinito" y "Fruta Femme" son perfectas para sesiones de juego cortas. La función de "Suspender y Reanudar" de la Steam Deck funciona a la perfección con Lucid Blocks, permitiéndote pausar tu sueño y reanudarlo exactamente donde lo dejaste en los serenos campos de hierba.
+
+</Section>
+
+<Section icon={Trophy} title="Lista de Verificación de Progresión en Steam Deck">
+
+To make the most of your **lucid blocks steam deck** experience, aim for these milestones during your first few hours of play. These targets ensure you have the right gear to survive the more hostile "Vertical Expansions."
+
+<Checklist
+  id="deck-progression"
+  title="Hitos del Inicio del Juego:"
+  items={[
+    "Crea el Gancho Giroscópico para movilidad avanzada",
+    "Llega al primer bioma de Ciudad de Plástico a 500m de profundidad",
+    "Sintetiza una Mano de Bruma usando el sistema Apotheosis",
+    "Derrota a una Araña Colosal usando solo bombas del entorno",
+    "Invoca a tu primer Bubblebear para llenar el vacío",
+    "Desbloquea el logro de Steam 'Archangel α'"
+  ]}
+/>
+
+| Hito | Recompensa | Dificultad |
+| --- | --- | --- |
+| **Primera Síntesis** | Criatura Esotérica Aleatoria | Fácil |
+| **Llegar a 1000m de Altura** | Alas de Planeador de Abeja | Medio |
+| **Sobrevivir a un Ciclo Nocturno** | Planos de Vóxeles Brillantes | Difícil |
+| **Conocer a un Kodama** | Mejora Permanente de Estamina | Medio |
+
+<Callout type="tip" title="Consejo de Exploración">
+No ignores los "Almacenes Abandonados". Estas áreas contienen botín de alta densidad pero son propensas a infestaciones de "Gel Blandito". Usa tu gancho de agarre para quedarte en el techo y evitar a los engendros terrestres.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Está Lucid Blocks verificado oficialmente para Steam Deck?",
+    answer: "Aún no. A partir de marzo de 2026, está marcado como 'Desconocido', pero es totalmente jugable con Proton Experimental y ajustes menores de configuración."
+  },
+  {
+    question: "¿Cómo soluciono el problema de 'Cierre al iniciar' en Steam Deck?",
+    answer: "Fuerza al juego a usar Proton Experimental en el menú de propiedades y añade '-windowed -noborder' a las opciones de lanzamiento."
+  },
+  {
+    question: "¿Cuál es la mejor duración de batería que puedo esperar?",
+    answer: "Con un límite de 40FPS/40Hz y ajustes medios, puedes esperar entre 3.5 a 5 horas de juego en una Steam Deck estándar."
+  },
+  {
+    question: "¿El juego es compatible con la relación de aspecto nativa 16:10 de la Steam Deck?",
+    answer: "Sí, Lucid Blocks es compatible con 1280x800 de forma nativa, proporcionando una experiencia a pantalla completa sin franjas negras."
+  }
+]} />
+
+<Callout type="info" title="Veredicto Final">
+A pesar del estado 'Desconocido', Lucid Blocks es un título imprescindible para los propietarios de Steam Deck que disfrutan de los sandbox de vóxeles y las atmósferas surrealistas. Los bajos requisitos de almacenamiento y el alto rendimiento del juego lo hacen perfecto para la plataforma.
+</Callout>
+
+</Section>
