@@ -1,11 +1,12 @@
 import fs from 'fs'
+import path from 'path'
 
 export interface WikiLink {
   name: string
   url: string
 }
 
-const SITE_JSON_PATH = process.env.SITE_JSON_PATH || '/root/Documents/GameProjects/site.json'
+const SITE_JSON_PATH = path.join(process.cwd(), 'site.json')
 
 function toTitleCase(str: string): string {
   return str.replace(/\b\w/g, c => c.toUpperCase())
