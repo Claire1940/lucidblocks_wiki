@@ -135,11 +135,10 @@ class MDXTranslator:
         # Retry logic
         for attempt in range(self.retry_attempts):
             try:
-                # 设置详细的超时配置，避免连接断开
                 timeout = aiohttp.ClientTimeout(
-                    total=self.timeout,      # 600秒总超时
-                    connect=60,              # 连接建立超时60秒
-                    sock_read=300            # Socket读取超时300秒（足够读取长响应）
+                    total=self.timeout,
+                    connect=30,
+                    sock_read=self.timeout
                 )
 
                 async with session.post(
@@ -245,8 +244,11 @@ class MDXTranslator:
         # Retry logic
         for attempt in range(self.retry_attempts):
             try:
-                # 简化超时配置（参考 api_client.py 的成功实现）
-                timeout = aiohttp.ClientTimeout(total=self.timeout)
+                timeout = aiohttp.ClientTimeout(
+                    total=self.timeout,
+                    connect=30,
+                    sock_read=self.timeout
+                )
 
                 async with session.post(
                     url=self.api_url,
@@ -310,7 +312,9 @@ class MDXTranslator:
                         if attempt == self.retry_attempts - 1:
                             return False, error_msg
 
-                        await asyncio.sleep(self.retry_delay)
+                        retry_wait = self.retry_delay * (attempt + 1)
+                        print(f"  [WAIT] 等待 {retry_wait}s 后重试...")
+                        await asyncio.sleep(retry_wait)
                         continue
 
             except asyncio.TimeoutError:
@@ -320,7 +324,9 @@ class MDXTranslator:
                 if attempt == self.retry_attempts - 1:
                     return False, error_msg
 
-                await asyncio.sleep(self.retry_delay)
+                retry_wait = self.retry_delay * (attempt + 1)
+                print(f"  [WAIT] 等待 {retry_wait}s 后重试...")
+                await asyncio.sleep(retry_wait)
                 continue
 
             except Exception as e:
@@ -362,7 +368,9 @@ class MDXTranslator:
                 if attempt == self.retry_attempts - 1:
                     return False, error_msg
 
-                await asyncio.sleep(self.retry_delay)
+                retry_wait = self.retry_delay * (attempt + 1)
+                print(f"  [WAIT] 等待 {retry_wait}s 后重试...")
+                await asyncio.sleep(retry_wait)
                 continue
 
         # All attempts failed
