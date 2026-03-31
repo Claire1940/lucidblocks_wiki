@@ -68,7 +68,12 @@ def load_config() -> dict:
 
 def call_api(content: str, lang_name: str, config: dict, timeout: int = 60, retries: int = 3) -> Optional[str]:
     """调用翻译 API，失败返回 None"""
-    api_url = f"{config['api_base_url'].rstrip('/')}/chat/completions"
+    base = config['api_base_url'].rstrip('/')
+    # 兼容各种写法：/v1、/v1/、/v1/chat/completions 均可正常工作
+    if base.endswith('/chat/completions'):
+        api_url = base
+    else:
+        api_url = f"{base}/chat/completions"
     api_key = config['api_key']
     model = config.get('model', 'gemini-2.5-flash')
     temperature = config.get('temperature', 0.1)
