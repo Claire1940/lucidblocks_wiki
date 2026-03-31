@@ -146,22 +146,57 @@ def count_values(obj) -> int:
 
 
 def split_into_chunks(data: dict, chunk_count: int = 10) -> list:
-    """按 leaf string value 数量均匀分成最多 chunk_count 块（贪心装箱）"""
-    weights = [(k, count_values(v)) for k, v in data.items()]
-    total = sum(w for _, w in weights)
-    target = max(1, total // chunk_count)  # 每块目标 value 数
+    """按 leaf string value 数量均匀装箱。
+    超大顶层 key（value 数 > target）会按其子 key 拆分，合并时用 deep_merge。
+    """
+    total = count_values(data)
+    target = max(1, total // chunk_count)
 
-    chunks, current, current_weight = [], {}, 0
-    for k, w in weights:
-        current[k] = data[k]
-        current_weight += w
-        # 达到目标且还有剩余块配额时切分
-        if current_weight >= target and len(chunks) < chunk_count - 1:
-            chunks.append(current)
-            current, current_weight = {}, 0
+    # 展开：超大 key 按子 key 拆分成独立 item
+    items = []  # (top_key, sub_key_or_None, value, weight)
+    for k, v in data.items():
+        w = count_values(v)
+        if w > target and isinstance(v, dict) and len(v) > 1:
+            for sub_k, sub_v in v.items():
+                items.append((k, sub_k, sub_v, count_values(sub_v)))
+        else:
+            items.append((k, None, v, w))
+
+    # 贪心装箱
+    raw_chunks, current, cur_w = [], [], 0
+    for item in items:
+        current.append(item)
+        cur_w += item[3]
+        if cur_w >= target and len(raw_chunks) < chunk_count - 1:
+            raw_chunks.append(current)
+            current, cur_w = [], 0
     if current:
-        chunks.append(current)
+        raw_chunks.append(current)
+
+    # 重建 dict（同 top_key 的子项合并到同一父 key 下）
+    chunks = []
+    for raw in raw_chunks:
+        chunk = {}
+        for k, sub_k, v, _ in raw:
+            if sub_k is None:
+                chunk[k] = v
+            else:
+                chunk.setdefault(k, {})[sub_k] = v
+        chunks.append(chunk)
     return chunks
+
+# ─── deep merge ──────────────────────────────────────────────────────────────
+
+
+def deep_merge(base: dict, update: dict) -> dict:
+    """递归合并两个 dict，update 优先；同名 dict 子树递归合并"""
+    result = dict(base)
+    for k, v in update.items():
+        if k in result and isinstance(result[k], dict) and isinstance(v, dict):
+            result[k] = deep_merge(result[k], v)
+        else:
+            result[k] = v
+    return result
 
 # ─── 翻译单个语言 ─────────────────────────────────────────────────────────────
 
@@ -240,14 +275,17 @@ def translate_language(
             idx_result, _, translated_chunk = future.result()
             results[idx_result - 1] = translated_chunk
 
-    # 按原始顺序合并
+    # 按原始顺序 deep merge（同一顶层 key 可能来自多个 chunk）
     translated: dict = {}
     for r in results:
         if r:
-            translated.update(r)
+            translated = deep_merge(translated, r)
 
-    # 合并：existing + 新翻译（新翻译优先）
-    merged = {**existing, **translated}
+    # incremental 模式：保留已有翻译，新翻译补充；overwrite 模式：完全替换
+    if incremental:
+        merged = deep_merge(existing, translated)
+    else:
+        merged = translated
 
     # 保存
     output_path.parent.mkdir(parents=True, exist_ok=True)
