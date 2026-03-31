@@ -67,7 +67,7 @@ def load_config() -> dict:
 # ─── API 调用 ─────────────────────────────────────────────────────────────────
 
 
-def call_api(content: str, lang_name: str, config: dict, timeout: int = 60, retries: int = 3) -> Optional[str]:
+def call_api(content: str, lang_name: str, config: dict, timeout: int = 120, retries: int = 3) -> Optional[str]:
     """调用翻译 API，失败返回 None"""
     base = config['api_base_url'].rstrip('/')
     # 兼容各种写法：/v1、/v1/、/v1/chat/completions 均可正常工作
@@ -116,7 +116,9 @@ def call_api(content: str, lang_name: str, config: dict, timeout: int = 60, retr
         except Exception as e:
             print(f"    [retry {attempt}/{retries}] {e}")
             if attempt < retries:
-                time.sleep(5)
+                retry_wait = 5 * attempt
+                print(f"    [WAIT] 等待 {retry_wait}s 后重试...")
+                time.sleep(retry_wait)
 
     return None
 
