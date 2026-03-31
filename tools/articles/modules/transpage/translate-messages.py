@@ -32,6 +32,7 @@ import time
 import argparse
 import urllib.request
 import urllib.error
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Optional
 
@@ -147,6 +148,29 @@ def split_into_chunks(data: dict, chunk_count: int = 10) -> list:
 # ─── 翻译单个语言 ─────────────────────────────────────────────────────────────
 
 
+def translate_chunk_task(idx: int, total: int, chunk: dict, lang_name: str, config: dict) -> tuple:
+    """单个 chunk 的翻译任务，返回 (idx, chunk_key_order, translated_dict)"""
+    keys_preview = ', '.join(list(chunk.keys())[:3])
+    suffix = '...' if len(chunk) > 3 else ''
+    print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] 开始", flush=True)
+
+    chunk_json = json.dumps(chunk, ensure_ascii=False, indent=2)
+    result = call_api(chunk_json, lang_name, config)
+
+    if result:
+        cleaned = clean_json_response(result)
+        try:
+            parsed = json.loads(cleaned)
+            print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ✓")
+            return (idx, list(chunk.keys()), parsed)
+        except json.JSONDecodeError as e:
+            print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ✗ JSON解析失败({e})，英文兜底")
+            return (idx, list(chunk.keys()), chunk)
+    else:
+        print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ✗ API失败，英文兜底")
+        return (idx, list(chunk.keys()), chunk)
+
+
 def translate_language(
     lang: str,
     lang_name: str,
@@ -155,6 +179,7 @@ def translate_language(
     overwrite: bool = False,
     incremental: bool = False,
     chunk_count: int = 10,
+    concurrency: int = 5,
 ) -> bool:
     output_dir = PROJECT_ROOT / config.get('output_dir', 'src/locales/')
     output_path = output_dir / f'{lang}.json'
@@ -184,30 +209,24 @@ def translate_language(
     # 按 chunk_count 拆分
     chunks = split_into_chunks(to_translate, chunk_count)
     total = len(chunks)
-    print(f"  [开始] {lang.upper()} ({lang_name}) - {total} 个 chunk")
+    print(f"  [开始] {lang.upper()} ({lang_name}) - {total} 个 chunk，并发度 {concurrency}")
 
+    # 并发度 concurrency 执行所有 chunk
+    results = [None] * total
+    with ThreadPoolExecutor(max_workers=concurrency) as executor:
+        futures = {
+            executor.submit(translate_chunk_task, idx + 1, total, chunk, lang_name, config): idx
+            for idx, chunk in enumerate(chunks)
+        }
+        for future in as_completed(futures):
+            idx_result, _, translated_chunk = future.result()
+            results[idx_result - 1] = translated_chunk
+
+    # 按原始顺序合并
     translated: dict = {}
-
-    for idx, chunk in enumerate(chunks, 1):
-        keys_preview = ', '.join(list(chunk.keys())[:3])
-        suffix = '...' if len(chunk) > 3 else ''
-        print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}]", end=' ', flush=True)
-
-        chunk_json = json.dumps(chunk, ensure_ascii=False, indent=2)
-        result = call_api(chunk_json, lang_name, config)
-
-        if result:
-            cleaned = clean_json_response(result)
-            try:
-                parsed = json.loads(cleaned)
-                translated.update(parsed)
-                print("✓")
-            except json.JSONDecodeError as e:
-                print(f"✗ JSON解析失败({e})，使用英文兜底")
-                translated.update(chunk)
-        else:
-            print("✗ API失败，使用英文兜底")
-            translated.update(chunk)
+    for r in results:
+        if r:
+            translated.update(r)
 
     # 合并：existing + 新翻译（新翻译优先）
     merged = {**existing, **translated}
@@ -231,6 +250,7 @@ def main():
     parser.add_argument('--overwrite', action='store_true', help='覆盖已有翻译文件')
     parser.add_argument('--incremental', action='store_true', help='增量翻译（只翻译缺失的顶层 key）')
     parser.add_argument('--chunks', type=int, default=10, help='每个语言拆成几个 chunk（默认 10）')
+    parser.add_argument('--concurrency', type=int, default=5, help='chunk 并发度（默认 5）')
     args = parser.parse_args()
 
     config = load_config()
@@ -262,7 +282,7 @@ def main():
     print("=" * 60)
     print(f"目标语言: {', '.join(target_langs)}")
     print(f"模式: {'增量' if args.incremental else '完整覆盖' if args.overwrite else '跳过已存在'}")
-    print(f"Chunk 数: {args.chunks}")
+    print(f"Chunk 数: {args.chunks}，并发度: {args.concurrency}")
     print("=" * 60 + "\n")
 
     for i, lang in enumerate(target_langs, 1):
@@ -276,6 +296,7 @@ def main():
             overwrite=args.overwrite,
             incremental=args.incremental,
             chunk_count=args.chunks,
+            concurrency=args.concurrency,
         )
 
     print("=" * 60)
