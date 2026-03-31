@@ -134,15 +134,33 @@ def clean_json_response(text: str) -> str:
 # ─── chunk 拆分 ───────────────────────────────────────────────────────────────
 
 
+def count_values(obj) -> int:
+    """递归统计 leaf string value 数量"""
+    if isinstance(obj, str):
+        return 1
+    if isinstance(obj, dict):
+        return sum(count_values(v) for v in obj.values())
+    if isinstance(obj, list):
+        return sum(count_values(v) for v in obj)
+    return 0
+
+
 def split_into_chunks(data: dict, chunk_count: int = 10) -> list:
-    """将顶层 key 均匀分成 chunk_count 组"""
-    keys = list(data.keys())
-    n = len(keys)
-    size = max(1, -(-n // chunk_count))  # 向上取整
-    chunks = []
-    for i in range(0, n, size):
-        chunk_keys = keys[i:i + size]
-        chunks.append({k: data[k] for k in chunk_keys})
+    """按 leaf string value 数量均匀分成最多 chunk_count 块（贪心装箱）"""
+    weights = [(k, count_values(v)) for k, v in data.items()]
+    total = sum(w for _, w in weights)
+    target = max(1, total // chunk_count)  # 每块目标 value 数
+
+    chunks, current, current_weight = [], {}, 0
+    for k, w in weights:
+        current[k] = data[k]
+        current_weight += w
+        # 达到目标且还有剩余块配额时切分
+        if current_weight >= target and len(chunks) < chunk_count - 1:
+            chunks.append(current)
+            current, current_weight = {}, 0
+    if current:
+        chunks.append(current)
     return chunks
 
 # ─── 翻译单个语言 ─────────────────────────────────────────────────────────────
