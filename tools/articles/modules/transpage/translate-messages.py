@@ -124,11 +124,13 @@ def call_api(content: str, lang_name: str, config: dict, timeout: int = 60, retr
 
 
 def clean_json_response(text: str) -> str:
-    """去除 markdown 代码块，提取纯 JSON"""
+    """去除 markdown 代码块，提取纯 JSON，移除非法控制字符"""
     text = text.strip()
     if text.startswith('```'):
         text = re.sub(r'^```\w*\n?', '', text)
         text = re.sub(r'\n?```$', '', text)
+    # 移除 JSON 字符串中的非法控制字符（保留 \t \n \r）
+    text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', text)
     return text.strip()
 
 # ─── chunk 拆分 ───────────────────────────────────────────────────────────────
