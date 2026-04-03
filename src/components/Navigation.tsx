@@ -218,15 +218,16 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 							)}
 						</div>
 
-						{/* Find more Wikis Dropdown */}
+						{/* More Wikis Dropdown */}
 						<div className="relative hidden sm:block" ref={wikiDropdownRef}>
 							<Button
+								size="sm"
 								onClick={() => setWikiMenuOpen(!wikiMenuOpen)}
-								className="bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)] text-white"
+								className="bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)] text-white text-xs px-2.5 py-1 h-7"
 								aria-expanded={wikiMenuOpen}
 								aria-haspopup="menu"
 							>
-								Find more Wikis
+								More Wikis
 								<ChevronDown className={`w-3 h-3 ml-1 transition-transform ${wikiMenuOpen ? 'rotate-180' : ''}`} />
 							</Button>
 
@@ -321,7 +322,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 							<div className="flex items-center gap-3 px-4 pt-2">
 								<ThemeToggle />
 							</div>
-							{/* Find more Wikis - Mobile */}
+							{/* More Wikis - Mobile */}
 							<div className="px-4">
 								<button
 									onClick={() => setMobileWikiExpanded(!mobileWikiExpanded)}
@@ -329,7 +330,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 								>
 									<span className="flex items-center gap-3 font-medium">
 										<ExternalLink className="w-5 h-5" />
-										Find more Wikis
+										More Wikis
 									</span>
 									<ChevronDown className={`w-4 h-4 transition-transform ${mobileWikiExpanded ? 'rotate-180' : ''}`} />
 								</button>
