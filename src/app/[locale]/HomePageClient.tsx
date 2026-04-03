@@ -26,6 +26,7 @@ import { useMessages } from 'next-intl'
 import { VideoFeature } from '@/components/home/VideoFeature'
 import { LatestGuidesAccordion } from '@/components/home/LatestGuidesAccordion'
 import { NativeBannerAd, AdBanner } from '@/components/ads'
+import { SidebarAd } from '@/components/ads/SidebarAd'
 import { scrollToSection } from '@/lib/scrollToSection'
 import { DynamicIcon } from '@/components/ui/DynamicIcon'
 import type { ContentItemWithType } from '@/lib/getLatestArticles'
@@ -180,10 +181,26 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
+      {/* 左侧广告容器 - Fixed 定位 */}
+      <aside
+        className="hidden xl:block fixed top-20 w-40 z-10"
+        style={{ left: 'calc((100vw - 896px) / 2 - 180px)' }}
+      >
+        <SidebarAd type="sidebar-160x600" adKey={process.env.NEXT_PUBLIC_AD_SIDEBAR_160X600} />
+      </aside>
+
+      {/* 右侧广告容器 - Fixed 定位 */}
+      <aside
+        className="hidden xl:block fixed top-20 w-40 z-10"
+        style={{ right: 'calc((100vw - 896px) / 2 - 180px)' }}
+      >
+        <SidebarAd type="sidebar-160x300" adKey={process.env.NEXT_PUBLIC_AD_SIDEBAR_160X300} />
+      </aside>
+
       {/* 广告位 1: 移动端横幅 Sticky */}
-      <div className="sticky top-20 z-20 border-b border-border py-2">
+      {/* <div className="sticky top-20 z-20 border-b border-border py-2">
         <AdBanner type="banner-320x50" adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50} />
-      </div>
+      </div> */}
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
@@ -244,7 +261,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
 
       {/* Video Section */}
       <section className="px-4 py-12">
-        <div className="scroll-reveal container mx-auto">
+        <div className="scroll-reveal container mx-auto max-w-4xl">
           <div className="relative rounded-2xl overflow-hidden">
             <VideoFeature
               videoId="7C7fybRM_No"
@@ -263,7 +280,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
 
       {/* Tools Grid - 16 Navigation Cards */}
       <section className="px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               {t.tools.title}{' '}
