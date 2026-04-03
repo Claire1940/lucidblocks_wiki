@@ -9,6 +9,7 @@ import { routing, type Locale } from '@/i18n/routing'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { NAVIGATION_CONFIG } from '@/config/navigation'
 import { getLanguageDisplayNames } from '@/lib/i18n-utils'
+import { extractPrimaryKeyword } from '@/lib/utils'
 import type { NavPreviewData, NavPreviewArticle } from '@/types/nav-preview'
 import type { WikiLink } from '@/lib/wiki-links'
 
@@ -148,7 +149,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 														onClick={() => setOpenDropdown(null)}
 													>
 														<ChevronRight className="w-3 h-3 text-[hsl(var(--nav-theme-light))] flex-shrink-0" />
-														<span className="line-clamp-1">{article.title}</span>
+														<span>{extractPrimaryKeyword(article.title)}</span>
 													</Link>
 												))}
 												{randomArticles.length === 0 && (
@@ -296,7 +297,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 														onClick={() => { setMobileMenuOpen(false); setMobileExpandedItem(null) }}
 													>
 														<ChevronRight className="w-3 h-3 text-[hsl(var(--nav-theme-light))] flex-shrink-0" />
-														<span className="line-clamp-1">{article.title}</span>
+														<span>{extractPrimaryKeyword(article.title)}</span>
 													</Link>
 												))}
 												{mobileRandomArticles.length === 0 && (
