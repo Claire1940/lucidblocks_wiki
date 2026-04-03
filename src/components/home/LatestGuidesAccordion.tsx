@@ -117,7 +117,7 @@ export function LatestGuidesAccordion({
 
   return (
     <section className={`px-4 py-20 ${className}`}>
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-4xl">
         {/* 标题 */}
         <div className="text-center mb-12 scroll-reveal">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
