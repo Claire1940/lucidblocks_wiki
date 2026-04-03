@@ -109,15 +109,15 @@ export async function DetailPage({ frontmatter, content, contentType, language, 
 			<aside
 				className="hidden xl:block fixed top-20 w-40 z-10"
 				style={{
-					left: 'calc((100vw - 1280px) / 2 - 180px)',
+					left: 'calc((100vw - 896px) / 2 - 180px)',
 				}}
 			>
 				{/* 左侧广告：160×600 竖幅 */}
 				<SidebarAd type="sidebar-160x600" adKey={process.env.NEXT_PUBLIC_AD_SIDEBAR_160X600} />
 			</aside>
 
-			{/* 中间正文容器 - 保持原有宽度 */}
-			<div className="container mx-auto px-4 py-6 max-w-7xl">
+			{/* 中间正文容器 */}
+			<div className="container mx-auto px-4 py-6 max-w-4xl">
 				{/* Article Content - MDX 渲染 */}
 				<article className="prose prose-lg max-w-none">{content}</article>
 
@@ -158,7 +158,7 @@ export async function DetailPage({ frontmatter, content, contentType, language, 
 			<aside
 				className="hidden xl:block fixed top-20 w-40 z-10"
 				style={{
-					right: 'calc((100vw - 1280px) / 2 - 180px)',
+					right: 'calc((100vw - 896px) / 2 - 180px)',
 				}}
 			>
 				{/* 右侧广告：160×300 方形 */}
