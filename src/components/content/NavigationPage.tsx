@@ -78,7 +78,7 @@ export async function NavigationPage({
       </section>
 
       {/* 广告位 1: Hero Section 下方 - 728×90 横幅 */}
-      <AdBanner type="banner-728x90" />
+      <AdBanner type="banner-728x90" adKey={process.env.NEXT_PUBLIC_AD_BANNER_728X90} />
 
       {/* What is / Why Section */}
       <section className="container mx-auto max-w-6xl px-4 py-8">
@@ -194,7 +194,7 @@ export async function NavigationPage({
       <NativeBannerAd adKey={process.env.NEXT_PUBLIC_AD_NATIVE_BANNER || ''} />
 
       {/* 广告位 2: Featured Section 下方 - 300×250 方形 */}
-      <AdBanner type="banner-300x250" />
+      <AdBanner type="banner-300x250" adKey={process.env.NEXT_PUBLIC_AD_BANNER_300X250} />
 
       {/* All Items - 一行 3 个 */}
       {allItems.length > 0 && (
@@ -249,7 +249,7 @@ export async function NavigationPage({
       )}
 
       {/* 广告位 4: 页面底部 - 728×90 横幅 */}
-      <AdBanner type="banner-728x90" />
+      <AdBanner type="banner-728x90" adKey={process.env.NEXT_PUBLIC_AD_BANNER_728X90} />
     </div>
   )
 }
