@@ -11,7 +11,7 @@ export function cn(...inputs: ClassValue[]) {
  * 如果标题中没有冒号，返回完整标题
  */
 export function extractPrimaryKeyword(title: string): string {
-  const colonIndex = title.indexOf(':')
+  const colonIndex = title.lastIndexOf(':')
   if (colonIndex === -1) {
     return title
   }
