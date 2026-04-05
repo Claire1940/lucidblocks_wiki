@@ -17,7 +17,7 @@ export function SocialBarAd({ adKey }: SocialBarAdProps) {
     if (!adKey || adKey === '0' || scriptLoadedRef.current) return
 
     const script = document.createElement('script')
-    script.src = `https://pl28666057.effectivegatecpm.com/b3/a5/94/${adKey}.js`
+    script.src = `https://pl28666057.effectivegatecpm.com/${adKey}.js`
     document.body.appendChild(script)
     scriptLoadedRef.current = true
 
