@@ -186,7 +186,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
         className="hidden xl:block fixed top-20 w-40 z-10"
         style={{ left: 'calc((100vw - 896px) / 2 - 180px)' }}
       >
-        <SidebarAd type="sidebar-160x600" adKey={process.env.NEXT_PUBLIC_AD_SIDEBAR_160X600} />
+        <SidebarAd type="sidebar-160x300" adKey={process.env.NEXT_PUBLIC_AD_SIDEBAR_160X300} />
       </aside>
 
       {/* 右侧广告容器 - Fixed 定位 */}
@@ -194,7 +194,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
         className="hidden xl:block fixed top-20 w-40 z-10"
         style={{ right: 'calc((100vw - 896px) / 2 - 180px)' }}
       >
-        <SidebarAd type="sidebar-160x300" adKey={process.env.NEXT_PUBLIC_AD_SIDEBAR_160X300} />
+        <SidebarAd type="sidebar-160x600" adKey={process.env.NEXT_PUBLIC_AD_SIDEBAR_160X600} />
       </aside>
 
       {/* 广告位 1: 移动端横幅 Sticky */}

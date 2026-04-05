@@ -3,6 +3,41 @@ import path from 'path'
 import { CONTENT_TYPES as CONFIG_CONTENT_TYPES } from '@/config/navigation'
 import type { Locale } from '@/i18n/routing'
 
+/**
+ * 将文件名转换为 URL-safe slug
+ * 所有非字母数字连字符下划线的字符（冒号、问号、井号、空格等）替换为 -
+ * 合并连续的 -，去掉首尾 -
+ */
+function fileNameToSlug(fileName: string): string {
+  return fileName
+    .replace(/[^a-zA-Z0-9\-_]/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '')
+}
+
+/**
+ * 根据 slug 在目录中反查真实文件名（不含 .mdx）
+ * 例如 slug="lucid-blocks-guide" → 返回 "lucid:blocks-guide"
+ */
+export function findFileBySlug(dir: string, slug: string, basePath: string[] = []): string | null {
+  if (!fs.existsSync(dir)) return null
+  const entries = fs.readdirSync(dir, { withFileTypes: true })
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name)
+    if (entry.isDirectory()) {
+      const result = findFileBySlug(fullPath, slug, [...basePath, entry.name])
+      if (result) return result
+    } else if (entry.name.endsWith('.mdx')) {
+      const fileName = entry.name.replace('.mdx', '')
+      const entrySlug = [...basePath, fileNameToSlug(fileName)].join('/')
+      if (entrySlug === slug) {
+        return [...basePath, fileName].join('/')
+      }
+    }
+  }
+  return null
+}
+
 // 通用 Frontmatter 接口
 export interface ContentFrontmatter {
   title: string
@@ -56,7 +91,7 @@ function getSlugsFromDirectory(dir: string, basePath: string[] = []): string[] {
       slugs.push(...getSlugsFromDirectory(fullPath, [...basePath, entry.name]))
     } else if (entry.name.endsWith('.mdx')) {
       const fileName = entry.name.replace('.mdx', '')
-      slugs.push([...basePath, fileName].join('/'))
+      slugs.push([...basePath, fileNameToSlug(fileName)].join('/'))
     }
   }
   return slugs
@@ -87,8 +122,9 @@ export async function getAllContent(
   // 使用 import 获取每个文件的 metadata
   for (const slug of slugs) {
     try {
-      // 先尝试当前语言
-      const mod = await import(`../../content/${language}/${contentType}/${slug}.mdx`)
+      // 先尝试当前语言（反查真实文件名以处理含特殊字符的文件名）
+      const realSlug = findFileBySlug(contentDir, slug) || slug
+      const mod = await import(`../../content/${language}/${contentType}/${realSlug}.mdx`)
       items.push({
         slug,
         frontmatter: mod.metadata as ContentFrontmatter,
@@ -97,7 +133,9 @@ export async function getAllContent(
       // Fallback 到英文
       if (language !== 'en') {
         try {
-          const mod = await import(`../../content/en/${contentType}/${slug}.mdx`)
+          const enContentDir = path.join(process.cwd(), 'content', 'en', contentType)
+          const enRealSlug = findFileBySlug(enContentDir, slug) || slug
+          const mod = await import(`../../content/en/${contentType}/${enRealSlug}.mdx`)
           items.push({
             slug,
             frontmatter: mod.metadata as ContentFrontmatter,
@@ -143,7 +181,7 @@ export async function getAllContentPaths(): Promise<string[][]> {
           scanDirectory(fullPath, [...basePath, entry.name])
         } else if (entry.name.endsWith('.mdx')) {
           const fileName = entry.name.replace('.mdx', '')
-          paths.push([contentType, ...basePath, fileName])
+          paths.push([contentType, ...basePath, fileNameToSlug(fileName)])
         }
       }
     }

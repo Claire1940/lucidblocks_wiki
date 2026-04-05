@@ -4,11 +4,13 @@ import {
   getAllContentPaths,
   getAllContent,
   isValidContentType,
+  findFileBySlug,
   CONTENT_TYPES,
   type ContentType,
   type Language,
   type ContentFrontmatter,
 } from '@/lib/content'
+import path from 'path'
 import { NavigationPage } from '@/components/content/NavigationPage'
 import { DetailPage } from '@/components/content/DetailPage'
 import { ArticleStructuredData } from '@/components/content/ArticleStructuredData'
@@ -110,8 +112,12 @@ async function renderDetailPage(
 
   // 动态导入 MDX，同时获取 metadata 和内容组件
   try {
+    // 反查真实文件名（处理含特殊字符的文件名，如冒号）
+    const contentDir = path.join(process.cwd(), 'content', locale, contentType)
+    const realSlug = findFileBySlug(contentDir, currentSlug) || currentSlug
+
     const { default: MDXContent, metadata } = await import(
-      `../../../../content/${locale}/${contentType}/${currentSlug}.mdx`
+      `../../../../content/${locale}/${contentType}/${realSlug}.mdx`
     )
 
     // 获取相关文章
@@ -142,8 +148,11 @@ async function renderDetailPage(
     // 如果当前语言的 MDX 不存在，尝试加载英文版本
     if (locale !== 'en') {
       try {
+        const enDir = path.join(process.cwd(), 'content', 'en', contentType)
+        const enRealSlug = findFileBySlug(enDir, currentSlug) || currentSlug
+
         const { default: MDXContent, metadata } = await import(
-          `../../../../content/en/${contentType}/${currentSlug}.mdx`
+          `../../../../content/en/${contentType}/${enRealSlug}.mdx`
         )
 
         const allContent = await getAllContent(contentType, locale)
@@ -271,8 +280,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const currentSlug = slugPath.join('/')
 
     try {
+      const contentDir = path.join(process.cwd(), 'content', locale, contentType)
+      const realSlug = findFileBySlug(contentDir, currentSlug) || currentSlug
+
       const { metadata } = await import(
-        `../../../../content/${locale}/${contentType}/${currentSlug}.mdx`
+        `../../../../content/${locale}/${contentType}/${realSlug}.mdx`
       )
 
       const fullPath = `/${slug.join('/')}`
@@ -303,8 +315,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       // Fallback 到英文
       if (locale !== 'en') {
         try {
+          const enDir = path.join(process.cwd(), 'content', 'en', contentType)
+          const enRealSlug = findFileBySlug(enDir, currentSlug) || currentSlug
+
           const { metadata } = await import(
-            `../../../../content/en/${contentType}/${currentSlug}.mdx`
+            `../../../../content/en/${contentType}/${enRealSlug}.mdx`
           )
 
           const fullPath = `/${slug.join('/')}`
