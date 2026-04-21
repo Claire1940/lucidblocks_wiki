@@ -15,13 +15,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: 'Copyright Notice - Lucid Blocks Wiki',
     description: 'Copyright and intellectual property information for Lucid Blocks Wiki. Learn about content ownership, fair use, DMCA policy, and how to report copyright infringement.',
-    keywords: [
-      'copyright notice',
-      'Lucid Blocks Wiki copyright',
-      'DMCA policy',
-      'intellectual property',
-      'content ownership',
-    ],
     robots: {
       index: false,
       follow: true,

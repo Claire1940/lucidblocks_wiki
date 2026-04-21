@@ -41,14 +41,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	// 获取 SEO 翻译
 	const t = await getTranslations('seo.home')
 
-	// 将 keywords 字符串分割为数组
-	const keywordsString = t('keywords')
-	const keywords = keywordsString.split(',').map(k => k.trim())
-
 	return {
 		title: t('title'),
 		description: t('description'),
-		keywords: keywords,
 		robots: {
 			index: true,
 			follow: true,
