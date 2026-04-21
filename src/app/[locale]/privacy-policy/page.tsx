@@ -15,13 +15,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: 'Privacy Policy - Lucid Blocks Wiki',
     description: 'Lucid Blocks Wiki Privacy Policy. Learn how we collect, use, and protect your data when you use our Steam game resource platform. Your privacy matters to us.',
-    keywords: [
-      'privacy policy',
-      'Lucid Blocks Wiki privacy',
-      'data protection',
-      'user privacy',
-      'GDPR compliance',
-    ],
     robots: {
       index: false,
       follow: true,

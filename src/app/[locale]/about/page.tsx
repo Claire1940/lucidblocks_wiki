@@ -15,13 +15,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: 'About Lucid Blocks Wiki - Your Ultimate Steam Game Resource',
     description: 'Learn about Lucid Blocks Wiki, a community-driven resource hub providing comprehensive guides, crafting tips, creature info, and strategies for the Lucid Blocks Steam game.',
-    keywords: [
-      'about Lucid Blocks Wiki',
-      'Lucid Blocks community',
-      'Steam game wiki',
-      'game resource hub',
-      'Lucid Blocks team',
-    ],
     robots: {
       index: false,
       follow: true,

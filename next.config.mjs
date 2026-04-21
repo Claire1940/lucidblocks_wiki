@@ -12,6 +12,9 @@ const nextConfig = {
   // Docker 部署配置
   output: 'standalone',
 
+  // URL 不加尾部斜杠
+  trailingSlash: false,
+
   // 性能优化
   compress: true,
   poweredByHeader: false,

@@ -15,13 +15,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: "Terms of Service - Lucid Blocks Wiki",
     description: "Read the Terms of Service for Lucid Blocks Wiki. Learn about user responsibilities, content usage guidelines, and legal terms for using our Steam game resource platform.",
-    keywords: [
-      'terms of service',
-      "Lucid Blocks Wiki terms",
-      'user agreement',
-      'legal terms',
-      'usage policy',
-    ],
     robots: {
       index: false,
       follow: true,
