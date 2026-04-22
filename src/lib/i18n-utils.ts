@@ -8,6 +8,8 @@ import { routing, type Locale } from '@/i18n/routing'
  * @returns 包含 canonical 和 languages 的配置对象
  */
 export function buildLanguageAlternates(path: string, locale: Locale, baseUrl: string) {
+  // 强制 https 协议，避免 NEXT_PUBLIC_SITE_URL 被注入 http:// 导致 hreflang Link 头泄漏
+  baseUrl = baseUrl.replace(/^http:\/\//i, 'https://')
   // 规范化路径：移除尾部斜杠（除非是根路径）
   const normalizedPath = path === '/' ? '' : path.replace(/\/$/, '')
 
