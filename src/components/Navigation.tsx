@@ -13,15 +13,6 @@ import { extractPrimaryKeyword } from '@/lib/utils'
 import type { NavPreviewData, NavPreviewArticle } from '@/types/nav-preview'
 import type { WikiLink } from '@/lib/wiki-links'
 
-function getRandomArticles(articles: NavPreviewArticle[], count: number): NavPreviewArticle[] {
-	const copy = [...articles]
-	for (let i = copy.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1))
-		;[copy[i], copy[j]] = [copy[j], copy[i]]
-	}
-	return copy.slice(0, count)
-}
-
 interface NavigationProps {
 	navPreviewData: NavPreviewData
 	wikiLinks: WikiLink[]
@@ -80,7 +71,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 			setOpenDropdown(null)
 		} else {
 			const articles = navPreviewData[contentType] || []
-			setRandomArticles(getRandomArticles(articles, 5))
+			setRandomArticles(articles.slice(0, 5))
 			setOpenDropdown(contentType)
 		}
 	}, [openDropdown, navPreviewData])
@@ -91,7 +82,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 			setMobileExpandedItem(null)
 		} else {
 			const articles = navPreviewData[contentType] || []
-			setMobileRandomArticles(getRandomArticles(articles, 5))
+			setMobileRandomArticles(articles.slice(0, 5))
 			setMobileExpandedItem(contentType)
 		}
 	}, [mobileExpandedItem, navPreviewData])
