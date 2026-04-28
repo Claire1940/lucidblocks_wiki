@@ -63,35 +63,45 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		}
 	}
 
-	// 3. 所有 MDX 文章（所有语言版本和内容类型）
+	// 3. 内容分类页和所有 MDX 文章（所有语言版本和内容类型）
 	for (const locale of routing.locales) {
 		for (const contentType of CONTENT_TYPES) {
 			try {
-				// 获取该语言和内容类型的所有文章
 				const articles = await getAllContent(contentType as ContentType, locale as Locale)
+				const priority = contentTypePriority[contentType] || 0.7
+				const changeFrequency = contentTypeChangeFrequency[contentType] || 'weekly'
+
+				if (articles.length > 1) {
+					const listUrl =
+						locale === 'en'
+							? `${BASE_URL}/${contentType}`
+							: `${BASE_URL}/${locale}/${contentType}`
+					const latestArticle = articles[0]
+					const latestDate = latestArticle.frontmatter.lastModified || latestArticle.frontmatter.date
+
+					sitemap.push({
+						url: listUrl,
+						lastModified: latestDate ? new Date(latestDate) : new Date(),
+						changeFrequency,
+						priority: Math.min(priority + 0.05, 0.95),
+					})
+				}
 
 				for (const article of articles) {
-					// 构建完整的文章 URL
 					const articleUrl =
 						locale === 'en'
 							? `${BASE_URL}/${contentType}/${article.slug}`
 							: `${BASE_URL}/${locale}/${contentType}/${article.slug}`
-
-					// 获取该内容类型的优先级和更新频率
-					const priority = contentTypePriority[contentType] || 0.7
-					const changeFrequency = contentTypeChangeFrequency[contentType] || 'weekly'
+					const articleDate = article.frontmatter.lastModified || article.frontmatter.date
 
 					sitemap.push({
 						url: articleUrl,
-						lastModified: article.frontmatter.date
-							? new Date(article.frontmatter.date)
-							: new Date(),
-						changeFrequency: changeFrequency,
-						priority: priority,
+						lastModified: articleDate ? new Date(articleDate) : new Date(),
+						changeFrequency,
+						priority,
 					})
 				}
 			} catch (error) {
-				// 忽略无法加载的内容类型
 				console.warn(`Failed to load content for ${locale}/${contentType}:`, error)
 			}
 		}

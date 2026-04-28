@@ -30,7 +30,8 @@
     "notFoundDescription": "お探しのページは存在しません。",
     "backToHome": "ホームに戻る",
     "relatedArticles": "関連記事",
-    "readMore": "続きを読む"
+    "readMore": "続きを読む",
+    "articlesComingSoon": "記事は近日公開予定です"
   },
   "hero": {
     "badge": "__PROTECTED_c0b0161c__ ボクセル・サバイバル・サンドボックス",
