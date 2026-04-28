@@ -30,7 +30,8 @@
     "notFoundDescription": "La página que buscas no existe.",
     "backToHome": "Volver al inicio",
     "relatedArticles": "Artículos relacionados",
-    "readMore": "Leer más"
+    "readMore": "Leer más",
+    "articlesComingSoon": "Artículos próximamente"
   },
   "hero": {
     "badge": "__PROTECTED_c0b0161c__ Sandbox de supervivencia de vóxeles",

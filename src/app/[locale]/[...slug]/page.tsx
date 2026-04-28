@@ -50,6 +50,10 @@ export default async function UnifiedContentPage({ params }: PageProps) {
 async function renderListPage(contentType: ContentType, locale: Language) {
   const items = await getAllContent(contentType, locale)
 
+  if (items.length === 0) {
+    notFound()
+  }
+
   // 如果只有一篇文章，直接跳转到详情页
   if (items.length === 1) {
     const singleArticle = items[0]
@@ -223,6 +227,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const isListPage = slug.length === 1
 
   if (isListPage) {
+    const items = await getAllContent(contentType, locale as Language)
+
+    if (items.length === 0) {
+      return {
+        title: 'Not Found',
+        robots: {
+          index: false,
+          follow: true,
+        },
+      }
+    }
+
     // 列表页元数据
     const t = await getTranslations(`pages.${contentType}`)
 

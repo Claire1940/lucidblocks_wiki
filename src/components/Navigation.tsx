@@ -145,7 +145,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 												))}
 												{randomArticles.length === 0 && (
 													<div className="px-4 py-3 text-sm text-muted-foreground text-center">
-														No articles yet
+														{t('common.articlesComingSoon')}
 													</div>
 												)}
 											</div>
@@ -293,7 +293,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 												))}
 												{mobileRandomArticles.length === 0 && (
 													<div className="py-2 text-sm text-muted-foreground">
-														No articles yet
+														{t('common.articlesComingSoon')}
 													</div>
 												)}
 												{articles.length > 1 && (
