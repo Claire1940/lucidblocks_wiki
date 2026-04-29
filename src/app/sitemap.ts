@@ -4,14 +4,6 @@ import { routing, type Locale } from '@/i18n/routing'
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lucidblocks.wiki'
 
-// 静态页面配置
-const staticPagesConfig: Record<string, { priority: number; changeFrequency: 'monthly' | 'yearly' }> = {
-	'about': { priority: 0.6, changeFrequency: 'monthly' },
-	'privacy-policy': { priority: 0.3, changeFrequency: 'yearly' },
-	'terms-of-service': { priority: 0.3, changeFrequency: 'yearly' },
-	'copyright': { priority: 0.3, changeFrequency: 'yearly' },
-}
-
 // 内容类型优先级配置
 const contentTypePriority: Record<string, number> = {
 	'guides': 0.9,
@@ -49,21 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		})
 	}
 
-	// 2. 静态页面（所有语言版本）
-	const staticPages = ['about', 'privacy-policy', 'terms-of-service', 'copyright']
-	for (const locale of routing.locales) {
-		for (const page of staticPages) {
-			const config = staticPagesConfig[page] || { priority: 0.5, changeFrequency: 'monthly' as const }
-			sitemap.push({
-				url: locale === 'en' ? `${BASE_URL}/${page}` : `${BASE_URL}/${locale}/${page}`,
-				lastModified: new Date(),
-				changeFrequency: config.changeFrequency,
-				priority: config.priority,
-			})
-		}
-	}
-
-	// 3. 内容分类页和所有 MDX 文章（所有语言版本和内容类型）
+	// 2. 内容分类页和所有 MDX 文章（所有语言版本和内容类型）
 	for (const locale of routing.locales) {
 		for (const contentType of CONTENT_TYPES) {
 			try {
