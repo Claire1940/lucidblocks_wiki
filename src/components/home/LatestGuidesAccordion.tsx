@@ -1,20 +1,24 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import type { ContentItem } from '@/lib/content'
+import Link from "next/link";
+import { useState } from "react";
+import type { ContentItem } from "@/lib/content";
 
 interface ContentItemWithType extends ContentItem {
-  contentType: string
+  contentType: string;
 }
 
 interface LatestGuidesAccordionProps {
-  articles: ContentItemWithType[]
-  locale: string
-  max?: number
-  className?: string
+  articles: ContentItemWithType[];
+  locale: string;
+  max?: number;
+  className?: string;
 }
 
-function AccordionColumn({ articles, locale }: { articles: ContentItemWithType[]; locale: string }) {
+function AccordionColumn({
+  articles,
+  locale,
+}: { articles: ContentItemWithType[]; locale: string }) {
   return (
     <div
       className="bg-white/5 border border-border rounded-xl overflow-hidden"
@@ -22,13 +26,13 @@ function AccordionColumn({ articles, locale }: { articles: ContentItemWithType[]
       aria-label="Latest articles"
     >
       {articles.map((article, index) => {
-        const url = `/${locale}/${article.contentType}/${article.slug}`
-        const detailsId = `article-${article.contentType}-${article.slug}`
+        const url = `/${locale}/${article.contentType}/${article.slug}`;
+        const detailsId = `article-${article.contentType}-${article.slug}`;
 
         return (
           <details
             key={`${article.contentType}-${article.slug}`}
-            className={`group ${index !== articles.length - 1 ? 'border-b border-border' : ''}`}
+            className={`group ${index !== articles.length - 1 ? "border-b border-border" : ""}`}
           >
             <summary
               className="cursor-pointer py-4 px-6 text-sm font-medium
@@ -50,7 +54,12 @@ function AccordionColumn({ articles, locale }: { articles: ContentItemWithType[]
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </summary>
 
@@ -71,11 +80,14 @@ function AccordionColumn({ articles, locale }: { articles: ContentItemWithType[]
               <div className="pl-4 flex items-center gap-4 text-xs text-muted-foreground mb-2">
                 {article.frontmatter.date && (
                   <span>
-                    {new Date(article.frontmatter.date).toLocaleDateString(locale, {
-                      year: 'numeric',
-                      month: 'short',
-                      day: 'numeric'
-                    })}
+                    {new Date(article.frontmatter.date).toLocaleDateString(
+                      locale,
+                      {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      },
+                    )}
                   </span>
                 )}
                 <span className="text-[hsl(var(--nav-theme-light))] uppercase tracking-wider">
@@ -92,38 +104,40 @@ function AccordionColumn({ articles, locale }: { articles: ContentItemWithType[]
               </Link>
             </div>
           </details>
-        )
+        );
       })}
     </div>
-  )
+  );
 }
 
 export function LatestGuidesAccordion({
   articles,
   locale,
-  max = 30,
-  className = ''
+  max = 12,
+  className = "",
 }: LatestGuidesAccordionProps) {
-  const displayArticles = articles.slice(0, max)
+  const [showAll, setShowAll] = useState(false);
+  const displayArticles = showAll ? articles : articles.slice(0, max);
 
   if (displayArticles.length === 0) {
-    return null
+    return null;
   }
 
   // 分成两列：前半放左列，后半放右列
-  const midpoint = Math.ceil(displayArticles.length / 2)
-  const leftColumn = displayArticles.slice(0, midpoint)
-  const rightColumn = displayArticles.slice(midpoint)
+  const midpoint = Math.ceil(displayArticles.length / 2);
+  const leftColumn = displayArticles.slice(0, midpoint);
+  const rightColumn = displayArticles.slice(midpoint);
 
   return (
-    <section className={`px-4 py-20 ${className}`}>
+    <section className={`px-4 py-14 md:py-20 ${className}`}>
       <div className="container mx-auto max-w-4xl">
         {/* 标题 */}
-        <div className="text-center mb-12 scroll-reveal">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Latest <span className="text-[hsl(var(--nav-theme-light))]">Updates</span>
+        <div className="text-center mb-8 md:mb-12 scroll-reveal">
+          <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4">
+            Latest{" "}
+            <span className="text-[hsl(var(--nav-theme-light))]">Updates</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-base md:text-lg text-muted-foreground">
             Discover the newest guides, tips, and content
           </p>
         </div>
@@ -135,8 +149,18 @@ export function LatestGuidesAccordion({
             <AccordionColumn articles={rightColumn} locale={locale} />
           )}
         </div>
-
+        {!showAll && articles.length > max && (
+          <div className="mt-6 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll(true)}
+              className="inline-flex items-center justify-center rounded-full border border-border px-5 py-2.5 text-sm font-medium text-foreground transition hover:border-[hsl(var(--nav-theme)/0.5)] hover:bg-white/5"
+            >
+              Show More Updates
+            </button>
+          </div>
+        )}
       </div>
     </section>
-  )
+  );
 }
