@@ -1,48 +1,22 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { AD_CONFIGS, type BannerAdType } from "./mobileAdConfigs";
 import { useDeferredAdSlot } from "./useDeferredAdSlot";
 
 interface AdBannerProps {
   /**
    * 广告类型
    */
-  type:
-    | "banner-300x250"
-    | "banner-468x60"
-    | "banner-728x90"
-    | "banner-160x600"
-    | "banner-320x50";
+  type: BannerAdType;
   className?: string;
+  eager?: boolean;
   /**
    * 广告 key（可选）
    * 如果提供且为空，则不渲染广告
    */
   adKey?: string;
 }
-
-const AD_CONFIGS = {
-  "banner-300x250": {
-    width: 300,
-    height: 250,
-  },
-  "banner-468x60": {
-    width: 468,
-    height: 60,
-  },
-  "banner-728x90": {
-    width: 728,
-    height: 90,
-  },
-  "banner-160x600": {
-    width: 160,
-    height: 600,
-  },
-  "banner-320x50": {
-    width: 320,
-    height: 50,
-  },
-};
 
 // 广告加载超时时间（毫秒）
 const AD_LOAD_TIMEOUT_MS = 8000;
@@ -79,11 +53,19 @@ function enqueueHighPerformanceAdLoad(task: () => Promise<void>) {
  * 使用 Adsterra 横幅广告
  * 队列化加载，防止并发冲突
  */
-export function AdBanner({ type, className = "", adKey }: AdBannerProps) {
-  const { ref: containerRef, isActive } = useDeferredAdSlot<HTMLDivElement>({
-    enabled: Boolean(adKey && adKey !== "0"),
-    delayMs: type === "banner-320x50" ? 1200 : 400,
-  });
+export function AdBanner({
+  type,
+  className = "",
+  adKey,
+  eager = false,
+}: AdBannerProps) {
+  const slotEnabled = Boolean(adKey && adKey !== "0");
+  const { ref: containerRef, isActive: isDeferredActive } =
+    useDeferredAdSlot<HTMLDivElement>({
+      enabled: slotEnabled && !eager,
+      delayMs: type === "banner-320x50" ? 1200 : 400,
+    });
+  const isActive = eager ? slotEnabled : isDeferredActive;
   const scriptLoadedRef = useRef(false);
 
   useEffect(() => {

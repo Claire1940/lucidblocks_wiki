@@ -5,6 +5,7 @@ import { Calendar, User, Sparkles, MapPin, Star, BookOpen } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import { extractPrimaryKeyword } from '@/lib/utils'
 import { NativeBannerAd, AdBanner } from '@/components/ads'
+import { getPreferredMobileBannerSelection } from '@/components/ads/mobileAdConfigs'
 import { Fragment } from 'react'
 
 interface NavigationPageProps {
@@ -50,6 +51,7 @@ export async function NavigationPage({
 }: NavigationPageProps) {
   // 获取翻译
   const t = await getTranslations(`pages.${contentType}`)
+  const mobileBannerAd = getPreferredMobileBannerSelection()
 
   // 随机选择 2 个作为 Featured & Essential
   // 使用 contentType 作为种子，确保服务器端和客户端结果一致
@@ -77,8 +79,19 @@ export async function NavigationPage({
         </div>
       </section>
 
-      {/* 广告位 1: Hero Section 下方 - 728×90 横幅 */}
-      <AdBanner type="banner-728x90" adKey={process.env.NEXT_PUBLIC_AD_BANNER_728X90} />
+      {/* 广告位 1: Hero Section 下方 */}
+      {mobileBannerAd && (
+        <AdBanner
+          type={mobileBannerAd.type}
+          adKey={mobileBannerAd.adKey}
+          className="md:hidden"
+        />
+      )}
+      <AdBanner
+        type="banner-728x90"
+        adKey={process.env.NEXT_PUBLIC_AD_BANNER_728X90}
+        className="hidden md:flex"
+      />
 
       {/* What is / Why Section */}
       <section className="container mx-auto max-w-6xl px-4 py-8">
@@ -248,8 +261,19 @@ export async function NavigationPage({
         </section>
       )}
 
-      {/* 广告位 4: 页面底部 - 728×90 横幅 */}
-      <AdBanner type="banner-728x90" adKey={process.env.NEXT_PUBLIC_AD_BANNER_728X90} />
+      {/* 广告位 4: 页面底部 */}
+      {mobileBannerAd && (
+        <AdBanner
+          type={mobileBannerAd.type}
+          adKey={mobileBannerAd.adKey}
+          className="md:hidden"
+        />
+      )}
+      <AdBanner
+        type="banner-728x90"
+        adKey={process.env.NEXT_PUBLIC_AD_BANNER_728X90}
+        className="hidden md:flex"
+      />
     </div>
   )
 }

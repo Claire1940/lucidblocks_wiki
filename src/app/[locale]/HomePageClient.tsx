@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, Suspense, lazy } from "react";
+import { useState, Suspense, lazy } from "react";
 import {
   AlertTriangle,
   ArrowRight,
@@ -26,6 +26,7 @@ import { useMessages } from "next-intl";
 import { VideoFeature } from "@/components/home/VideoFeature";
 import { LatestGuidesAccordion } from "@/components/home/LatestGuidesAccordion";
 import { NativeBannerAd, AdBanner } from "@/components/ads";
+import { getPreferredMobileBannerSelection } from "@/components/ads/mobileAdConfigs";
 import { SidebarAd } from "@/components/ads/SidebarAd";
 import { scrollToSection } from "@/lib/scrollToSection";
 import { DynamicIcon } from "@/components/ui/DynamicIcon";
@@ -171,26 +172,7 @@ export default function HomePageClient({
   // FAQ accordion states
   const [faqExpanded, setFaqExpanded] = useState<number | null>(null);
   const [deckExpanded, setDeckExpanded] = useState<number | null>(null);
-
-  // Scroll reveal animation
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("scroll-reveal-visible");
-          }
-        });
-      },
-      { threshold: 0.1 },
-    );
-
-    document.querySelectorAll(".scroll-reveal").forEach((el) => {
-      observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
+  const mobileBannerAd = getPreferredMobileBannerSelection();
 
   return (
     <div className="home-shell min-h-screen bg-background text-foreground">
@@ -890,11 +872,13 @@ export default function HomePageClient({
       </section>
 
       {/* 广告位 6: 移动端横幅 320×50 */}
-      <AdBanner
-        type="banner-320x50"
-        adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50}
-        className="md:hidden"
-      />
+      {mobileBannerAd && (
+        <AdBanner
+          type={mobileBannerAd.type}
+          adKey={mobileBannerAd.adKey}
+          className="md:hidden"
+        />
+      )}
 
       {/* Module 9: Farming and Growth */}
       <section id="farming-growth" className="scroll-mt-24 px-4 py-20">
