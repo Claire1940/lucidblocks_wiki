@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from "react";
 
 interface SocialBarAdProps {
-  adKey: string
+  adKey: string;
 }
 
 /**
@@ -11,23 +11,27 @@ interface SocialBarAdProps {
  * 浮动式社交分享栏
  */
 export function SocialBarAd({ adKey }: SocialBarAdProps) {
-  const scriptLoadedRef = useRef(false)
+  const scriptLoadedRef = useRef(false);
 
   useEffect(() => {
-    if (!adKey || adKey === '0' || scriptLoadedRef.current) return
+    if (!adKey || adKey === "0" || scriptLoadedRef.current) return;
 
-    const script = document.createElement('script')
-    script.src = `https://pl28666057.effectivegatecpm.com/${adKey}.js`
-    document.body.appendChild(script)
-    scriptLoadedRef.current = true
+    const timeoutId = window.setTimeout(() => {
+      const script = document.createElement("script");
+      script.src = `https://pl28666057.effectivegatecpm.com/${adKey}.js`;
+      document.body.appendChild(script);
+      scriptLoadedRef.current = true;
+    }, 3500);
 
     return () => {
-      if (script.parentNode) {
-        script.parentNode.removeChild(script)
-      }
-      scriptLoadedRef.current = false
-    }
-  }, [adKey])
+      window.clearTimeout(timeoutId);
+      const script = document.querySelector(
+        `script[src="https://pl28666057.effectivegatecpm.com/${adKey}.js"]`,
+      );
+      if (script?.parentNode) script.parentNode.removeChild(script);
+      scriptLoadedRef.current = false;
+    };
+  }, [adKey]);
 
-  return null
+  return null;
 }

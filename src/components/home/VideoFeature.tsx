@@ -1,24 +1,28 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Image from 'next/image'
-import { Play } from 'lucide-react'
+import { useState } from "react";
+import Image from "next/image";
+import { Play } from "lucide-react";
 
 interface VideoFeatureProps {
-  videoId: string
-  title: string
-  posterImage: string
+  videoId: string;
+  title: string;
+  posterImage: string;
 }
 
-export function VideoFeature({ videoId, title, posterImage }: VideoFeatureProps) {
-  const [isPlaying, setIsPlaying] = useState(false)
+export function VideoFeature({
+  videoId,
+  title,
+  posterImage,
+}: VideoFeatureProps) {
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlay = () => {
-    setIsPlaying(true)
-  }
+    setIsPlaying(true);
+  };
 
   return (
-    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
       {!isPlaying ? (
         <>
           {/* 占位图片 */}
@@ -34,8 +38,11 @@ export function VideoFeature({ videoId, title, posterImage }: VideoFeatureProps)
             className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition-colors cursor-pointer rounded-lg"
             onClick={handlePlay}
           >
-            <div className="w-20 h-20 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors">
-              <Play className="w-10 h-10 text-white ml-1" fill="white" />
+            <div className="w-16 h-16 md:w-20 md:h-20 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors">
+              <Play
+                className="w-8 h-8 md:w-10 md:h-10 text-white ml-1"
+                fill="white"
+              />
             </div>
           </div>
         </>
@@ -50,5 +57,5 @@ export function VideoFeature({ videoId, title, posterImage }: VideoFeatureProps)
         />
       )}
     </div>
-  )
+  );
 }
