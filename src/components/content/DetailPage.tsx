@@ -11,6 +11,11 @@ import {
 import { extractPrimaryKeyword } from "@/lib/utils";
 import { SidebarAd } from "@/components/ads/SidebarAd";
 import { AdBanner } from "@/components/ads";
+import {
+  getPreferredMobileBannerSelection,
+  getPreferredMobileContentSelection,
+} from "@/components/ads/mobileAdConfigs";
+import { cloneElement, isValidElement } from "react";
 
 interface DetailPageProps {
   frontmatter: ContentFrontmatter;
@@ -51,6 +56,39 @@ export async function DetailPage({
   const bgColor =
     frontmatter.themeColor || imageMetadata?.backgroundColor || "3b82f6";
   const bgColorRgb = getTailwindRgbString(bgColor);
+  const mobileInlineAd = getPreferredMobileContentSelection();
+  const mobileBannerAd = getPreferredMobileBannerSelection();
+  let paragraphCount = 0;
+
+  const articleContent = isValidElement(content)
+    ? cloneElement(
+        content as React.ReactElement<{ components?: Record<string, unknown> }>,
+        {
+          components: {
+            ...((content.props as { components?: Record<string, unknown> })
+              .components || {}),
+            p: ({
+              children,
+              ...props
+            }: React.HTMLAttributes<HTMLParagraphElement>) => {
+              paragraphCount += 1;
+              const shouldInsertMobileAd = paragraphCount === 2;
+
+              return (
+                <>
+                  <p {...props}>{children}</p>
+                  {shouldInsertMobileAd && mobileInlineAd && (
+                    <div className="not-prose my-6 md:hidden">
+                      <AdBanner type={mobileInlineAd.type} adKey={mobileInlineAd.adKey} />
+                    </div>
+                  )}
+                </>
+              );
+            },
+          },
+        },
+      )
+    : content;
 
   return (
     <div className="bg-background min-h-screen">
@@ -120,6 +158,15 @@ export async function DetailPage({
         </div>
       </section>
 
+      {/* 标题后移动端常驻广告：此位置固定保留 */}
+      <div className="sticky top-20 z-20 border-y border-border/80 bg-background/95 py-2 backdrop-blur md:hidden">
+        <AdBanner
+          type="banner-320x50"
+          adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50}
+          eager
+        />
+      </div>
+
       {/* 左侧广告容器 - Fixed 定位 */}
       <aside
         className="hidden xl:block fixed top-20 w-40 z-10"
@@ -138,16 +185,8 @@ export async function DetailPage({
       <div className="container mx-auto max-w-4xl px-4 py-5 md:py-6">
         {/* Article Content - MDX 渲染 */}
         <article className="prose prose-base md:prose-lg max-w-none">
-          {content}
+          {articleContent}
         </article>
-
-        {/* 移动端正文后广告：先阅读，再展示 */}
-        <div className="mt-8 md:hidden">
-          <AdBanner
-            type="banner-300x250"
-            adKey={process.env.NEXT_PUBLIC_AD_BANNER_300X250}
-          />
-        </div>
 
         {/* Related Articles */}
         {relatedArticles.length > 0 && (
@@ -155,6 +194,12 @@ export async function DetailPage({
             articles={relatedArticles}
             contentType={contentType}
           />
+        )}
+
+        {mobileBannerAd && (
+          <div className="border-t border-border/70 pt-8 mt-8 md:hidden">
+            <AdBanner type={mobileBannerAd.type} adKey={mobileBannerAd.adKey} />
+          </div>
         )}
 
         {/* Footer Navigation */}
