@@ -281,7 +281,7 @@ export default function HomePageClient({
 
       {/* Tools Grid - 16 Navigation Cards */}
       <section className="px-4 py-14 md:py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-8 md:mb-12 scroll-reveal">
             <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4">
               {t.tools.title}{" "}
