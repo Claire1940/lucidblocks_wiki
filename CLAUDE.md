@@ -416,7 +416,6 @@ npm run build
 - `NativeBannerAd`: 原生横幅（内容中）
 - `IframeBannerAd`: iframe 横幅（灵活嵌入）
 - `SidebarAd`: 侧边栏广告（桌面端）
-- `SocialBarAd`: 社交栏广告（移动端）
 
 **集成位置**:
 - 首页: `src/app/[locale]/page.tsx`
