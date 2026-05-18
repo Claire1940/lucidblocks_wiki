@@ -9,7 +9,7 @@ Powers 47+ game wiki sites with SEO optimization, MDX content, and Docker deploy
 - **MDX** content system with metadata support
 - **8 languages** via next-intl (en, es, pt, fr, de, ru, ja, id)
 - **SEO**: sitemap, structured data, hreflang, og:image
-- **Ads**: 5 ad formats (banner, native, sidebar, social bar, iframe)
+- **Ads**: 4 ad formats (banner, native, sidebar, iframe)
 - **Docker** standalone deployment via GitHub Actions → GHCR
 
 ## Sites Powered by This Template
