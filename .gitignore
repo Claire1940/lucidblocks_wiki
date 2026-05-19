@@ -40,10 +40,18 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# tools logs and debug files
-tools/articles/logs/debug/
-tools/articles/logs/failed_*.json
-tools/articles/logs/failed_*.log
-tools/articles/modules/transpage/temp/
-tools/validation_report.json
+# Removed tool scripts (sensitive for public repo)
+tools/articles/
+tools/content_pipeline/
+tools/youtube_mcp/
+tools/adsterra/
+tools/demand/
+utils/
+cache/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+seo-check-report.md
+validation_report.json
 test-cards.html

@@ -266,17 +266,7 @@ content/                      # MDX 内容文件（内容层，完全可变）
 │   └── ...
 └── {locale}/                # 其他语言（结构同 en）
 
-tools/                        # Python 工具集（辅助层，可选使用）
-├── articles/                # AI 文章生成工具
-│   ├── modules/
-│   │   ├── generation/      # GPT-4o 批量生成
-│   │   ├── translate/       # 多语言翻译
-│   │   └── transpage/       # 页面翻译
-│   └── logs/                # 生成日志
-├── content_pipeline/        # 内容采集管道
-│   ├── collect.py           # 从 YouTube/Web 采集
-│   ├── extract.py           # 提取关键词
-│   └── core/                # 核心模块
+tools/
 └── validate_mdx.py          # MDX 验证工具
 ```
 
@@ -330,16 +320,7 @@ export const routing = defineRouting({
 }
 ```
 
-2. 使用 Python 工具翻译其他语言：
-```bash
-cd tools/articles/modules/transpage
-python translate-all-locales.py --overwrite
-```
-
-**说明**：
-- 自动从 `src/i18n/routing.ts` 读取目标语言列表
-- 翻译所有非英文语言到 `src/locales/` 目录
-- 使用 `--overwrite` 覆盖已有翻译文件
+2. 手动翻译或使用外部工具翻译其他语言的 JSON 文件
 
 ### 步骤 4: 替换内容目录
 
@@ -357,11 +338,7 @@ content/
 └── {locale}/  # 其他语言
 ```
 
-3. 使用 Python 工具生成内容（可选）：
-```bash
-cd tools/articles/modules/generation
-python api_client.py
-```
+3. 手动编写或使用外部工具生成 MDX 内容
 
 ### 步骤 5: 更新首页内容
 
@@ -476,48 +453,6 @@ content/en/{type}/
 
 ## Python Tools (Optional)
 
-### 文章生成工具
-
-```bash
-# 生成英文文章
-cd tools/articles/modules/generation
-python api_client.py
-
-# 翻译到其他语言
-cd tools/articles/modules/translate
-python translator.py
-
-# 翻译页面内容（locales/*.json）
-cd tools/articles/modules/transpage
-python translate-all-locales.py --overwrite
-
-# 或使用原脚本（手动指定语言）
-python translate-messages-enhanced.py --lang es,pt,ja,ru,de,fr,tr --overwrite
-```
-
-**推荐使用 `translate-all-locales.py`**：
-- 自动从 `src/i18n/routing.ts` 读取语言列表
-- 避免手动输入错误
-- 确保与项目配置一致
-
-**配置文件**:
-- `tools/articles/modules/generation/config.json`: API 配置
-- `tools/articles/modules/translate/translate_config.json`: 翻译配置
-- `tools/articles/modules/transpage/transpage_config.json`: 页面翻译配置
-
-### 内容采集管道
-
-```bash
-# 采集 YouTube 视频和网页内容
-python tools/content_pipeline/collect.py
-
-# 提取关键词
-python tools/content_pipeline/extract.py
-
-# 完整管道
-python tools/content_pipeline/pipeline.py
-```
-
 ### MDX 验证
 
 ```bash
@@ -594,11 +529,6 @@ python tools/validate_mdx.py --format json
 **类型错误**:
 - 运行 `npm run typecheck` 检查
 - 确保 `src/config/navigation.ts` 中的类型定义正确
-
-**Python 工具报错**:
-- 检查 `.env` 文件中的 API 密钥
-- 确认 Python 依赖已安装（`pip install -r requirements.txt`）
-- 查看 `tools/articles/logs/` 中的错误日志
 
 ## Deployment
 
