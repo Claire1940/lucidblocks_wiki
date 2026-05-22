@@ -75,6 +75,10 @@ export interface ContentData {
   frontmatter: ContentFrontmatter
 }
 
+interface GetAllContentOptions {
+  includeFallback?: boolean
+}
+
 /**
  * 辅助函数：递归获取目录下所有 MDX 文件的 slug
  */
@@ -103,16 +107,18 @@ function getSlugsFromDirectory(dir: string, basePath: string[] = []): string[] {
  */
 export async function getAllContent(
   contentType: ContentType,
-  language: Language
+  language: Language,
+  options: GetAllContentOptions = {}
 ): Promise<ContentItem[]> {
   const items: ContentItem[] = []
+  const { includeFallback = true } = options
 
   // 获取指定语言的所有 slugs
   const contentDir = path.join(process.cwd(), 'content', language, contentType)
   let slugs = getSlugsFromDirectory(contentDir)
 
   // 如果不是英文，也获取英文目录的 slugs（用于 fallback）
-  if (language !== 'en') {
+  if (includeFallback && language !== 'en') {
     const enContentDir = path.join(process.cwd(), 'content', 'en', contentType)
     const enSlugs = getSlugsFromDirectory(enContentDir)
     // 合并，去重
@@ -131,7 +137,7 @@ export async function getAllContent(
       })
     } catch {
       // Fallback 到英文
-      if (language !== 'en') {
+      if (includeFallback && language !== 'en') {
         try {
           const enContentDir = path.join(process.cwd(), 'content', 'en', contentType)
           const enRealSlug = findFileBySlug(enContentDir, slug) || slug
@@ -163,11 +169,11 @@ export async function getAllContent(
  * 获取所有内容路径（用于 generateStaticParams）
  * 返回格式: [['guide', 'beginner'], ['unit', 'jinwoo'], ...]
  */
-export async function getAllContentPaths(): Promise<string[][]> {
+export async function getAllContentPaths(language: Language = 'en'): Promise<string[][]> {
   const paths: string[][] = []
 
   for (const contentType of CONTENT_TYPES) {
-    const contentDir = path.join(process.cwd(), 'content', 'en', contentType)
+    const contentDir = path.join(process.cwd(), 'content', language, contentType)
 
     const scanDirectory = (dir: string, basePath: string[] = []) => {
       if (!fs.existsSync(dir)) return
@@ -197,8 +203,14 @@ export async function getAllContentPaths(): Promise<string[][]> {
  */
 export async function getAllContentSlugs(
   contentType: ContentType,
-  language: Language
+  language: Language,
+  options?: { includeFallback?: boolean }
 ): Promise<string[]> {
+  if (options?.includeFallback === false) {
+    const contentDir = path.join(process.cwd(), 'content', language, contentType)
+    return getSlugsFromDirectory(contentDir)
+  }
+
   const items = await getAllContent(contentType, language)
   return items.map(item => item.slug)
 }
