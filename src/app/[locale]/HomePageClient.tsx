@@ -27,7 +27,7 @@ import { VideoFeature } from "@/components/home/VideoFeature";
 import { LatestGuidesAccordion } from "@/components/home/LatestGuidesAccordion";
 import { NativeBannerAd, AdBanner } from "@/components/ads";
 import { getPreferredMobileBannerSelection } from "@/components/ads/mobileAdConfigs";
-import { SidebarAd } from "@/components/ads/SidebarAd";
+// import { SidebarAd } from "@/components/ads/SidebarAd";
 import { scrollToSection } from "@/lib/scrollToSection";
 import { DynamicIcon } from "@/components/ui/DynamicIcon";
 import type { ContentItemWithType } from "@/lib/getLatestArticles";
@@ -183,7 +183,7 @@ export default function HomePageClient({
       />
 
       {/* 左侧广告容器 - Fixed 定位 */}
-      <aside
+      {/* <aside
         className="hidden xl:block fixed top-20 w-40 z-10"
         style={{ left: "calc((100vw - 896px) / 2 - 180px)" }}
       >
@@ -191,10 +191,10 @@ export default function HomePageClient({
           type="sidebar-160x300"
           adKey={process.env.NEXT_PUBLIC_AD_SIDEBAR_160X300}
         />
-      </aside>
+      </aside> */}
 
       {/* 右侧广告容器 - Fixed 定位 */}
-      <aside
+      {/* <aside
         className="hidden xl:block fixed top-20 w-40 z-10"
         style={{ right: "calc((100vw - 896px) / 2 - 180px)" }}
       >
@@ -202,12 +202,12 @@ export default function HomePageClient({
           type="sidebar-160x600"
           adKey={process.env.NEXT_PUBLIC_AD_SIDEBAR_160X600}
         />
-      </aside>
+      </aside> */}
 
-      {/* 广告位 1: 移动端横幅 Sticky */}
-      {/* <div className="sticky top-20 z-20 border-b border-border py-2">
+      {/* 广告位 1: 顶部固定横幅 */}
+      <div className="sticky top-20 z-20 border-b border-border py-2">
         <AdBanner type="banner-320x50" adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50} />
-      </div> */}
+      </div>
 
       {/* Hero Section */}
       <section className="relative overflow-hidden px-4 pt-24 pb-14 md:pt-32 md:pb-20">
