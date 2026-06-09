@@ -1,7 +1,4 @@
 export { NativeBannerAd } from './NativeBannerAd'
-export { PopunderAd } from './PopunderAd'
 export { IframeBannerAd } from './IframeBannerAd'
-export { SocialBarAd } from './SocialBarAd'
 export { SidebarAd } from './SidebarAd'
 export { AdBanner } from './AdBanner'
-export { SmartlinkAd } from './SmartlinkAd'
