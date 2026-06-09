@@ -137,15 +137,6 @@ export async function DetailPage({
             {extractPrimaryKeyword(frontmatter.title)}
           </h1>
 
-          {/* 标题后移动端常驻广告：固定放在标题正下方 */}
-          <div className="sticky top-20 z-20 mb-5 border-y border-border/80 bg-background/95 py-2 backdrop-blur md:hidden">
-            <AdBanner
-              type="banner-320x50"
-              adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50}
-              eager
-            />
-          </div>
-
           <p className="mx-auto mb-5 max-w-3xl text-base leading-7 text-muted-foreground md:mb-6 md:text-xl">
             {frontmatter.description}
           </p>
@@ -166,6 +157,15 @@ export async function DetailPage({
           </div>
         </div>
       </section>
+
+      {/* Wiki Team 下方常驻广告：跟随页面滚动持续显示 */}
+      <div className="sticky top-20 z-20 border-y border-border/80 bg-background/95 py-2 backdrop-blur md:hidden">
+        <AdBanner
+          type="banner-320x50"
+          adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50}
+          eager
+        />
+      </div>
 
       {/* 左侧广告容器 - Fixed 定位 */}
       <aside
