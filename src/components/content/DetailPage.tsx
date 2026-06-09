@@ -11,6 +11,7 @@ import {
 import { extractPrimaryKeyword } from "@/lib/utils";
 import { SidebarAd } from "@/components/ads/SidebarAd";
 import { AdBanner } from "@/components/ads";
+import { DismissibleStickyBanner } from "@/components/ads/DismissibleStickyBanner";
 import {
   getPreferredMobileBannerSelection,
   getPreferredMobileContentSelection,
@@ -158,14 +159,8 @@ export async function DetailPage({
         </div>
       </section>
 
-      {/* Wiki Team 下方常驻广告：跟随页面滚动持续显示 */}
-      <div className="sticky top-20 z-20 border-y border-border/80 bg-background/95 py-2 backdrop-blur">
-        <AdBanner
-          type="banner-320x50"
-          adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50}
-          eager
-        />
-      </div>
+      {/* Wiki Team 下方常驻广告：跟随页面滚动持续显示，可手动关闭 */}
+      <DismissibleStickyBanner adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50} />
 
       {/* 左侧广告容器 - Fixed 定位 */}
       <aside
