@@ -267,6 +267,13 @@ export default function HomePageClient({
         </div>
       </section>
 
+      {/* Latest Updates Section */}
+      <LatestGuidesAccordion
+        articles={latestArticles}
+        locale={locale}
+        max={12}
+      />
+
       {/* Video Section */}
       <section className="px-4 py-10 md:py-12">
         <div className="scroll-reveal container mx-auto max-w-5xl">
@@ -354,13 +361,6 @@ export default function HomePageClient({
 
       {/* 广告位 2: 首屏内容之后再加载广告 */}
       <NativeBannerAd adKey={process.env.NEXT_PUBLIC_AD_NATIVE_BANNER || ""} />
-
-      {/* Latest Updates Section */}
-      <LatestGuidesAccordion
-        articles={latestArticles}
-        locale={locale}
-        max={12}
-      />
 
       {/* 广告位 3: 移动端优先使用方形，桌面端保留横幅 */}
       <AdBanner
