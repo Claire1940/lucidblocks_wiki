@@ -55,3 +55,7 @@ __pycache__/
 seo-check-report.md
 validation_report.json
 test-cards.html
+
+# Cloudflare Workers / OpenNext 构建产物
+.open-next/
+.wrangler/

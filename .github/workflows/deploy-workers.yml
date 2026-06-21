@@ -1,0 +1,63 @@
+name: Deploy to Cloudflare Workers
+
+# 迁移期：手动触发（canary 验证用）。批量铺开后再改为 push main 自动触发，
+# 并在 docker 容器停掉后移除旧的 deploy.yml（GHCR docker 构建）。
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: workers-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # account_id 非敏感，可写字面量；只有 CLOUDFLARE_API_TOKEN 走 secrets。
+  CLOUDFLARE_ACCOUNT_ID: f6d724a5fbdfc8463c6edbc1948aebaa
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install OpenNext + Wrangler (no package.json change)
+        # 不改各站 package.json/lock，构建期临时装这两个工具（版本对齐试点）
+        run: npm i -D @opennextjs/cloudflare@^1.19.11 wrangler@^4.103.0 --no-save
+
+      - name: Generate content manifest
+        # Workers 无运行时文件系统，内容枚举靠构建期清单（sitemap/llms/分类页依赖它）
+        run: node scripts/generate-content-manifest.mjs
+
+      - name: Build (OpenNext for Cloudflare)
+        # NEXT_PUBLIC_* 是构建期内联，必须在 build 时注入。复用与 docker 构建同一批 secrets，
+        # 保证站点 URL / GA / Clarity / AdSense / 广告位与原 docker 站零漂移。
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+          NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID }}
+          NEXT_PUBLIC_MICROSOFT_CLARITY_ID: ${{ secrets.NEXT_PUBLIC_MICROSOFT_CLARITY_ID }}
+          NEXT_PUBLIC_GOOGLE_ADSENSE_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ADSENSE_ID }}
+          NEXT_PUBLIC_AD_NATIVE_BANNER: ${{ secrets.NEXT_PUBLIC_AD_NATIVE_BANNER }}
+          NEXT_PUBLIC_AD_BANNER_728X90: ${{ secrets.NEXT_PUBLIC_AD_BANNER_728X90 }}
+          NEXT_PUBLIC_AD_BANNER_300X250: ${{ secrets.NEXT_PUBLIC_AD_BANNER_300X250 }}
+          NEXT_PUBLIC_AD_BANNER_468X60: ${{ secrets.NEXT_PUBLIC_AD_BANNER_468X60 }}
+          NEXT_PUBLIC_AD_SIDEBAR_160X600: ${{ secrets.NEXT_PUBLIC_AD_SIDEBAR_160X600 }}
+          NEXT_PUBLIC_AD_SIDEBAR_160X300: ${{ secrets.NEXT_PUBLIC_AD_SIDEBAR_160X300 }}
+          NEXT_PUBLIC_AD_MOBILE_320X50: ${{ secrets.NEXT_PUBLIC_AD_MOBILE_320X50 }}
+          NEXT_PUBLIC_AD_POPUNDER: ${{ secrets.NEXT_PUBLIC_AD_POPUNDER }}
+          NEXT_PUBLIC_AD_SMARTLINK: ${{ secrets.NEXT_PUBLIC_AD_SMARTLINK }}
+        run: npx @opennextjs/cloudflare build
+
+      - name: Deploy to Cloudflare Workers
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: npx wrangler deploy
