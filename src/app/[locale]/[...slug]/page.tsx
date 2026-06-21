@@ -1,5 +1,5 @@
 import { notFound, redirect } from 'next/navigation'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import {
   getAllContentPaths,
   getAllContent,
@@ -25,6 +25,8 @@ interface PageProps {
 
 export default async function UnifiedContentPage({ params }: PageProps) {
   const { locale, slug } = await params
+  // 启用静态渲染：先于任何 next-intl 服务端调用设置 locale
+  setRequestLocale(locale)
 
   // 验证内容类型
   const contentType = slug[0]
@@ -149,43 +151,6 @@ async function renderDetailPage(
       </>
     )
   } catch {
-    // 如果当前语言的 MDX 不存在，尝试加载英文版本
-    if (locale !== 'en') {
-      try {
-        const enDir = path.join(process.cwd(), 'content', 'en', contentType)
-        const enRealSlug = findFileBySlug(enDir, currentSlug) || currentSlug
-
-        const { default: MDXContent, metadata } = await import(
-          `../../../../content/en/${contentType}/${enRealSlug}.mdx`
-        )
-
-        const allContent = await getAllContent(contentType, locale)
-        const relatedArticles = allContent
-          .filter(item => item.slug !== currentSlug)
-          .slice(0, 3)
-
-        return (
-          <>
-            <ArticleStructuredData
-              frontmatter={metadata as ContentFrontmatter}
-              contentType={contentType}
-              locale={locale}
-              slug={currentSlug}
-            />
-            <DetailPage
-              frontmatter={metadata as ContentFrontmatter}
-              content={<MDXContent />}
-              contentType={contentType}
-              language={locale}
-              currentSlug={currentSlug}
-              relatedArticles={relatedArticles}
-            />
-          </>
-        )
-      } catch {
-        notFound()
-      }
-    }
     notFound()
   }
 }
@@ -194,16 +159,14 @@ async function renderDetailPage(
  * 生成静态参数
  */
 export async function generateStaticParams() {
-  const allPaths = await getAllContentPaths()
   const params: { locale: string; slug: string[] }[] = []
 
   for (const locale of routing.locales) {
-    // 添加列表页
     for (const type of CONTENT_TYPES) {
       params.push({ locale, slug: [type] })
     }
 
-    // 添加详情页
+    const allPaths = await getAllContentPaths(locale as Language)
     for (const path of allPaths) {
       params.push({ locale, slug: path })
     }
@@ -217,6 +180,7 @@ export async function generateStaticParams() {
  */
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, slug } = await params
+  setRequestLocale(locale)
   const contentType = slug[0]
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lucidblocks.wiki'
 
@@ -328,44 +292,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         },
       }
     } catch {
-      // Fallback 到英文
-      if (locale !== 'en') {
-        try {
-          const enDir = path.join(process.cwd(), 'content', 'en', contentType)
-          const enRealSlug = findFileBySlug(enDir, currentSlug) || currentSlug
-
-          const { metadata } = await import(
-            `../../../../content/en/${contentType}/${enRealSlug}.mdx`
-          )
-
-          const fullPath = `/${slug.join('/')}`
-
-          return {
-            title: `${metadata.title} - Lucid Blocks Wiki`,
-            description: metadata.description,
-            alternates: buildLanguageAlternates(fullPath, locale as Locale, siteUrl),
-            openGraph: {
-              title: metadata.title,
-              description: metadata.description,
-              images: metadata.image ? [metadata.image] : [],
-              url: `${siteUrl}${locale === 'en' ? fullPath : `/${locale}${fullPath}`}`,
-            },
-            robots: {
-              index: true,
-              follow: true,
-              googleBot: {
-                index: true,
-                follow: true,
-                'max-video-preview': -1,
-                'max-image-preview': 'large',
-                'max-snippet': -1,
-              },
-            },
-          }
-        } catch {
-          return { title: 'Not Found' }
-        }
-      }
       return { title: 'Not Found' }
     }
   }

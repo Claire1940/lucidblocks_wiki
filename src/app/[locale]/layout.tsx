@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getTranslations } from 'next-intl/server'
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { buildLanguageAlternates } from '@/lib/i18n-utils'
@@ -35,6 +35,8 @@ export function generateStaticParams() {
 // 生成元数据
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+  // 启用静态渲染：必须在调用 next-intl 服务端函数前设置请求 locale
+  setRequestLocale(locale);
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://www.lucidblocks.wiki";
 
@@ -101,7 +103,12 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound();
   }
 
-  // 获取翻译消息（不需要 setRequestLocale！）
+  // 启用静态渲染：必须在调用任何 next-intl 服务端函数前设置请求 locale，
+  // 否则 next-intl 会退回用 headers() 读 locale，强制整条路由动态渲染（响应 no-store、
+  // 每请求全量 SSR）。设置后 generateStaticParams 才能真正预渲染各 locale 静态页。
+  setRequestLocale(locale);
+
+  // 获取翻译消息
   const messages = await getMessages();
   const navPreviewData = await getNavPreviewData(locale as Language);
   const wikiLinks = getWikiLinks();
