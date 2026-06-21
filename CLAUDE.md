@@ -532,17 +532,16 @@ python tools/validate_mdx.py --format json
 
 ## Deployment
 
-项目配置为 Docker standalone 模式（`next.config.mjs` 中 `output: 'standalone'`）：
+**默认部署目标：Cloudflare Workers（OpenNext SSR）**，不再走 Docker。
 
-```bash
-# 构建
-npm run build
+- 构建/部署由 GitHub Actions `.github/workflows/deploy-workers.yml` 完成：`npx @opennextjs/cloudflare build` → `npx wrangler deploy`。
+- `wrangler.jsonc` 含 per-site worker 名与 `route www.<domain>/*`；模板自带的是 lucidblocks.wiki 自身的版本，game-refactor 克隆建站时由 `wiki-workers-migrate/deploy-workers-site.sh` 按新域名重新生成。
+- Workers 无运行时文件系统：内容枚举改为构建期清单 `src/generated/content-manifest.json`（由 `scripts/generate-content-manifest.mjs` 扫 `content/` 生成），`src/lib/content.ts` 读清单而非 `fs.readdirSync`。
+- `next.config.mjs` 中 `images.unoptimized: true`（OpenNext 不支持 Vercel 图片优化器）；`output: 'standalone'` 保留但 Workers 路径不使用。
+- 广告/统计等 `NEXT_PUBLIC_*` 在 CI 构建期内联，复用与原 docker 同一批 GitHub Secrets（零漂移）。
+- 旧 `.github/workflows/deploy.yml`（GHCR Docker 镜像）保留作应急回退，非默认路径。
 
-# 启动
-npm start
-```
-
-生成的 `.next/standalone` 目录包含完整的生产环境文件。
+> ⚠️ 遵循"禁止本地 build"：不要在本地跑 `npm run build` / `next build`，统一由 GitHub Actions 远程构建。本地只需 `node scripts/generate-content-manifest.mjs` 即可刷新内容清单。
 
 ## Template Philosophy
 
