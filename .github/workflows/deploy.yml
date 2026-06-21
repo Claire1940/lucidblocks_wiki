@@ -1,8 +1,8 @@
 name: Build and Deploy to GHCR
 
+# 已降级为应急回退：默认部署走 Cloudflare Workers（deploy-workers.yml）。
+# 不再 push 自动触发 GHCR docker 构建（Workers 架构下镜像无用且浪费 CI）；仅保留手动触发。
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 env:
