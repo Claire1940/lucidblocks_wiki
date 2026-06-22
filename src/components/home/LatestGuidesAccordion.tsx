@@ -26,7 +26,10 @@ function AccordionColumn({
       aria-label="Latest articles"
     >
       {articles.map((article, index) => {
-        const url = `/${locale}/${article.contentType}/${article.slug}`;
+        // 默认语言 en 无前缀（与 as-needed 一致），非默认语言带前缀
+        const url = locale === 'en'
+          ? `/${article.contentType}/${article.slug}`
+          : `/${locale}/${article.contentType}/${article.slug}`;
         const detailsId = `article-${article.contentType}-${article.slug}`;
 
         return (

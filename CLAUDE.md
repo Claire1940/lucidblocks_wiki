@@ -532,12 +532,12 @@ python tools/validate_mdx.py --format json
 
 ## Deployment
 
-**默认部署目标：Cloudflare Workers（OpenNext SSR）**，不再走 Docker。
+**默认部署目标：Cloudflare Workers（Next 静态导出 + asset-only Worker，0 CPU）**，不再走 Docker / OpenNext SSR。
 
-- 构建/部署由 GitHub Actions `.github/workflows/deploy-workers.yml` 完成：`npx @opennextjs/cloudflare build` → `npx wrangler deploy`。
-- `wrangler.jsonc` 含 per-site worker 名与 `route www.<domain>/*`；模板自带的是 lucidblocks.wiki 自身的版本，game-refactor 克隆建站时由 `wiki-workers-migrate/deploy-workers-site.sh` 按新域名重新生成。
-- Workers 无运行时文件系统：内容枚举改为构建期清单 `src/generated/content-manifest.json`（由 `scripts/generate-content-manifest.mjs` 扫 `content/` 生成），`src/lib/content.ts` 读清单而非 `fs.readdirSync`。
-- `next.config.mjs` 中 `images.unoptimized: true`（OpenNext 不支持 Vercel 图片优化器）；`output: 'standalone'` 保留但 Workers 路径不使用。
+- 构建/部署由 GitHub Actions `.github/workflows/deploy-workers.yml` 完成：`npm run build`（`output:'export'` 产出 `out/`）→ 提升默认语言 en 到根 → `npx wrangler deploy`（asset-only，资产服务器直接返回，0 Worker CPU）。
+- `wrangler.jsonc` 为 asset-only（**无 `main`**，`assets.directory: ./out`），含 per-site worker 名与 `route www.<domain>/*`；模板自带 lucidblocks.wiki 版本，game-refactor 克隆建站时由 `wiki-workers-migrate/deploy-workers-site.sh` 按新域名重新生成。
+- 内容枚举用构建期清单 `src/generated/content-manifest.json`（由 `scripts/generate-content-manifest.mjs` 扫 `content/` 生成），`src/lib/content.ts` 读清单。
+- `next.config.mjs`：`output: 'export'` + `images.unoptimized: true`（静态导出不支持 Vercel 图片优化器）。静态导出**不支持** middleware / 根 `redirect()`，故无 `src/middleware.ts`、无根 `src/app/page.tsx`、无 `open-next.config.ts`；URL 零变化靠「`localePrefix:'as-needed'` + 构建后把 en 提升到根」。`src/app/sitemap.ts` 顶部声明 `export const dynamic = 'force-static'`。
 - 广告/统计等 `NEXT_PUBLIC_*` 在 CI 构建期内联，复用与原 docker 同一批 GitHub Secrets（零漂移）。
 - 旧 `.github/workflows/deploy.yml`（GHCR Docker 镜像）保留作应急回退，非默认路径。
 

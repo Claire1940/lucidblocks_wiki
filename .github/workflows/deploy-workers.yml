@@ -30,15 +30,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install OpenNext + Wrangler (no package.json change)
-        # 不改各站 package.json/lock，构建期临时装这两个工具（版本对齐试点）
-        run: npm i -D @opennextjs/cloudflare@^1.19.11 wrangler@^4.103.0 --no-save
+      - name: Install Wrangler (no package.json change)
+        # 静态导出 + asset-only：不再需要 OpenNext，只需 wrangler 部署静态资产
+        run: npm i -D wrangler@^4.103.0 --no-save
 
       - name: Generate content manifest
         # Workers 无运行时文件系统，内容枚举靠构建期清单（sitemap/llms/分类页依赖它）
         run: node scripts/generate-content-manifest.mjs
 
-      - name: Build (OpenNext for Cloudflare)
+      - name: Build (Next static export → out/)
         # NEXT_PUBLIC_* 是构建期内联，必须在 build 时注入。复用与 docker 构建同一批 secrets，
         # 保证站点 URL / GA / Clarity / AdSense / 广告位与原 docker 站零漂移。
         env:
@@ -74,9 +74,22 @@ jobs:
           NEXT_PUBLIC_CLARITY_ID: ${{ secrets.NEXT_PUBLIC_CLARITY_ID }}
           NEXT_PUBLIC_AHREFS_KEY: ${{ secrets.NEXT_PUBLIC_AHREFS_KEY }}
           NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }}
-        run: npx @opennextjs/cloudflare build
+        run: npm run build
 
-      - name: Deploy to Cloudflare Workers
+      - name: Promote default locale (en) to root — 保持无前缀 URL
+        # 静态导出把 [locale] 产物落在 out/en、out/es… 。默认语言 en 已收录为无前缀 URL，
+        # 故把 out/en/* 提升到根；非默认语言（es/pt…）保持前缀不动。
+        run: |
+          set -e
+          if [ ! -d out/en ]; then echo "❌ out/en 不存在，静态导出可能失败"; ls -la out || true; exit 1; fi
+          cp -r out/en/. out/
+          if [ -f out/en.html ]; then cp -f out/en.html out/index.html
+          elif [ -f out/en/index.html ]; then cp -f out/en/index.html out/index.html
+          else echo "❌ 找不到 en 首页(out/en.html 或 out/en/index.html)"; ls out/en* || true; exit 1; fi
+          [ -f out/en/404.html ] && cp -f out/en/404.html out/404.html || true
+          echo "✓ 根 index：$(ls -la out/index.html 2>/dev/null || echo 缺失)"
+
+      - name: Deploy to Cloudflare Workers (asset-only)
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: npx wrangler deploy

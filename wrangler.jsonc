@@ -1,12 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "lucidblocks-wiki",
-  "main": ".open-next/worker.js",
   "compatibility_date": "2025-03-10",
-  "compatibility_flags": ["nodejs_compat"],
+  // asset-only：无 main/worker 脚本，内容页由 Cloudflare 资产服务器直接返回 = 0 Worker CPU。
+  // out/ 为 Next 静态导出产物；构建后已把默认语言 en 提升到根（保持无前缀 URL）。
   "assets": {
-    "directory": ".open-next/assets",
-    "binding": "ASSETS"
+    "directory": "./out",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
   },
   "routes": [
     { "pattern": "www.lucidblocks.wiki/*", "zone_name": "lucidblocks.wiki" }

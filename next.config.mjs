@@ -9,8 +9,8 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   allowedDevOrigins: ["*.preview.same-app.com"],
 
-  // Docker 部署配置
-  output: 'standalone',
+  // 静态导出：产出 out/ 纯静态 HTML，配 asset-only Worker = 0 CPU
+  output: 'export',
 
   // URL 不加尾部斜杠
   trailingSlash: false,
